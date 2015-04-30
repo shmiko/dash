@@ -1,0 +1,42 @@
+
+.cm-menu-area {
+    position: relative;
+    background-color: #333;
+    color: #ccc;
+    padding-left: 0;
+    width: 200px;
+    min-height: 100vh;
+    padding-top: 30px;
+}
+
+.cm-menu-area .btn:hover {
+    color: #ccc;
+}
+
+.cm-menu {
+    list-style-type: none;
+    vertical-align: top;
+}
+
+.cm-menu ul {
+    display: inline;
+    list-style-type: none;
+    padding-left: 0;
+}
+.cm-menu li {
+    line-height: 3em;
+    cursor: pointer;
+}
+
+.cm-selectable-item:hover {
+    background-color: #555;
+}
+
+.cm-not-selectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
