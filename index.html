@@ -13,6 +13,9 @@
     <script src="Scripts/angular.min.js"></script>
 
     <script src="ext-modules/cmMenu/cmMenuModule.js"></script>
+    <script src="ext-modules/cmMenu/cmMenuController.js"></script>
+    <script src="ext-modules/cmMenu/cmMenuDirective.js"></script>
+    <script src="ext-modules/cmMenu/cmMenuItemDirective.js"></script>
 
     <script src="ext-modules/cmDashboard/cmDashboardModule.js"></script>
 
@@ -21,6 +24,7 @@
     <script src="ext-modules/cmFramework/cmFrameworkDirective.js"></script>
 
     <script src="app/appModule.js"></script>
+    <script src="app/appConfig.js"></script>
 
 </head>
 <body class="container-fluid">
@@ -29,7 +33,14 @@
             subtitle="TripStomp Dashboard"
             icon-file="images/calmapit_icon_55.png">
 
-    </cm-framework>
+        <cm-menu>
+            <cm-menu-item label="Dashboard"></cm-menu-item>
+            <cm-menu-item label="Calendar"></cm-menu-item>
+            <cm-menu-item label="Map"></cm-menu-item>
+        </cm-menu>
+
+    </cm-menm-framework>
+
 
 </body>
 </html>

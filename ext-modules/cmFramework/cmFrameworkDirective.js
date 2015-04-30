@@ -5,7 +5,7 @@
 
 angular.module('cmFramework').directive("cmFramework", function(){
     return {
-        transclude: false,
+        transclude: true,
         scope: {
             title:'@',
             subtitle:'@',
