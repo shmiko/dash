@@ -90,6 +90,16 @@
     border: 1px solid #999;
 }
 
+/*.cm-layout-button-vertical {*/
+
+/*}*/
+
+.cm-layout-button-horizontal {
+    position: absolute;
+    top: -6px;
+    right: 10px;
+}
+
 .cm-item-horizontal {
     display: inline-block;
     width: 165px !important;

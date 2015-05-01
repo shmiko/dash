@@ -3,7 +3,7 @@
         <i class="fa {{icon}} cm-menu-icon"></i>
         {{label}}
     </div>
-    <i class="fa fa-chevron-left cm-group-indicator-left"
+    <i ng-if="isVertical()" class="fa fa-chevron-left cm-group-indicator-left"
        ng-class="{'fa-rotate-270': isOpen}"></i>
 </li>
 <div ng-show="isOpen" class="cm-subitem-section">
