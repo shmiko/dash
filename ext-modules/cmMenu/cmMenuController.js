@@ -4,8 +4,15 @@
 "use strict";
 
 angular.module('cmMenu').controller('cmMenuController',
-    ['$scope',
-        function($scope){
+    ['$scope','$rootScope',
+        function($scope,$rootScope){
+            this.setActiveElement = function(el) {
+              $scope.activeElement = el;
+            };
 
+            this.setRoute = function (route) {
+                $rootScope.$broadcast('cm-menu-item-selected-event',
+                { route : route});
+            };
         }
     ]);

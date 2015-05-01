@@ -6,6 +6,8 @@
 angular.module('cmFramework').controller("cmFrameworkController",
     [ '$scope',
         function($scope) {
-
+            $scope.$on('cm-menu-item-selected-event', function(evt,data) {
+                $scope.routeString = data.route;
+            });
         }
     ]);
