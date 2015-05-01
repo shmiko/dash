@@ -55,6 +55,17 @@
     user-select: none;
 }
 
+.cm-group-indicator-left{
+    float: right;
+    color: #ddd;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.cm-subitem-section{
+    padding-left: 16px;
+}
+
 .cm-menu-active-indicator {
     float: right;
     color: #ddd;

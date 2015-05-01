@@ -18,6 +18,7 @@
     <script src="ext-modules/cmMenu/cmMenuController.js"></script>
     <script src="ext-modules/cmMenu/cmMenuDirective.js"></script>
     <script src="ext-modules/cmMenu/cmMenuItemDirective.js"></script>
+    <script src="ext-modules/cmMenu/cmMenuGroupDirective.js"></script>
 
     <script src="ext-modules/cmDashboard/cmDashboardModule.js"></script>
 
@@ -39,6 +40,11 @@ nserver
             <cm-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></cm-menu-item>
             <cm-menu-item label="Calendar" icon="fa-calendar" route="calendar"></cm-menu-item>
             <cm-menu-item label="Map" icon="fa-map-marker" route="map"></cm-menu-item>
+            <cm-menu-group label="Locations" icon="fa-location-arrow">
+                <cm-menu-item label="Asia" icon="fa-unlink" route="asia"></cm-menu-item>
+                <cm-menu-item label="US" icon="fa-magic" route="us"></cm-menu-item>
+                <cm-menu-item label="UK" icon="fa-life-ring" route="uk"></cm-menu-item>
+            </cm-menu-group>
         </cm-menu>
 
     </cm-framework>

@@ -1,0 +1,11 @@
+<li class="cm-selectable-item" ng-click="clicked()">
+    <div class="cm-not-selectable">
+        <i class="fa {{icon}} cm-menu-icon"></i>
+        {{label}}
+    </div>
+    <i class="fa fa-chevron-left cm-group-indicator-left"
+       ng-class="{'fa-rotate-270': isOpen}"></i>
+</li>
+<div ng-show="isOpen" class="cm-subitem-section">
+    <ul ng-transclude></ul>
+</div>
