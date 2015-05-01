@@ -19,6 +19,10 @@ angular.module('cmMenu').controller('cmMenuController',
               $scope.activeElement = el;
             };
 
+            this.isVertical = function(){
+                return $scope.isVertical;
+            };
+
             this.setRoute = function (route) {
                 $rootScope.$broadcast('cm-menu-item-selected-event',
                 { route : route});

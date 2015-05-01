@@ -20,6 +20,9 @@ angular.module('cmMenu').directive('cmMenuGroup', function(){
             scope.clicked = function(){
                 scope.isOpen = !scope.isOpen;
             };
+            scope.isVertical = function(){
+                return ctrl.isVertical();
+            };
         }
     };
 });
