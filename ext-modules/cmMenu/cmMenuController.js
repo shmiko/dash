@@ -7,6 +7,8 @@ angular.module('cmMenu').controller('cmMenuController',
     ['$scope','$rootScope',
         function($scope,$rootScope){
 
+            $scope.showMenu = true;
+
             this.getActiveElement = function(){
                 return $scope.activeElement;
             };
@@ -19,5 +21,9 @@ angular.module('cmMenu').controller('cmMenuController',
                 $rootScope.$broadcast('cm-menu-item-selected-event',
                 { route : route});
             };
+
+            $scope.$on('cm-menu-show', function(evt,data){
+                $scope.showMenu = data.show;
+            });
         }
     ]);
