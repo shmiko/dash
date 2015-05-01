@@ -1,14 +1,12 @@
-
 <li class="cm-selectable-item" ng-click="clicked()" ng-class="{'cm-item-horizontal': !isVertical()}">
-    <div class="cm-noselect">
+    <div class="cm-not-selectable">
         <i class="fa {{icon}} cm-menu-icon"></i>
         {{label}}
         <i ng-if="isVertical()"
            class="fa fa-chevron-left cm-group-indicator-left"
-           ng-class="{'fa-rotate-270': isOpen}"></i>
+            ng-class="{'fa-rotate-270': isOpen}"></i>
     </div>
 </li>
-//have taken out animation effect
-<div ng-show="isOpen" class="cm-subitem-section" ng-class="{'cm-popup-menu': !isVertical() }">
+<div ng-show="isOpen" class="cm-subitem-section cm-fade-in-animation" ng-class="{'cm-popup-menu': !isVertical()}">
     <ul ng-transclude></ul>
 </div>

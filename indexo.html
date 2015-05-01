@@ -2,13 +2,14 @@
 <html ng-app="app">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>CalMapit</title>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <title>CalMapIt</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>"
     <link href="content/bootstrap.min.css" rel="stylesheet" />
     <link href="content/font-awesome.min.css" rel="stylesheet" />
     <link href="app/app.css" rel="stylesheet" />
     <link href="ext-modules/cmFramework/cmFramework.css" rel="stylesheet" />
     <link href="ext-modules/cmMenu/cmMenu.css" rel="stylesheet" />
+
 
     <script src="Scripts/jquery-2.1.3.min.js"></script>
     <script src="Scripts/angular.min.js"></script>
@@ -22,7 +23,6 @@
 
     <script src="ext-modules/cmDashboard/cmDashboardModule.js"></script>
 
-
     <script src="ext-modules/cmFramework/cmFrameworkModule.js"></script>
     <script src="ext-modules/cmFramework/cmFrameworkController.js"></script>
     <script src="ext-modules/cmFramework/cmFrameworkDirective.js"></script>
@@ -32,24 +32,29 @@
 
 </head>
 <body class="container-fluid">
+    <cm-framework
+            title="CalMapit"
+            subtitle="TripStomp Dashboard"
+            icon-file="images/calmapit_icon_55.png">
 
-<cm-framework title="CalMapit"
-              subtitle="Tripstomp Dashboard"
-              icon-file="images/calmapit_icon_55.png">
+        <cm-menu>
+            <cm-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></cm-menu-item>
+            <cm-menu-item label="Calendar" icon="fa-calendar" route="calendar"></cm-menu-item>
+            <cm-menu-item label="Map" icon="fa-map-marker" route="map"></cm-menu-item>
+            <cm-menu-group label="Locations" icon="fa-location-arrow">
+                <cm-menu-item label="Asia" icon="fa-unlink" route="asia"></cm-menu-item>
+                <cm-menu-item label="US" icon="fa-magic" route="us"></cm-menu-item>
+                <cm-menu-item label="UK" icon="fa-life-ring" route="uk"></cm-menu-item>
+                <cm-menu-group label="Remote Locations" icon="fa-location-arrow">
+                    <cm-menu-item label="Asia Pacific" icon="fa-unlink" route="asia-pacific"></cm-menu-item>
+                    <cm-menu-item label="Canada" icon="fa-magic" route="canada"></cm-menu-item>
+                    <cm-menu-item label="South America" icon="fa-life-ring" route="south-america"></cm-menu-item>
+                </cm-menu-group>
+            </cm-menu-group>
+        </cm-menu>
 
-    <cm-menu>
-        <cm-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></cm-menu-item>
-        <cm-menu-item label="Calendar" icon="fa-location-arrow" route="calendar"></cm-menu-item>
-        <cm-menu-item label="Map" icon="fa-user" route="map"></cm-menu-item>
-        <cm-menu-group label="Locations" icon="fa-gears">
-            <cm-menu-item label="US" icon="fa-unlink" route="us"></cm-menu-item>
-            <cm-menu-item label="UK" icon="fa-magic" route="uk"></cm-menu-item>
-            <cm-menu-item label="ASIA" icon="fa-life-ring" route="asia"></cm-menu-item>
-        </cm-menu-group>
-    </cm-menu>
+    </cm-framework>
 
-
-</cm-framework>
 
 </body>
 </html>

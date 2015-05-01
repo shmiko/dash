@@ -1,6 +1,9 @@
+/**
+ * Created by pauljones on 1/05/15.
+ */
 "use strict";
 
-angular.module('cmMenu').directive('cmMenuGroup', function () {
+angular.module('cmMenu').directive('cmMenuGroup', function(){
     return {
         require: '^cmMenu',
         transclude: true,
@@ -9,12 +12,14 @@ angular.module('cmMenu').directive('cmMenuGroup', function () {
             icon: '@'
         },
         templateUrl: 'ext-modules/cmMenu/cmMenuGroupTemplate.html',
-        link: function (scope, el, attrs, ctrl) {
+        link: function(scope, el, attrs, ctrl){
+
             scope.isOpen = false;
-            scope.closeMenu = function () {
+            scope.closeMenu = function(){
                 scope.isOpen = false;
             };
-            scope.clicked = function () {
+
+            scope.clicked = function(){
                 scope.isOpen = !scope.isOpen;
 
                 if (el.parents('.cm-subitem-section').length == 0)
@@ -22,13 +27,14 @@ angular.module('cmMenu').directive('cmMenuGroup', function () {
 
                 ctrl.setOpenMenuScope(scope);
             };
-            scope.isVertical = function () {
+
+            scope.isVertical = function(){
                 return ctrl.isVertical() || el.parents('.cm-subitem-section').length > 0;
             };
 
-            scope.setSubmenuPosition = function () {
+            scope.setSubmenuPosition = function (){
                 var pos = el.offset();
-                $('.cm-subitem-section').css({ 'left': pos.left + 20, 'top': 36 });
+                $('.cm-subitem-section').css({'left': pos.left + 20, 'top': 36});
             };
         }
     };

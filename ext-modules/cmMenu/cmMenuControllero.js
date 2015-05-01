@@ -43,16 +43,14 @@ angular.module('cmMenu').controller('cmMenuController',
             };
 
             angular.element(document).bind('click', function (e) {
-                if ($scope.openMenuScope) {
-                    if (!$scope.isVertical) {
-                        if ($(e.target).parent().hasClass('cm-selectable-item'))
-                            return;
-                        $scope.$apply(function () {
-                            $scope.openMenuScope.closeMenu();
-                        });
-                        e.preventDefault();
-                        e.stopPropagation();
-                    }
+                if ($scope.openMenuScope && !$scope.isVertical) {
+                    if ($(e.target).parent().hasClass('cm-selectable-item'))
+                        return;
+                    $scope.$apply(function () {
+                        $scope.openMenuScope.closeMenu();
+                    });
+                    e.preventDefault();
+                    e.stopPropagation();
                 }
             });
             $scope.$on('cm-menu-show', function(evt, data) {

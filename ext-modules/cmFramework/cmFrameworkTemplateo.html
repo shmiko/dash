@@ -1,15 +1,14 @@
-
 <div class="cm-title-bar">
     <div class="row">
         <div class="cm-logo-area col-sm-6">
-            <img class="cm-icon" ng-src="{{ iconFile }}" />
+            <img class="cm-icon" ng-src="{{iconFile}}"/>
             <div class="cm-title-area">
-                <p class="cm-logo-title">{{ title }}</p>
-                <p class="cm-logo-subtitle">{{ subtitle }}</p>
+                <p class="cm-logo-title">{{title}}</p>
+                <p class="cm-logo-subtitle">{{subtitle}}</p>
             </div>
 
             <div ng-if="isMenuButtonVisible" ng-click="menuButtonClicked()"
-                 class="cm-collacmed-menu pull-right">
+                 class="cm-collapsed-menu pull-right">
                 <button type="button" class="btn cm-nav-button">
                     <i class="fa fa-bars"></i>
                 </button>
@@ -19,9 +18,9 @@
 
         <div class="cm-right-side-controls col-sm-6">
             <div>
-                <button class="btn btn-primary">Button 1</button>
-                <button class="btn btn-success">Button 2</button>
-                <button class="btn btn-warning">Button 3</button>
+                <button class="btn btn-primary">One</button>
+                <button class="btn btn-success">Two</button>
+                <button class="btn btn-warning">Buckle my shoe</button>
             </div>
         </div>
     </div>
@@ -31,5 +30,3 @@
 <div style="position: absolute; left:220px; top: 200px; color: red; font-size: 44px;">
     {{routeString}}
 </div>
-
-

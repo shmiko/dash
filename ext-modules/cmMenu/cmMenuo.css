@@ -4,10 +4,11 @@
     background-color: #333;
     color: #ccc;
     padding-left: 0;
+    /*padding-top: 20px;*/
 }
 
 .cm-menu-area-vertical {
-    width: 200px;
+    width: 202px;
     min-height: 100vh;
     padding-top: 30px;
 }
@@ -70,24 +71,35 @@
     user-select: none;
 }
 
-.cm-group-indicator-left {
+.cm-group-indicator-left{
     float: right;
     color: #ddd;
-    margin-right: 2px;
+    margin-right: 10px;
     margin-top: 15px;
 }
 
-.cm-subitem-section {
+.cm-subitem-section{
     padding-left: 16px;
 }
 
-.cm-menu-layout-button {
+/*.cm-menu-active-indicator {*/
+    /*float: right;*/
+    /*color: #ddd;*/
+    /*margin-right: 0;*/
+    /*margin-top: 8px;*/
+/*}*/
+
+.cm-menu-layout-button{
     margin: 12px;
     padding: 2px 8px;
     color: #bbb;
     background-color: #333;
     border: 1px solid #999;
 }
+
+/*.cm-layout-button-vertical {*/
+
+/*}*/
 
 .cm-layout-button-horizontal {
     position: absolute;
@@ -99,7 +111,7 @@
     display: inline-block;
     width: 165px !important;
     margin-left: 20px;
-    margin-top: 10px;
+    margin-top: 5px;
     line-height: 1.5em !important;
 }
 
