@@ -6,6 +6,11 @@
 angular.module('cmMenu').controller('cmMenuController',
     ['$scope','$rootScope',
         function($scope,$rootScope){
+
+            this.getActiveElement = function(){
+                return $scope.activeElement;
+            };
+
             this.setActiveElement = function(el) {
               $scope.activeElement = el;
             };
