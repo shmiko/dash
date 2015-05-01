@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html ng-app="app">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -6,13 +6,17 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href="content/bootstrap.min.css" rel="stylesheet" />
     <link href="content/font-awesome.min.css" rel="stylesheet" />
+    <link href="content/angular-gridster.min.css" rel="stylesheet" />
     <link href="app/app.css" rel="stylesheet" />
     <link href="ext-modules/cmFramework/cmFramework.css" rel="stylesheet" />
     <link href="ext-modules/cmMenu/cmMenu.css" rel="stylesheet" />
+    <link href="ext-modules/cmDashboard/cmDashboard.css" rel="stylesheet" />
 
     <script src="Scripts/jquery-2.1.3.min.js"></script>
     <script src="Scripts/angular.min.js"></script>
     <script src="Scripts/angular-animate.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="Scripts/angular-gridster.min.js"></script>
 
     <script src="ext-modules/cmMenu/cmMenuModule.js"></script>
     <script src="ext-modules/cmMenu/cmMenuController.js"></script>
@@ -21,6 +25,7 @@
     <script src="ext-modules/cmMenu/cmMenuGroupDirective.js"></script>
 
     <script src="ext-modules/cmDashboard/cmDashboardModule.js"></script>
+    <script src="ext-modules/cmDashboard/cmDashboardDirective.js"></script>
 
 
     <script src="ext-modules/cmFramework/cmFrameworkModule.js"></script>
@@ -29,27 +34,31 @@
 
     <script src="app/appModule.js"></script>
     <script src="app/appConfig.js"></script>
+    <script src="app/appRouteConfig.js"></script>
+    <script src="app/directives/wwaDashboardDirective.js"></script>
+    <script src="app/directives/wwaMapsDirective.js"></script>
+    <script src="app/directives/wwaCalendarDirective.js"></script>
 
 </head>
 <body class="container-fluid">
 
-<cm-framework title="CalMapit"
-              subtitle="Tripstomp Dashboard"
-              icon-file="images/calmapit_icon_55.png">
+    <cm-framework title="TripStomp Adventures"
+                  subtitle="Dashboard"
+                  icon-file="images/calmapit_icon_55.png">
 
-    <cm-menu>
-        <cm-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></cm-menu-item>
-        <cm-menu-item label="Calendar" icon="fa-location-arrow" route="calendar"></cm-menu-item>
-        <cm-menu-item label="Map" icon="fa-user" route="map"></cm-menu-item>
-        <cm-menu-group label="Locations" icon="fa-gears">
-            <cm-menu-item label="US" icon="fa-unlink" route="us"></cm-menu-item>
-            <cm-menu-item label="UK" icon="fa-magic" route="uk"></cm-menu-item>
-            <cm-menu-item label="ASIA" icon="fa-life-ring" route="asia"></cm-menu-item>
-        </cm-menu-group>
-    </cm-menu>
+        <cm-menu>
+            <cm-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></cm-menu-item>
+            <cm-menu-item label="Calendar" icon="fa-location-arrow" route="calendar"></cm-menu-item>
+            <cm-menu-item label="Maps & Guides" icon="fa-user" route="maps"></cm-menu-item>
+            <cm-menu-group label="Locations" icon="fa-gears">
+                <cm-menu-item label="Rafts" icon="fa-unlink" route="rafts"></cm-menu-item>
+                <cm-menu-item label="Paddles" icon="fa-magic" route="paddles"></cm-menu-item>
+                <cm-menu-item label="Life Vests" icon="fa-life-ring" route="vests"></cm-menu-item>
+            </cm-menu-group>
+        </cm-menu>
 
 
-</cm-framework>
+    </cm-framework>
 
 </body>
 </html>

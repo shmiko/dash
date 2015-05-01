@@ -1,11 +1,8 @@
-/**
- * Created by pauljones on 1/05/15.
- */
-"use strict";
+﻿"use strict";
 
 angular.module("cmFramework").controller("cmFrameworkController",
-    ['$scope', '$window', '$timeout', '$rootScope',
-        function ($scope, $window, $timeout, $rootScope) {
+    ['$scope', '$window', '$timeout', '$rootScope', '$location',
+        function ($scope, $window, $timeout, $rootScope, $location) {
 
             $scope.isMenuVisible = true;
             $scope.isMenuButtonVisible = true;
@@ -13,7 +10,7 @@ angular.module("cmFramework").controller("cmFrameworkController",
 
             $scope.$on('cm-menu-item-selected-event', function (evt, data) {
                 $scope.routeString = data.route;
-
+                $location.path(data.route);
                 checkWidth();
                 broadcastMenuState();
             });

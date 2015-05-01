@@ -1,4 +1,4 @@
-"use strict";
+﻿"use strict";
 
 angular.module("cmFramework").directive("cmFramework", function () {
     return {
@@ -10,6 +10,6 @@ angular.module("cmFramework").directive("cmFramework", function () {
         },
         controller: "cmFrameworkController",
         templateUrl: "ext-modules/cmFramework/cmFrameworkTemplate.html"
-
+        
     };
 });

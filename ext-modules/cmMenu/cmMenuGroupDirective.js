@@ -1,4 +1,4 @@
-"use strict";
+﻿"use strict";
 
 angular.module('cmMenu').directive('cmMenuGroup', function () {
     return {

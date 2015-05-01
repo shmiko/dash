@@ -1,6 +1,3 @@
-/**
- * Created by pauljones on 30/04/15.
- */
-"use strict";
+﻿"use strict";
 
-angular.module('app', ["cmFramework"]);
+angular.module("app", ["ngRoute", "cmFramework"]);
