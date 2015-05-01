@@ -7,6 +7,8 @@ angular.module('app').directive('wwaDashboard', [function () {
         template: '<cm-dashboard></cm-dashboard>',
         link: function (scope) {
 
+            scope.title = "TripStomp Dashboard";
+
             scope.gridsterOpts = {
                 columns: 12,
                 margins: [20, 20],
