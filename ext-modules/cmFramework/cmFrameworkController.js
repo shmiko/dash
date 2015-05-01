@@ -6,11 +6,16 @@ angular.module("cmFramework").controller("cmFrameworkController",
 
             $scope.isMenuVisible = true;
             $scope.isMenuButtonVisible = true;
+            $scope.isMenuVertical = true;
 
             $scope.$on('cm-menu-item-selected-event', function (evt, data) {
                 $scope.routeString = data.route;
                 checkWidth();
                 broadcastMenuState();
+            });
+
+            $scope.$on('cm-menu-orientation-changed-event', function(evt,data) {
+                $scope.isMenuVertical = data.isMenuVertical;
             });
 
             $($window).on('resize.cmFramework', function () {

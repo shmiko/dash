@@ -9,6 +9,8 @@ angular.module('cmMenu').controller('cmMenuController',
 
             $scope.showMenu = true;
 
+            $scope.isVertical = true;
+
             this.getActiveElement = function(){
                 return $scope.activeElement;
             };
@@ -20,6 +22,13 @@ angular.module('cmMenu').controller('cmMenuController',
             this.setRoute = function (route) {
                 $rootScope.$broadcast('cm-menu-item-selected-event',
                 { route : route});
+            };
+
+            $scope.toggleMenuOrientation = function(){
+                $scope.isVertical = !$scope.isVertical;
+
+                $rootScope.$broadcat('cm-menu-orientation-changed-event',
+                    { isMenuVertical: $scope.isVertical });
             };
 
             $scope.$on('cm-menu-show', function(evt,data){
