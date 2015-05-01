@@ -9,6 +9,10 @@
     padding-top: 30px;
 }
 
+.cm-menu-area ul {
+    padding-left: 0;
+}
+
 .cm-menu-area .btn:hover {
     color: #ccc;
 }
@@ -23,13 +27,24 @@
     list-style-type: none;
     padding-left: 0;
 }
+
 .cm-menu li {
     line-height: 3em;
     cursor: pointer;
 }
 
+.cm-menu li div {
+    display: inline-block;
+    width: 90%;
+    padding-left: 16px;
+}
+
 .cm-selectable-item:hover {
     background-color: #555;
+}
+
+.cm-menu-icon {
+    margin-right: 10px;
 }
 
 .cm-not-selectable {

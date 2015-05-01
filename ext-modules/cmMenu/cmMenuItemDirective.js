@@ -7,7 +7,8 @@ angular.module('cmMenu').directive('cmMenuItem', function () {
     return {
         require: '^cmMenu',
         scope: {
-            label: '@'
+            label: '@',
+            icon: '@'
         },
         templateUrl: 'ext-modules/cmMenu/cmMenuItemTemplate.html',
         link: function (scope, el, attr, ctrl) {
