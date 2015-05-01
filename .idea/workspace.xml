@@ -61,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cmDashboard.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cmDashboard.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ext-modules/cmDashboard/cmDashboard.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5805243">
-              <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -81,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wwaDashboardDirective.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="wwaDashboardDirective.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/directives/wwaDashboardDirective.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.78651685">
+              <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -225,8 +225,8 @@
         <option value="$PROJECT_DIR$/app/directives/wwaMapsDirective.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/ext-modules/cmDashboard/cmDashboardTemplate.html" />
-        <option value="$PROJECT_DIR$/app/directives/wwaDashboardDirective.js" />
         <option value="$PROJECT_DIR$/ext-modules/cmDashboard/cmDashboard.css" />
+        <option value="$PROJECT_DIR$/app/directives/wwaDashboardDirective.js" />
       </list>
     </option>
   </component>
@@ -893,18 +893,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/directives/wwaDashboardDirective.js">
+    <entry file="file://$PROJECT_DIR$/ext-modules/cmDashboard/cmDashboard.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ext-modules/cmDashboard/cmDashboard.css">
+    <entry file="file://$PROJECT_DIR$/app/directives/wwaDashboardDirective.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5805243">
-          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.78651685">
+          <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
           <folding />
         </state>
       </provider>

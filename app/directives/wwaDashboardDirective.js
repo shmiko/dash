@@ -32,6 +32,13 @@ angular.module('app').directive('wwaDashboard', [function () {
                     sizeY: 4,
                     row: 0,
                     col: 5
+                },
+                {
+                    title: 'loop',
+                    sizeX: 4,
+                    sizeY: 8,
+                    row: 8,
+                    col: 0
                 }
             ];
         }
