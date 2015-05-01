@@ -4,7 +4,8 @@
     background-color: #333;
     color: #ccc;
     padding-left: 0;
-    width: 200px;
+    width: 20%;
+    min-width: 210px;
     min-height: 100vh;
     padding-top: 30px;
 }
