@@ -4,8 +4,8 @@
 "use strict";
 
 angular.module('cmDashboard').directive('cmWidgetBody',
-    ['$compile',
-        function ($compile) {
+    ['$compile','$modal',
+        function ($compile, $modal) {
             return {
                 templateUrl: 'ext-modules/cmDashboard/cmWidgetBodyTemplate.html',
                 link: function (scope, element, attrs) {
@@ -15,6 +15,16 @@ angular.module('cmDashboard').directive('cmWidgetBody',
 
                     scope.close = function () {
                         scope.widgets.splice(scope.widgets.indexOf(scope.item), 1);
+                    };
+
+                    scope.settings = function () {
+                        var options = {
+                            templateUrl: scope.item.widgetSettings.templateUrl,
+                            controller: scope.item.widgetSettings.controller,
+                            scope: scope
+                        };
+                        $modal.open(options);
+
                     };
                 }
             };
