@@ -49,3 +49,28 @@
 .cm-dashboard-controls {
     float: right;
 }
+
+.cm-dropdown{
+    max-width: 10px !important;
+}
+
+.cm-widget-menu-area {
+    position: absolute;
+    top: 0;
+    right: 8px;
+    font-size: 22px;
+}
+
+.cm-widget-menu-area .dropdown-menu {
+    left: -20px;
+    padding-left: 15px;
+}
+
+
+.cm-widget-menu-area a {
+    color: white;
+}
+
+.cm-widget-menu-area i {
+    cursor: pointer;
+}
