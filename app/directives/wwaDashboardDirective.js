@@ -18,27 +18,85 @@ angular.module('app').directive('wwaDashboard', [function () {
                 swapping: false
             };
 
+            scope.widgetDefinitions = [
+                {
+                    title: 'Temperature',
+                    settings: {
+                        sizeX: 3,
+                        sizeY: 3,
+                        minSizeX: 2,
+                        minSizeY: 2,
+                        template: '<wwa-temperature></wwa-temperature>',
+                        widgetSettings: {
+                            id: 1000
+                        }
+                    }
+                },
+                {
+                    title: 'Inventory',
+                    settings: {
+                        sizeX: 5,
+                        sizeY: 3,
+                        minSizeX: 2,
+                        minSizeY: 2,
+                        template: '<wwa-inventory></wwa-inventory>',
+                        widgetSettings: {
+                            id: 1002
+                        }
+                    }
+                },
+                {
+                    title: 'Employee',
+                    settings: {
+                        sizeX: 5,
+                        sizeY: 3,
+                        minSizeX: 2,
+                        minSizeY: 2,
+                        template: '<wwa-employee></wwa-employee>',
+                        widgetSettings: {
+                            id: 5000
+                        }
+                    }
+                }
+            ];
+
             scope.widgets = [
                 {
                     title: 'poop',
                     sizeX: 3,
                     sizeY: 3,
+                    minSizeX: 2,
+                    minSizeY: 2,
                     row: 0,
-                    col: 0
-                },
+                    col: 0,
+                    template: '<wwa-temperature></wwa-temperature>'
+                    ,widgetSettings: {
+                        id: 1000
+                    }
+                }
+                ,
                 {
                     title: 'scoop',
-                    sizeX: 2,
-                    sizeY: 4,
+                    sizeX: 5,
+                    sizeY: 3,
                     row: 0,
-                    col: 5
-                },
+                    col: 5,
+                    template: '<wwa-employee></wwa-employee>'
+                    ,widgetSettings: {
+                        id: 5001
+                    }
+                }
+                ,
                 {
-                    title: 'loop',
-                    sizeX: 4,
-                    sizeY: 8,
-                    row: 8,
-                    col: 0
+                    title: 'droop',
+                    sizeX: 5,
+                    sizeY: 3,
+                    row: 3,
+                    col: 5,
+                    template: '<wwa-inventory></wwa-inventory>'
+                    ,widgetSettings: {
+                        id: 1002
+                    }
                 }
             ];
         }

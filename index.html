@@ -12,11 +12,17 @@
     <link href="ext-modules/cmMenu/cmMenu.css" rel="stylesheet" />
     <link href="ext-modules/cmDashboard/cmDashboard.css" rel="stylesheet" />
 
+    <!-- widget css -->
+    <link href="app/widgets/wwaTemperature/wwaTemperature.css" rel="stylesheet" />
+    <link href="app/widgets/wwaInventory/wwaInventory.css" rel="stylesheet" />
+    <link href="app/widgets/wwaEmployee/wwaEmployee.css" rel="stylesheet" />
+
     <script src="Scripts/jquery-2.1.3.min.js"></script>
     <script src="Scripts/angular.min.js"></script>
     <script src="Scripts/angular-animate.min.js"></script>
     <script src="Scripts/angular-route.min.js"></script>
     <script src="Scripts/angular-gridster.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
 
     <script src="ext-modules/cmMenu/cmMenuModule.js"></script>
     <script src="ext-modules/cmMenu/cmMenuController.js"></script>
@@ -26,7 +32,7 @@
 
     <script src="ext-modules/cmDashboard/cmDashboardModule.js"></script>
     <script src="ext-modules/cmDashboard/cmDashboardDirective.js"></script>
-
+    <script src="ext-modules/cmDashboard/cmWidgetBodyDirective.js"></script>
 
     <script src="ext-modules/cmFramework/cmFrameworkModule.js"></script>
     <script src="ext-modules/cmFramework/cmFrameworkController.js"></script>
@@ -35,9 +41,16 @@
     <script src="app/appModule.js"></script>
     <script src="app/appConfig.js"></script>
     <script src="app/appRouteConfig.js"></script>
+    <script src="app/services/dataService.js"></script>
+
     <script src="app/directives/wwaDashboardDirective.js"></script>
     <script src="app/directives/wwaMapsDirective.js"></script>
     <script src="app/directives/wwaCalendarDirective.js"></script>
+
+    <!-- widget JavaScript files -->
+    <script src="app/widgets/wwaTemperature/wwaTemperatureDirective.js"></script>
+    <script src="app/widgets/wwaInventory/wwaInventoryDirective.js"></script>
+    <script src="app/widgets/wwaEmployee/wwaEmployeeDirective.js"></script>
 
 </head>
 <body class="container-fluid">
