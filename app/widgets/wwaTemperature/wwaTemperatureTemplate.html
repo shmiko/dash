@@ -7,7 +7,7 @@
     </div>
 
     <div class="wwa-temperature-body" ng-style="selectedLocation != null && {'background-image': 'url(/images/' + selectedLocation.image + ')'}">
-        <div ng-if="!isLoaded">
+        <div ng-if="!isLoaded && !hasError">
             <i class="fa fa-refresh fa-2x fa-spin"></i>
         </div>
         <div ni-if="isLoaded" class="wwa-temperature-view">
@@ -17,6 +17,10 @@
             <div class="wwa-temperature-degrees">
                 {{ selectedLocation.temperature }}º
             </div>
+        </div>
+        <div ng-if="hasError">
+            <h4>Error loading widget.</h4>
+            <button class="btn btn-primary" ng-click="loadlocation()">Reload</button>
         </div>
     </div>
 
