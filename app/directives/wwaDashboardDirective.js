@@ -1,6 +1,8 @@
 ﻿"use strict";
 
-angular.module('app').directive('wwaDashboard', [function () {
+angular.module('app')
+    .directive('wwaDashboard', ['$localStorage', 
+        function ($localStorage) {
     return {
         scope: {
         },
@@ -66,45 +68,15 @@ angular.module('app').directive('wwaDashboard', [function () {
                 }
             ];
 
-            scope.widgets = [
-                //{
-                //    title: 'poop',
-                //    sizeX: 3,
-                //    sizeY: 3,
-                //    minSizeX: 2,
-                //    minSizeY: 2,
-                //    row: 0,
-                //    col: 0,
-                //    template: '<wwa-temperature></wwa-temperature>'
-                //    ,widgetSettings: {
-                //        id: 1000
-                //    }
-                //}
-                //,
-                //{
-                //    title: 'scoop',
-                //    sizeX: 5,
-                //    sizeY: 3,
-                //    row: 0,
-                //    col: 5,
-                //    template: '<wwa-employee></wwa-employee>'
-                //    ,widgetSettings: {
-                //        id: 5001
-                //    }
-                //}
-                //,
-                //{
-                //    title: 'droop',
-                //    sizeX: 5,
-                //    sizeY: 3,
-                //    row: 3,
-                //    col: 5,
-                //    template: '<wwa-inventory></wwa-inventory>'
-                //    ,widgetSettings: {
-                //        id: 1002
-                //    }
-                //}
+            scope.widgets = $localStorage.widgets || [
+                
             ];
+
+            scope.$watch('widgets', function (){
+                $localStorage.widgets = scope.widgets;
+            }, true);
         }
     }
 }]);
+
+
