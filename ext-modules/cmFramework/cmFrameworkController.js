@@ -17,6 +17,9 @@ angular.module("cmFramework").controller("cmFrameworkController",
 
             $scope.$on('cm-menu-orientation-changed-event', function (evt, data) {
                 $scope.isMenuVertical = data.isMenuVertical;
+                $timeout(function (){
+                    $($window).trigger('resize');
+                }, 0);
             });
 
             $($window).on('resize.cmFramework', function () {
@@ -38,7 +41,7 @@ angular.module("cmFramework").controller("cmFrameworkController",
             $scope.menuButtonClicked = function () {
                 $scope.isMenuVisible = !$scope.isMenuVisible;
                 broadcastMenuState();
-                $scope.$apply();
+                // $scope.$apply();
             };
 
             var broadcastMenuState = function () {
