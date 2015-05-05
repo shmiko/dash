@@ -12,8 +12,8 @@ angular.module('app').config(['$routeProvider', function ($routeProvider) {
         {
             url: '/calendar',
             config: {
-                //template: '<wwa-calendar></wwa-calendar>'
-                templateUrl: '/app/calendar.html'
+                template: '<wwa-calendar></wwa-calendar>'
+                //templateUrl: 'app/calendar.html'
             }
         },
         {
