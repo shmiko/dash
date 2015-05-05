@@ -1,4 +1,4 @@
-<html lang="en" ng-app="StarterApp">
+<html lang="en">
 <head>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
@@ -6,23 +6,56 @@
 
     <meta name="viewport" content="initial-scale=1" />
 </head>
-<body layout="column" ng-controller="AppCtrl">
-<md-toolbar layout="row">
-    <button ng-click="toggleSidenav('left')" hide-gt-sm class="menuBtn">
-        <span class="visually-hidden">Menu</span>
-    </button>
-    <h1 class="md-toolbar-tools" layout-align-gt-sm="center">Hello World</h1>
-</md-toolbar>
-<div layout="row" flex>
-    <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
+<body>
 
-    </md-sidenav>
-    <div layout="column" flex id="content">
-        <md-content layout="column" flex class="md-padding">
-
+<div ng-app="sidenavDemo1" ng-controller="AppCtrl" layout="column" layout-fill>
+    <section layout="row" flex>
+        <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$media('gt-md')">
+            <md-toolbar class="md-theme-indigo">
+                <h1 class="md-toolbar-tools">Sidenav Left</h1>
+            </md-toolbar>
+            <md-content class="md-padding" ng-controller="LeftCtrl">
+                <md-button ng-click="close()" class="md-primary" hide-gt-md>
+                    Close Sidenav Left
+                </md-button>
+                <p hide-md show-gt-md>
+                    This sidenav is locked open on your device. To go back to the default behavior,
+                    narrow your display.
+                </p>
+                <p>
+                    The "right" sideNav is open = {{isOpen()}} </p>
+            </md-content>
+        </md-sidenav>
+        <md-content flex class="md-padding">
+            <div layout="column" layout-fill layout-align="center center">
+                <p>
+                    The left sidenav will 'lock open' on a medium (>=960px wide) device.
+                </p>
+                <div>
+                    <md-button ng-click="toggleLeft()" class="md-primary" hide-gt-md>
+                        Toggle left
+                    </md-button>
+                </div>
+                <div>
+                    <md-button ng-click="toggle()" class="md-primary" >
+                        Toggle right
+                    </md-button>
+                </div>
+            </div>
         </md-content>
-    </div>
+        <md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="right">
+            <md-toolbar class="md-theme-light">
+                <h1 class="md-toolbar-tools">Sidenav Right</h1>
+            </md-toolbar>
+            <md-content ng-controller="RightCtrl" class="md-padding">
+                <md-button ng-click="close()" class="md-primary">
+                    Close Sidenav Right
+                </md-button>
+            </md-content>
+        </md-sidenav>
+    </section>
 </div>
+
 <!-- Angular Material Dependencies -->
 
 
@@ -32,6 +65,6 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.js"></script>
 
-<script src="app/calanderController.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
