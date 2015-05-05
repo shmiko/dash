@@ -24,7 +24,7 @@ app.use(bodyParser.json());
 dashboardRouter = require('./routes/dashboardRoutes')(Dashboard);
 
 
-app.use('/api', dashboardRouter);
+app.use('/api/dashboards', dashboardRouter);
 
 app.get('/', function(req,res){
     res.send('Gotcha');

@@ -6,7 +6,7 @@ var express = require('express');
 var routes = function(Dashboard){
     var dashboardRouter = express.Router();
 
-    dashboardRouter.route('/Dashboards')
+    dashboardRouter.route('/')
         .post(function(req,res){
             var dashboard = new Dashboard(req.body);
             dashboard.save();
@@ -34,7 +34,7 @@ var routes = function(Dashboard){
             //res.json(responseJSON);
         });
 
-    dashboardRouter.route('/Dashboards/:id')
+    dashboardRouter.route('/:id')
         .get(function(req,res){
 
             //var responseJSON = {hello: "hello paul"};
