@@ -18,7 +18,8 @@ angular.module('app').config(['$routeProvider', function ($routeProvider) {
         {
             url: '/maps',
             config: {
-                template: '<wwa-maps></wwa-maps>'
+                //template: '<wwa-maps></wwa-maps>'
+                templateUrl: 'calendar.html'
             }
         }
     ];
