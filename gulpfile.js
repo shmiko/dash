@@ -6,6 +6,8 @@ var strip = require('gulp-strip-line');
 var templateCache = require('gulp-angular-templatecache');
 var nodemon = require('gulp-nodemon');
 var gulpMocha = require('gulp-mocha');
+var env = require('gulp-env');
+var supertest = require('supertest');
 
 gulp.task('buildMenuTemplateCache', function () {
     return gulp
@@ -83,6 +85,7 @@ gulp.task('default', function(){
 });
 
 gulp.task('test', function(){
+    env({vars: {ENV:'Test'}});
     gulp.src('Tests/*.js', {read: false})
         .pipe(gulpMocha({reporter: 'nyan'}))
 
