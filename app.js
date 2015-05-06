@@ -7,7 +7,12 @@ var mongoose = require('mongoose');
 
 var bodyParser = require('body-parser');
 
-var db = mongoose.connect('mongodb://localhost/dashAPI');
+var db;
+if (process.env.ENV == 'Test')
+    db = mongoose.connect('mongodb://localhost/dashAPI_test');
+else {
+    db = mongoose.connect('mongodb://localhost/dashAPI');
+}
 
 var Dashboard = require('./models/dashModel');
 
