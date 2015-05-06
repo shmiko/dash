@@ -15,16 +15,13 @@ var app = express();
 
 var port = process.env.PORT || 8080;
 
-
 app.use(bodyParser.urlencoded({extended:true}));
 
 app.use(bodyParser.json());
 
-
 dashboardRouter = require('./routes/dashboardRoutes')(Dashboard);
 
-
-app.use('/api/dashboards', dashboardRouter);
+app.use('/api', dashboardRouter);
 
 app.get('/', function(req,res){
     res.send('Gotcha');
