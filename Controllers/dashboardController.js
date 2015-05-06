@@ -3,9 +3,16 @@
  */
 var dashboardController = function(Dashboard){
     var post = function(req,res){
-        var dash = new Dashboard(req,res);
-            dash.save();
-            res.status(201).send(dash);
+        var dash = new Dashboard(req.body);
+
+            if (!req.body.pageTitle){
+                res.status(400);
+                res.send('pageTitle is required');
+            } else {
+                dash.save();
+                res.status(201);
+                res.send(dash);
+            }
 
     }
 

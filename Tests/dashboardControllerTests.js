@@ -7,7 +7,7 @@ var sinon = require('sinon');
 describe('Dashboard Controller Tests:', function(){
     describe('Post', function(){
         it('should not allow an empty title on post', function(){
-            var Dashboard = function(book){this.save = function(){}};
+            var Dashboard = function(dashboard){this.save = function(){}};
 
             var req = {
                 body: {
@@ -20,7 +20,7 @@ describe('Dashboard Controller Tests:', function(){
                 send: sinon.spy()
             }
 
-            var dashboardController = require('../controllers/dashboardController')(Dashboard);
+            var dashboardController = require('../Controllers/dashboardController')(Dashboard);
 
             dashboardController.post(req,res);
 
