@@ -31,6 +31,7 @@ var routes = function(Dashboard){
                     res.json(dashboards);
             });
         });
+
     dashboardRouter.use('/Dashboards/:id', function(req,res,next){
         Dashboard.findById(req.params.id, function(err,dashboard){
             console.log(req.params.id);
@@ -47,6 +48,7 @@ var routes = function(Dashboard){
             }
         });
     });
+
     dashboardRouter.route('/Dashboards/:id')
         .get(function(req,res){
 
