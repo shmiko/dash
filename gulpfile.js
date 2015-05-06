@@ -5,7 +5,7 @@ var angularFilesort = require('gulp-angular-filesort');
 var strip = require('gulp-strip-line');
 var templateCache = require('gulp-angular-templatecache');
 var nodemon = require('gulp-nodemon');
-
+var gulpMocha = require('gulp-mocha');
 
 gulp.task('buildMenuTemplateCache', function () {
     return gulp
@@ -80,4 +80,10 @@ gulp.task('default', function(){
    .on('restart', function(){
        console.log('Restarting');
    });
+});
+
+gulp.task('test', function(){
+    gulp.src('Tests/*.js', {saveDash: false})
+        .pipe(gulpMocha({reporter: 'nyan'}))
+
 });
