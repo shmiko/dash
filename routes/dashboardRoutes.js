@@ -20,9 +20,9 @@ var routes = function(Dashboard){
         .get(function(req,res){
             var query = {};
 
-            if(req.query.saveDash)
+            if(req.query.widgets)
             {
-                query.saveDash = req.query.saveDash;
+                query.widgets = req.query.widgets;
             }
             Dashboard.find(query, function(err,dashboards){
                 if(err)
@@ -33,10 +33,10 @@ var routes = function(Dashboard){
             //res.json(responseJSON);
         });
 
-    dashboardRouter.route('/:dashboardId')
+    dashboardRouter.route('/:id')
         .get(function(req,res){
             //console.log(req.params.dashboardId);
-            Dashboard.findById(req.params.dashboardId, function(err,dashboard){
+            Dashboard.findById(req.params.id, function(err,id){
                 if(err)
                     res.status(500).send(err);
                 else if(dashboard)
