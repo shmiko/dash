@@ -9,15 +9,9 @@ var express = require('express');
 var routes = function(Dashboard){
     var dashboardRouter = express.Router();
 
-    dashboardRouter.route('/')
-        .post(function(req,res){
-            var dashboard = new Dashboard(req.body);
-            dashboard.save();
-            res.status(201).send(dashboard);
-            //console.log(dashboard);
-        })
-
+    dashboardRouter.route('/Dashboards')
         .get(function(req,res){
+
             var query = {};
 
             if(req.query.widgets)
@@ -30,17 +24,16 @@ var routes = function(Dashboard){
                 else
                     res.json(dashboards);
             });
-            //res.json(responseJSON);
         });
 
-    dashboardRouter.route('/:id')
+    dashboardRouter.route('/Dashboards/:id')
         .get(function(req,res){
-            //console.log(req.params.dashboardId);
-            Dashboard.findById(req.params.id, function(err,id){
+
+
+            Dashboard.findById(req.params.id, function(err,dashboard){
                 if(err)
                     res.status(500).send(err);
-                else if(dashboard)
-
+                else
                     res.json(dashboard);
             });
         });
