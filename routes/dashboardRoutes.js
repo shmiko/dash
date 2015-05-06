@@ -8,29 +8,31 @@ var express = require('express');
 
 var routes = function(Dashboard){
     var dashboardRouter = express.Router();
-
+    var dashboardController = require('../Controllers/dashboardController')(Dashboard)
     dashboardRouter.route('/Dashboards')
-        .post(function(req,res){
-            var dashboard = new Dashboard(req.body);
-            dashboard.save();
-            res.status(201).send(dashboard);
-            //console.log(dashboard);
-        })
-        .get(function(req,res){
-
-            var query = {};
-
-            if(req.query.widgets)
-            {
-                query.widgets = req.query.widgets;
-            }
-            Dashboard.find(query, function(err,dashboards){
-                if(err)
-                    res.status(500).send(err);
-                else
-                    res.json(dashboards);
-            });
-        });
+        //.post(function(req,res){
+        //    var dashboard = new Dashboard(req.body);
+        //    dashboard.save();
+        //    res.status(201).send(dashboard);
+        //    //console.log(dashboard);
+        //})
+        .post(dashboardController.post)
+        .get(dashboardController.get);
+        //.get(function(req,res){
+        //
+        //    var query = {};
+        //
+        //    if(req.query.widgets)
+        //    {
+        //        query.widgets = req.query.widgets;
+        //    }
+        //    Dashboard.find(query, function(err,dashboards){
+        //        if(err)
+        //            res.status(500).send(err);
+        //        else
+        //            res.json(dashboards);
+        //    });
+        //});
 
     dashboardRouter.use('/Dashboards/:id', function(req,res,next){
         Dashboard.findById(req.params.id, function(err,dashboard){
