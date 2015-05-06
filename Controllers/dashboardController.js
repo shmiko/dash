@@ -1,8 +1,8 @@
 /**
  * Created by pauljones on 7/05/15.
  */
-var dsahboardController = function(dashboard){
-    var dashboard = function(req,res){
+var dashboardController = function(Dashboard){
+    var post = function(req,res){
         var dash = new Dashboard(req,res);
             dash.save();
             res.status(201).send(dash);
@@ -22,6 +22,11 @@ var dsahboardController = function(dashboard){
             else
                 res.json(dashboards);
         });
+    }
+
+    return {
+        post: post,
+        get: get
     }
 };
 
