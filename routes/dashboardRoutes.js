@@ -53,8 +53,11 @@ var routes = function(Dashboard){
 
     dashboardRouter.route('/Dashboards/:id')
         .get(function(req,res){
-
-            res.json(req.dashboard);
+            var returnDashboard = req.dashboard.toJSON();
+            returnDashboard.links = {};
+            var newLink = 'http://' + req.headers.host + '/api/dashboards/?widgets=' + returnDashboard.widgets;
+            returnDashboard.links.FilterByThisWidget = newLink.replace(' ', '%20');
+            res.json(returnDashboard);
 
         })
         .put(function(req,res){

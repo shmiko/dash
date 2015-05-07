@@ -11,7 +11,7 @@ describe('Dashboard Controller Tests:', function(){
 
             var req = {
                 body: {
-                    saveDash: false
+                    pageTitle: "test"
                 }
             }
 
