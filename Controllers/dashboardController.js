@@ -27,7 +27,14 @@ var dashboardController = function(Dashboard){
             if(err)
                 res.status(500).send(err);
             else
-                res.json(dashboards);
+                var returnDashboards = [];
+                dashboards.forEach(function(element, index, array){
+                    var newDashboard = element.toJSON();
+                    newDashboard.links = {};
+                    newDashboard.links.self = 'http://' + req.headers.host + '/api/dashboards/' + newDashboard._id;
+                    returnDashboards.push(newDashboard);
+                });
+                res.json(returnDashboards);
         });
     }
 
