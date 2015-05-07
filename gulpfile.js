@@ -1,5 +1,7 @@
 ﻿
 var gulp = require('gulp');
+var jshint = require('gulp-jshint');
+var jscs = require('gulp-jscs');
 var concat = require('gulp-concat');
 var angularFilesort = require('gulp-angular-filesort');
 var strip = require('gulp-strip-line');
@@ -8,6 +10,35 @@ var nodemon = require('gulp-nodemon');
 var gulpMocha = require('gulp-mocha');
 var env = require('gulp-env');
 var supertest = require('supertest');
+var util = require('gulp-util');
+var gulpprint = require('gulp-print');
+
+gulp.task('vet', function(){
+   log('Analysing source with JSHint and JSCS');
+   return gulp.src([
+       './ext-modules/**/*.js',
+       './*.js'
+   ])
+   .pipe(gulpprint())
+   .pipe(jscs())
+   .pipe(jshint())
+   .pipe(jshint.reporter('jshint-stylish', {verbose: true}))
+   .pipe(jshint.reporter('fail'));
+});
+
+/////////////
+function log(msg) {
+    if (typeof(msg) === 'object') {
+        for (var item in msg) {
+            if (msg.hasOwnProperty(item)) {
+                util.log(util.colors.blue(msg[item]));
+            }
+        }
+    } else {
+        util.log(util.colors.blue(msg));
+    }
+
+}
 
 gulp.task('buildMenuTemplateCache', function () {
     return gulp
