@@ -1,29 +1,32 @@
 ﻿
 var gulp = require('gulp');
-var jshint = require('gulp-jshint');
-var jscs = require('gulp-jscs');
-var concat = require('gulp-concat');
-var angularFilesort = require('gulp-angular-filesort');
-var strip = require('gulp-strip-line');
-var templateCache = require('gulp-angular-templatecache');
-var nodemon = require('gulp-nodemon');
-var gulpMocha = require('gulp-mocha');
-var env = require('gulp-env');
-var supertest = require('supertest');
-var util = require('gulp-util');
-var gulpprint = require('gulp-print');
+var args = require('yargs').argv;
+var config = require('./gulp.config')();
+var $ = require('gulp-load-plugins')({lazy: true});
+
+//var jshint = require('gulp-jshint');
+//var jscs = require('gulp-jscs');
+//var concat = require('gulp-concat');
+//var angularFilesort = require('gulp-angular-filesort');
+//var strip = require('gulp-strip-line');
+//var templateCache = require('gulp-angular-templatecache');
+//var nodemon = require('gulp-nodemon');
+//var gulpMocha = require('gulp-mocha');
+//var env = require('gulp-env');
+//var supertest = require('supertest');
+//var util = require('gulp-util');
+//var gulpprint = require('gulp-print');
+//var gulpif = require('gulp-if');
+
 
 gulp.task('vet', function(){
    log('Analysing source with JSHint and JSCS');
-   return gulp.src([
-       './ext-modules/**/*.js',
-       './*.js'
-   ])
-   .pipe(gulpprint())
-   .pipe(jscs())
-   .pipe(jshint())
-   .pipe(jshint.reporter('jshint-stylish', {verbose: true}))
-   .pipe(jshint.reporter('fail'));
+   return gulp.src(config.alljs)
+   .pipe($.if(args.verbose, $.print()))
+   .pipe($.jscs())
+   .pipe($.jshint())
+   .pipe($.jshint.reporter('jshint-stylish', {verbose: true}))
+   .pipe($.jshint.reporter('fail'));
 });
 
 /////////////
@@ -31,11 +34,11 @@ function log(msg) {
     if (typeof(msg) === 'object') {
         for (var item in msg) {
             if (msg.hasOwnProperty(item)) {
-                util.log(util.colors.blue(msg[item]));
+                $.util.log($.util.colors.blue(msg[item]));
             }
         }
     } else {
-        util.log(util.colors.blue(msg));
+        $.util.log($.util.colors.blue(msg));
     }
 
 }
@@ -45,7 +48,7 @@ gulp.task('buildMenuTemplateCache', function () {
         .src([
             './ext-modules/cmMenu/**/*.html'
         ])
-        .pipe(templateCache({
+        .pipe($.templateCache({
             root: 'ext-modules/cmMenu/',
             module: 'cmMenu'
         }))
@@ -58,7 +61,7 @@ gulp.task('buildDashboardTemplateCache', function () {
         .src([
             './ext-modules/cmDashboard/**/*.html'
         ])
-        .pipe(templateCache({
+        .pipe($.templateCache({
             root: 'ext-modules/cmDashboard/',
             module: 'cmDashboard'
         }))
@@ -71,7 +74,7 @@ gulp.task('buildFrameworkTemplateCache', function () {
         .src([
             './ext-modules/cmFramework/**/*.html'
         ])
-        .pipe(templateCache({
+        .pipe($.templateCache({
             root: 'ext-modules/cmFramework/',
             module: 'cmFramework'
         }))
@@ -84,9 +87,9 @@ gulp.task('buildJavaScript', function () {
         .src([
             './ext-modules/**/*.js'
         ])
-        .pipe(angularFilesort())
-        .pipe(strip(["use strict"]))
-        .pipe(concat('cmFramework.js'))
+        .pipe($.angularFilesort())
+        .pipe($.strip(["use strict"]))
+        .pipe($.concat('cmFramework.js'))
         .pipe(gulp.dest('./dist/'))
     ;
 });
@@ -96,13 +99,13 @@ gulp.task('buildCSS', function () {
         .src([
             './ext-modules/**/*.css'
         ])
-        .pipe(concat('cmFramework.css'))
+        .pipe($.concat('cmFramework.css'))
         .pipe(gulp.dest('./dist/'))
     ;
 });
 
 gulp.task('default', function(){
-   nodemon({
+    $.nodemon({
       script: 'app.js',
       ext: 'js',
       env: {
@@ -116,8 +119,8 @@ gulp.task('default', function(){
 });
 
 gulp.task('test', function(){
-    env({vars: {ENV:'Test'}});
+    $.env({vars: {ENV:'Test'}});
     gulp.src('Tests/*.js', {read: false})
-        .pipe(gulpMocha({reporter: 'nyan'}))
+        .pipe($.gulpMocha({reporter: 'nyan'}))
 
 });
