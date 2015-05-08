@@ -28,9 +28,16 @@ dashboardRouter = require('./routes/dashboardRoutes')(Dashboard);
 
 app.use('/api', dashboardRouter);
 
-app.get('/', function(req,res){
-    res.send('Gotcha');
-});
+//app.get('/', function(req,res){
+  //  res.send('Gotcha');
+//});
+//app.use(express.static(path.join(__dirname, 'app')));
+
+//app.get('/', function(req, res) {
+//    res.render('app/calendar');
+//});
+
+app.get('*', 'app/calendar.html');
 
 app.listen(port, function(){
     console.log("Gulp is running the app on port: " + port);
