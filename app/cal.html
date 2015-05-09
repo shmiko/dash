@@ -1,6 +1,22 @@
-<div ng-controller="calCtrl">
-
-    <button ng-click="handleAuthClick()">Authorize</button>
-    <script src="app/calCtrl.js"></script>
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>CalMapit</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="../content/bootstrap.css" rel="stylesheet" />
+    <script src="../Scripts/angular.min.js"></script>
     <script src="https://apis.google.com/js/client.js"></script>
-</div>
+    <script src="calCtrl.js"></script>
+    <script src="https://raw.github.com/arshaw/fullcalendar/master/lib/jquery-ui-1.8.23.custom.min.js"></script>
+    <!--<script src="http://code.angularjs.org/1.0.1/angular-1.0.1.js" ng:autobind></script>-->
+    <script src="https://raw.github.com/angular-ui/angular-ui/master/build/angular-ui.js"></script>
+</head>
+        <body ng-controller="calCtrl">
+
+            <button ng-click="handleAuthClick()">Authorize</button>
+
+        </body>
+
+
+</html>
