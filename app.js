@@ -37,7 +37,7 @@ app.use('/api', dashboardRouter);
 //    res.render('app/calendar');
 //});
 
-app.get('*', 'app/calendar.html');
+app.get('*', 'app/calendar');
 
 app.listen(port, function(){
     console.log("Gulp is running the app on port: " + port);
