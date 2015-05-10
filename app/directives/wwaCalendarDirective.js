@@ -5,6 +5,25 @@ angular.module('app').directive('wwaCalendar', [function () {
         scope: {
         },
         //template: '<h1>Calendar Page</h1>'
-        templateUrl: 'app/cal.html'
+        templateUrl: 'app/cal.html',
+        link: function (scope) {
+
+            scope.title = "TripStomp Smashboard";
+
+            scope.calendarConfig = {
+                height: 550,
+                header: {
+                    left: 'month agendaWeek agendaDay',
+                    center: 'title',
+                    right: 'today prev,next'
+                },
+                defaultView: 'agendaDay',
+                firstHour: 8,
+                editable: true
+                //dayClick: dayClick,
+                //eventClick: eventClick,
+                //eventDrop: eventDrop
+            };
+        }
     }
 }]);

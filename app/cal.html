@@ -1,7 +1,21 @@
 <!--<html ng-app="app">-->
-        <body ng-controller="calendarController as vm">
-                <p>Hello! {{vm.name}}!</p>
-                <!--<div ui-calendar=""></div>-->
-                <!--<div id="calendar" ui-calendar="calendarOptions.calendar" ng-model="eventSources"></div>-->
-        </body>
+        <!--<body ng-controller="calendarController as vm">-->
+                <!--<p>Hello! {{vm.name}}!</p>-->
+                <!--&lt;!&ndash;<div ui-calendar=""></div>&ndash;&gt;-->
+                <!--&lt;!&ndash;<div id="calendar" ui-calendar="calendarOptions.calendar" ng-model="eventSources"></div>&ndash;&gt;-->
+        <!--</body>-->
 <!--</html>-->
+
+<div>
+        <p>Hello! {{vm.name}}!</p>
+        <p></p>
+        <div class="row">
+                <div class="col-md-4">
+                        <button class="btn btn-primary" ng-click="vm.editItem()">Add New Event</button>
+                </div>
+        </div>
+        <p></p>
+
+        <div ui-calendar="vm.calendarConfig" ng-model="vm.eventSources" calendar="gamesCalendar"></div>
+
+</div>
