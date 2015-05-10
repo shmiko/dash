@@ -21,12 +21,17 @@ angular.module('app').directive('wwaMaps', [function () {
                     latitude: -33.561987,
                     longitude: 150.675768
                 },
+                //center: {
+                //    latitude: currentPosition.coords.latitude,
+                //    longitude: currentPosition.coords.longitude
+                //},
                 zoom: 12
             };
 
             scope.marker = {
                 id: 1,
-                coords: '-33.561987,150.675768'
+                coords: {latitude:-33.561987,longitude:150.675768}
+                //coords: currentPosition.coords
             };
 
             //activate();
