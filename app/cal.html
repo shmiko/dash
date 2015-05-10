@@ -1,7 +1,7 @@
 <!--<html ng-app="app">-->
-        <body ng-controller="calendarController">
-                <p>Hello! {{calendarController.name}}!</p>
+        <body ng-controller="calendarController as vm">
+                <p>Hello! {{vm.name}}!</p>
                 <!--<div ui-calendar=""></div>-->
-                <div id="calendar" ui-calendar="calendarOptions.calendar" ></div>
+                <!--<div id="calendar" ui-calendar="calendarOptions.calendar" ng-model="eventSources"></div>-->
         </body>
 <!--</html>-->
