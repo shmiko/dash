@@ -11,7 +11,12 @@ angular.module('app').directive('wwaMaps', [function () {
            // var vm = this;
             scope.title = "Tripstomp Maps";
             scope.activate = activate;
-            //vm.location = initialData;
+            scope.location = {
+                address: "10 Castlereagh Street",
+                Suburb: "Riverstone",
+                state: "NSW",
+                country: "Australia",
+                name: "Home"};
             scope.refreshMap = refreshMap;
             //vm.save = save;
             //scope.title = 'Maps';//($stateParams.id ? 'Edit Location': 'Add Location');
