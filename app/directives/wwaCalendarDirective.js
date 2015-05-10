@@ -8,7 +8,7 @@ angular.module('app').directive('wwaCalendar', [function () {
         templateUrl: 'app/cal.html',
         link: function (scope) {
 
-            scope.title = "TripStomp Smashboard";
+            scope.name = "TripStomp Smashboard";
 
             scope.calendarConfig = {
                 height: 550,

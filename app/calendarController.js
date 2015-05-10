@@ -4,7 +4,7 @@
 
     angular.module("app").controller("calendarController",calendarController);
 
-    calendarController.$inject = [];
+    calendarController.$inject = ['ui-calander'];
     function calendarController($scope) {
         /* jshint validthis: true */
         var vm = this;
