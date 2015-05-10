@@ -34,7 +34,7 @@ angular.module('app').directive('wwaMaps', [function () {
                 //coords: currentPosition.coords
             };
 
-            //activate();
+            activate();
 
             ////////////////
 
