@@ -12,7 +12,7 @@ angular.module('app').factory('dataService',
                     guides: 20,
                     rafts: 18,
                     vests: 200,
-                    image: 'river1.png'
+                    image: '10.jpg'
                 },
                 {
                     id: 1001,
@@ -21,7 +21,7 @@ angular.module('app').factory('dataService',
                     guides: 36,
                     rafts: 22,
                     vests: 250,
-                    image: 'river2.png'
+                    image: '11.jpg'
                 },
                 {
                     id: 1002,
@@ -30,7 +30,7 @@ angular.module('app').factory('dataService',
                     guides: 56,
                     rafts: 40,
                     vests: 500,
-                    image: 'river3.png'
+                    image: '12.jpg'
                 },
                 {
                     id: 1003,
@@ -39,7 +39,7 @@ angular.module('app').factory('dataService',
                     guides: 8,
                     rafts: 10,
                     vests: 40,
-                    image: 'river4.png'
+                    image: '13.jpg'
                 },
                 {
                     id: 1004,
@@ -48,7 +48,7 @@ angular.module('app').factory('dataService',
                     guides: 8,
                     rafts: 8,
                     vests: 100,
-                    image: 'river1.png'
+                    image: '14.jpg'
                 },
                 {
                     id: 1005,
@@ -57,7 +57,7 @@ angular.module('app').factory('dataService',
                     guides: 22,
                     rafts: 12,
                     vests: 230,
-                    image: 'river2.png'
+                    image: '15.jpg'
                 },
                 {
                     id: 1006,
@@ -66,7 +66,7 @@ angular.module('app').factory('dataService',
                     guides: 20,
                     rafts: 24,
                     vests: 420,
-                    image: 'river3.png'
+                    image: '9.jpg'
                 },
                 {
                     id: 1007,
@@ -75,7 +75,7 @@ angular.module('app').factory('dataService',
                     guides: 12,
                     rafts: 8,
                     vests: 225,
-                    image: 'river4.png'
+                    image: '8.jpg'
                 }
             ];
 
@@ -90,25 +90,25 @@ angular.module('app').factory('dataService',
                     id: 5001,
                     name: 'Lilia Jones',
                     location: 'New York',
-                    image: 'employee-april.png'
+                    image: 'user.jpg'
                 },
                 {
                     id: 5002,
                     name: 'Jack Jones',
                     location: 'Texas',
-                    image: 'employee-don.png'
+                    image: 'user2.jpg'
                 },
                 {
                     id: 5003,
                     name: 'Wendy Jones',
                     location: 'Las Vegas',
-                    image: 'employee-tom.png'
+                    image: 'user3.jpg'
                 },
                 {
                     id: 5004,
                     name: 'Cats Galore',
                     location: 'New Orleans',
-                    image: 'employee-kathy.png'
+                    image: 'c5.jpg'
                 }
             ];
 
