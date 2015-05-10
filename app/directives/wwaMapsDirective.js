@@ -14,7 +14,7 @@ angular.module('app').directive('wwaMaps', [function () {
             //vm.location = initialData;
             scope.refreshMap = refreshMap;
             //vm.save = save;
-            scope.title = 'Maps';//($stateParams.id ? 'Edit Location': 'Add Location');
+            //scope.title = 'Maps';//($stateParams.id ? 'Edit Location': 'Add Location');
 
             scope.map = {
                 center: {
