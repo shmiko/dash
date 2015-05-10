@@ -8,7 +8,7 @@ angular.module('app').directive('wwaCalendar', [function () {
         templateUrl: 'app/cal.html',
         link: function (scope) {
 
-            scope.name = "TripStomp Smashboard";
+            scope.name = "Paul";
 
             scope.calendarConfig = {
                 height: 550,
@@ -24,6 +24,30 @@ angular.module('app').directive('wwaCalendar', [function () {
                 //eventClick: eventClick,
                 //eventDrop: eventDrop
             };
+
+            scope.events = [
+                {
+                    title: 'Event1',
+                    start: '2014-07-19'
+                },
+                {
+                    title: 'Event2',
+                    start: '2011-07-20'
+                }
+            ];
+            scope.eventSources = [scope.events];
+
+        //    scope.eventSources = {
+        //        events: [{
+        //            title: 'Event1',
+        //            start: '2014-07-19'
+        //        }, {
+        //            title: 'Event2',
+        //            start: '2011-07-20'
+        //        }],
+        //        color: 'red', // an option!
+        //        textColor: 'black' // an option!
+        //    };
         }
     }
 }]);
