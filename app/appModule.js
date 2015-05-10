@@ -1,3 +1,3 @@
 ﻿"use strict";
 
-angular.module("app", ["ngRoute", "cmFramework", "ngStorage"]);
+angular.module("app", ["ngRoute", "cmFramework", "ngStorage", "ui.calendar"]);
