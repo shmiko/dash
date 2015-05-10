@@ -9,7 +9,7 @@ angular.module('app').directive('wwaMaps', [function () {
         link: function (scope) {
 
            // var vm = this;
-
+            scope.title = "Tripstomp Maps";
             scope.activate = activate;
             //vm.location = initialData;
             scope.refreshMap = refreshMap;
@@ -18,18 +18,18 @@ angular.module('app').directive('wwaMaps', [function () {
 
             scope.map = {
                 center: {
-                    latitude: currentPosition.coords.latitude,
-                    longitude: currentPosition.coords.longitude
+                    latitude: -33.561987,
+                    longitude: 150.675768
                 },
                 zoom: 12
             };
 
             scope.marker = {
                 id: 1,
-                coords: currentPosition.coords
+                coords: '-33.561987,150.675768'
             };
 
-            activate();
+            //activate();
 
             ////////////////
 

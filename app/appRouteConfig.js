@@ -1,6 +1,11 @@
 ﻿"use strict";
 
-angular.module('app').config(['$routeProvider', function ($routeProvider) {
+angular.module('app').config(['$routeProvider','uiGmapGoogleMapApiProvider', function ($routeProvider,uiGmapGoogleMapApiProvider) {
+    uiGmapGoogleMapApiProvider.configure({
+        //    key: 'your api key',
+        v: '3.17'
+        //libraries: 'weather,geometry,visualization'
+    });
 
     var routes = [
         {
