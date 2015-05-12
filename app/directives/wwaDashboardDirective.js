@@ -65,6 +65,21 @@ angular.module('app')
                             controller: 'wwaSelectEmployeeController'
                         }
                     }
+                },
+                {
+                    title: 'Map',
+                    settings: {
+                        sizeX: 5,
+                        sizeY: 3,
+                        minSizeX: 2,
+                        minSizeY: 2,
+                        template: '<wwa-map></wwa-map>',
+                        widgetSettings: {
+                            id: 5000,
+                            templateUrl: 'app/dialogs/wwaSelectLocationTemplate.html',
+                            controller: 'wwaSelectLocationController'
+                        }
+                    }
                 }
             ];
 
