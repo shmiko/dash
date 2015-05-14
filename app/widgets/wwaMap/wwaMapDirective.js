@@ -26,7 +26,7 @@ angular.module('app').directive('wwaMap',
 
                 scope.map = {
                     center: {
-                        latitude: -33.561987,
+                        latitude: -33.561986,
                         longitude: 150.675768
                     },
                     //center: {
