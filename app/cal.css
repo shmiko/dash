@@ -10,6 +10,10 @@
     height: 20px;
 }
 
+.test{
+    width: 100px;
+}
+
 .demo {
     position:relative;
     width : 600px;
