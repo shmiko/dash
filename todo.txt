@@ -1,4 +1,5 @@
 // TODO(shmiko): convert controllers to controller as using VM
-// TODO(shmiko): Add more widgets - weather api, crime, flights
+// TODO(shmiko): Add more widgets - weather api, crime, flights, calendar, map
 // TODO(shmiko): Get events form google calendar
 // TODO(shmiko): Add material design
+// TODO(shmiko): Add sidebars
