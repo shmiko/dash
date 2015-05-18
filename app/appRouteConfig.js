@@ -27,6 +27,13 @@ angular.module('app').config(['$routeProvider','uiGmapGoogleMapApiProvider', fun
                 template: '<wwa-maps></wwa-maps>'
 
             }
+        },
+        {
+            url: '/tests',
+            config: {
+                template: '<wwa-tests></wwa-tests>'
+
+            }
         }
     ];
 

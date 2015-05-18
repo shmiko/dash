@@ -115,21 +115,6 @@ angular.module('app')
                             controller: 'wwaSelectLocationController'
                         }
                     }
-                },
-                {
-                    title: 'Tests',
-                    settings: {
-                        sizeX: 5,
-                        sizeY: 3,
-                        minSizeX: 2,
-                        minSizeY: 2,
-                        template: '<wwa-tests></wwa-tests>',
-                        widgetSettings: {
-                            id: 6000,
-                            templateUrl: 'app/dialogs/wwaSelectLocationTemplate.html',
-                            controller: 'wwaSelectLocationController'
-                        }
-                    }
                 }
             ];
 
