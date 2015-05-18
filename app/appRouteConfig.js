@@ -35,6 +35,14 @@ angular.module('app').config(['$routeProvider','uiGmapGoogleMapApiProvider', fun
 
             }
         }
+        ,
+        {
+            url: '/colors',
+            config: {
+                template: '<wwa-colors></wwa-colors>'
+
+            }
+        }
     ];
 
     routes.forEach(function (route) {
