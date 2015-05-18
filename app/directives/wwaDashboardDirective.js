@@ -25,8 +25,8 @@ angular.module('app')
                 width: 'auto', // can be an integer or 'auto'. 'auto' scales gridster to be the full width of its containing element
                 colWidth: 'auto', // can be an integer or 'auto'.  'auto' uses the pixel width of the element divided by 'columns'
                 rowHeight: 'match', // can be an integer or 'match'.  Match uses the colWidth, giving you square widgets.
-                margins: [10, 10], // the pixel distance between each widget
-                outerMargin: true, // whether margins apply to outer edges of the grid
+                margins: [60, 60], // the pixel distance between each widget
+                outerMargin: false, // whether margins apply to outer edges of the grid
                 isMobile: false, // stacks the grid items if true
                 mobileBreakPoint: 600, // if the screen is not wider that this, remove the grid layout and stack the items
                 mobileModeEnabled: true, // whether or not to toggle mobile mode when screen width is less than mobileBreakPoint
@@ -47,11 +47,11 @@ angular.module('app')
                     stop: function(event, $element, widget) {} // optional callback fired when item is finished resizing
                 },
                 draggable: {
-                    enabled: true, // whether dragging items is supported
-                    handle: '.my-class', // optional selector for resize handle
-                    start: function(event, $element, widget) {}, // optional callback fired when drag is started,
-                    drag: function(event, $element, widget) {}, // optional callback fired when item is moved,
-                    stop: function(event, $element, widget) {} // optional callback fired when item is finished dragging
+                    enabled: true // whether dragging items is supported
+                    //handle: '.my-class', // optional selector for resize handle
+                    //start: function(event, $element, widget) {}, // optional callback fired when drag is started,
+                    //drag: function(event, $element, widget) {}, // optional callback fired when item is moved,
+                    //stop: function(event, $element, widget) {} // optional callback fired when item is finished dragging
                 }
             };
 
