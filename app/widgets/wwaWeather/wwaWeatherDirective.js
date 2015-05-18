@@ -7,7 +7,7 @@
 
 var app = angular.module('app');// DIRECTIVES
 
-app.directive("wwaWeather", function() {
+app.directive("wwaWeather", function(dataService) {
     return {
         restrict: 'E',
         templateUrl: 'app/widgets/wwaWeather/wwaWeatherTemplate.html',
@@ -17,10 +17,31 @@ app.directive("wwaWeather", function() {
             convertToStandard: "&",
             convertToDate: "&",
             dateFormat: "@"
+        },
+        link: function (scope, el, attrs) {
+            scope.isLoaded = false;
+            scope.hasError = false;
+            scope.selectedLocation = null;
+
+            scope.loadlocation = function () {
+                scope.hasError = false;
+                dataService.getLocation(scope.item.widgetSettings.id)
+                    .then(function (data) {
+                        //success
+                        scope.selectedLocation = data;
+                        scope.isLoaded = true;
+                        scope.hasError = false;
+                    }, function (data) {
+                        //error
+                        scope.hasError = true;
+                    });
+            };
+
+            scope.loadlocation();
         }
     }
 })
-    .controller('weatherController', ['$scope', 'cityService', function($scope, cityService) {
+    .controller('weatherController', ['$scope', 'weatherService', function($scope, cityService) {
 
         $scope.city = cityService.city;
 
