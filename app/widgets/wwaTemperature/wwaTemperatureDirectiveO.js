@@ -2,19 +2,16 @@
 
     "use strict";
 
-    var app = angular.module('app');
 
-    app.directive('wwaTemperature', ['dataService',
+
+    angular.module('app')
+
+        .directive('wwaTemperature',
+        ['dataService',
         function (dataService) {
-            var temperatureWidgetController = function() {
-                var vm = this;
-            };
-
             return {
-                controller: temperatureWidgetController,
-                controllerAs: 'vm',
-                bindToController: true,
                 templateUrl: 'app/widgets/wwaTemperature/wwaTemperatureTemplate.html',
+                //controller: 'temperatureWidgetController',
                 link: function (scope, el, attrs) {
                     scope.isLoaded = false;
                     scope.hasError = false;
