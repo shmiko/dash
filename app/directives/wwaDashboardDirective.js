@@ -115,6 +115,21 @@ angular.module('app')
                             controller: 'wwaSelectLocationController'
                         }
                     }
+                },
+                {
+                    title: 'Weather',
+                    settings: {
+                        sizeX: 5,
+                        sizeY: 3,
+                        minSizeX: 2,
+                        minSizeY: 2,
+                        template: '<wwa-weather></wwa-weather>',
+                        widgetSettings: {
+                            id: 5000,
+                            templateUrl: 'app/dialogs/wwaSelectLocationTemplate.html',
+                            controller: 'wwaSelectLocationController'
+                        }
+                    }
                 }
             ];
 

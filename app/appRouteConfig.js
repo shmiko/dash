@@ -43,6 +43,22 @@ angular.module('app').config(['$routeProvider','uiGmapGoogleMapApiProvider', fun
 
             }
         }
+        ,
+        {
+            url: '/forecast',
+            config: {
+                template: '<wwa-weather></wwa-weather>'
+
+            }
+        }
+        ,
+        {
+            url: '/forecast/:days',
+            config: {
+                template: '<wwa-weather></wwa-weather>'
+
+            }
+        }
     ];
 
     routes.forEach(function (route) {
