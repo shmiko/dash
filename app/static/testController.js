@@ -1,7 +1,7 @@
 (function(angular, undefined){
     "use strict";
-    angular.module('sidenavDemo1', ['ngMaterial'])
-        .controller('AppCtrl', function($scope, $timeout, $mdSidenav, $mdComponentRegistry, $log) {
+    angular.module('app', ['ngMaterial'])
+        .controller('testController', function($scope, $timeout, $mdSidenav, $mdComponentRegistry, $log) {
 
             // Option #1
             //
