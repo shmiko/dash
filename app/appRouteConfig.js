@@ -47,7 +47,9 @@ angular.module('app').config(['$routeProvider','uiGmapGoogleMapApiProvider', fun
         {
             url: '/forecast',
             config: {
-                template: '<wwa-weather></wwa-weather>'
+                //template: '<wwa-weather></wwa-weather>'
+                templateUrl: 'pages/forecast.htm',
+                controller: 'forecastController'
 
             }
         }
@@ -55,7 +57,8 @@ angular.module('app').config(['$routeProvider','uiGmapGoogleMapApiProvider', fun
         {
             url: '/forecast/:days',
             config: {
-                template: '<wwa-weather></wwa-weather>'
+                templateUrl: 'pages/forecast.htm',
+                controller: 'forecastController'
 
             }
         }

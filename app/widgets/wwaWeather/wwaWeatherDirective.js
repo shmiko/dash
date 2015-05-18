@@ -1,11 +1,16 @@
 /**
  * Created by pauljones on 19/05/15.
  */
-// DIRECTIVES
-weatherApp.directive("weatherDirective", function() {
+(function() {
+
+"use strict";
+
+var app = angular.module('app');// DIRECTIVES
+
+app.directive("wwaWeather", function() {
     return {
         restrict: 'E',
-        templateUrl: 'directives/weatherReport.html',
+        templateUrl: 'app/widgets/wwaWeather/wwaWeatherTemplate.html',
         replace: true,
         scope: {
             weatherDay: "=",
@@ -23,9 +28,9 @@ weatherApp.directive("weatherDirective", function() {
             cityService.city = $scope.city;
         });
 
-    }]);
+    }])
 
-weatherApp.controller('forecastController', ['$scope', '$resource', '$routeParams', 'cityService', function($scope, $resource, $routeParams, cityService) {
+    .controller('forecastController', ['$scope', '$resource', '$routeParams', 'weatherService', function($scope, $resource, $routeParams, weatherService) {
 
     $scope.city = cityService.city;
 
@@ -39,7 +44,7 @@ weatherApp.controller('forecastController', ['$scope', '$resource', '$routeParam
 
         return Math.round((1.8 * (degK - 273)) + 32);
 
-    }
+    };
 
     $scope.convertToDate = function(dt) {
 
@@ -48,3 +53,5 @@ weatherApp.controller('forecastController', ['$scope', '$resource', '$routeParam
     };
 
 }]);
+
+} () );
