@@ -11,10 +11,10 @@
         <div ni-if="isLoaded" class="wwa-weather-view" >
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">City:{{ weather.convertToDate({ dt: weather.weatherDay.dt }) | date: weather.dateFormat }}</h3>
+                    <h3 class="panel-title">City:{{ convertToDate({ dt: weatherDay.dt }) | date: dateFormat }}</h3>
                 </div>
                 <div class="panel-body">
-                    Daytime temperature: {{ weather.convertToStandard({ daytimeTemp: weather.weatherDay.temp.day }) }}
+                    Daytime temperature: {{ convertToStandard({ daytimeTemp: weatherDay.temp.day }) }}
                 </div>
             </div>
         </div>
