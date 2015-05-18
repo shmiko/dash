@@ -5,7 +5,7 @@ angular.module('app').directive('wwaMaps', [function () {
         scope: {
         },
         //template: '<h1>Maps Page</h1>'
-        templateUrl: 'app/map.html',
+        templateUrl: 'map.html',
         link: function (scope) {
 
            // var vm = this;
