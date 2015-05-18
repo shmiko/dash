@@ -53,7 +53,7 @@ app.directive("wwaWeather", function(dataService) {
 
     .controller('forecastController', ['$scope', '$resource', '$routeParams', 'weatherService', function($scope, $resource, $routeParams, weatherService) {
 
-    $scope.city = cityService.city;
+    $scope.city = weatherService.city;
 
     $scope.days = $routeParams.days || '2';
 
