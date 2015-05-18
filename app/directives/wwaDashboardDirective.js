@@ -95,7 +95,7 @@ angular.module('app')
                         minSizeY: 2,
                         template: '<wwa-employee></wwa-employee>',
                         widgetSettings: {
-                            id: 5000,
+                            id: 4000,
                             templateUrl: 'app/dialogs/wwaSelectEmployeeTemplate.html',
                             controller: 'wwaSelectEmployeeController'
                         }
@@ -111,6 +111,21 @@ angular.module('app')
                         template: '<wwa-map></wwa-map>',
                         widgetSettings: {
                             id: 5000,
+                            templateUrl: 'app/dialogs/wwaSelectLocationTemplate.html',
+                            controller: 'wwaSelectLocationController'
+                        }
+                    }
+                },
+                {
+                    title: 'Tests',
+                    settings: {
+                        sizeX: 5,
+                        sizeY: 3,
+                        minSizeX: 2,
+                        minSizeY: 2,
+                        template: '<wwa-tests></wwa-tests>',
+                        widgetSettings: {
+                            id: 6000,
                             templateUrl: 'app/dialogs/wwaSelectLocationTemplate.html',
                             controller: 'wwaSelectLocationController'
                         }
