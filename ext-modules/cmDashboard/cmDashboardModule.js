@@ -1,3 +1,3 @@
 ﻿"use strict";
 
-angular.module("cmDashboard", ["gridster", "ui.bootstrap"]);
+angular.module("cmDashboard", ["gridster", "ui.bootstrap", "ngAnimate"]);
