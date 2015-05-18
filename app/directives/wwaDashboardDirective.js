@@ -125,7 +125,7 @@ angular.module('app')
                         minSizeY: 2,
                         template: '<wwa-weather></wwa-weather>',
                         widgetSettings: {
-                            id: 5000,
+                            id: 7000,
                             templateUrl: 'app/dialogs/wwaSelectLocationTemplate.html',
                             controller: 'wwaSelectLocationController'
                         }

@@ -1,8 +1,26 @@
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <h3 class="panel-title">{{ convertToDate({ dt: weatherDay.dt }) | date: dateFormat }}</h3>
+<div class="wwa-weather-widget">
+    <div class="wwa-weather-heading">
+        <img class="wwa-weather-icon" ng-src="images/therm-icon.png" alt="thermometer" />
+        <span class="www-weather-title">Weather</span>
     </div>
-    <div class="panel-body">
-        Daytime temperature: {{ convertToStandard({ daytimeTemp: weatherDay.temp.day }) }}
+    <div class="wwa-weather-body" ng-style="selectedLocation != null && {'background-image': 'url(/images/' + selectedLocation.image + ')'}">
+        <div ng-if="!isLoaded && !hasError">
+            <!--<i class="fa fa-refresh fa-2x fa-spin"></i>-->
+            <md-progress-circular md-mode="indeterminate"></md-progress-circular>
+        </div>
+        <div ni-if="isLoaded" class="wwa-weather-view">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">{{ convertToDate({ dt: weatherDay.dt }) | date: dateFormat }}</h3>
+                </div>
+                <div class="panel-body">
+                    Daytime temperature: {{ convertToStandard({ daytimeTemp: weatherDay.temp.day }) }}
+                </div>
+            </div>
+        </div>
+        <div ng-if="hasError">
+            <h4>Error loading widget.</h4>
+            <button class="btn btn-primary" ng-click="loadlocation()">Reload</button>
+        </div>
     </div>
 </div>
