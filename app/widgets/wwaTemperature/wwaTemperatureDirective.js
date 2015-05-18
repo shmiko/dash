@@ -7,7 +7,7 @@ angular.module('app')
     function (dataService) {
         return {
             templateUrl: 'app/widgets/wwaTemperature/wwaTemperatureTemplate.html',
-            controller: 'temperatureWidgetController',
+            //controller: 'temperatureWidgetController',
             link: function (scope, el, attrs) {
                 scope.isLoaded = false;
                 scope.hasError = false;
