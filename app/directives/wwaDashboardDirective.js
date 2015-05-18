@@ -12,9 +12,9 @@ angular.module('app')
             scope.title = "TripStomp Smashboard";
 
             scope.gridsterOpts = {
-                columns: 12,
+                columns: 6,
                 margins: [20, 20],
-                outerMargin: false,
+                outerMargin: true,
                 pushing: true,
                 floating: true,
                 swapping: false
