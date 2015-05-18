@@ -124,7 +124,7 @@ angular.module('app').factory('dataService',
                         if (locations[i].id == id)
                             return locations[i];
                     return undefined;
-                }, 2000);
+                }, 4000);
             };
 
             var getEmployees = function () {
