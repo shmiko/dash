@@ -6,7 +6,7 @@ angular.module('app')
             scope: {
             },
             //template: '<h1>Tests Page</h1>'
-            templateUrl: 'app/tests.html'
+            templateUrl: 'app/static/tests.html'
         }
     }])
     .controller('testController', ['$scope',
