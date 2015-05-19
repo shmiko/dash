@@ -4,7 +4,7 @@
     var app = express();
 
     require('./config/config_app')(app);
-    require('./config/config_routes')(app);
+    require('./config/config_routes.js')(app);
 
     // START THE SERVER
     console.log('STARTING THE SABRE SERVER');
