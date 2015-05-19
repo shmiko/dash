@@ -18,7 +18,7 @@ module.exports = function(app) {
 
     app.use(methodOverride());
 
-    app.use(express.static(__dirname + '/../www/'));
+    app.use(express.static(__dirname + '/index.html'));
 
     // app.use(favicon(__dirname + '/../../Twyst-Web-Apps/common/images/favicon/twyst.ico'));
     app.all("/api/*", function(req, res, next) {

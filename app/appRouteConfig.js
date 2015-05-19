@@ -67,6 +67,14 @@ angular.module('app').config(['$routeProvider','uiGmapGoogleMapApiProvider', fun
                 controller: 'forecastController'
 
             }
+        },
+        {
+            url: '/lost',
+            config: {
+                templateUrl: 'app/static/lost.html',
+                controller: 'appController'
+
+            }
         }
     ];
 
