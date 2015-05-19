@@ -26,7 +26,7 @@
             $scope.weatherAPI = $resource("http://api.openweathermap.org/data/2.5/forecast/daily", { callback: "JSON_CALLBACK" }, { get: { method: "JSONP" }});
 
             $scope.weatherResult = $scope.weatherAPI.get({ q: $scope.city, cnt: $scope.days });
-            console.log($scope.weatherResult);
+            //console.log($scope.weatherResult);
 
             $scope.convertToFahrenheit = function(degK) {
 
