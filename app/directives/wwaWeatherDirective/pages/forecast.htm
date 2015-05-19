@@ -1,12 +1,10 @@
-
-<div ng-controller="weatherController as WeatherController">
 <p>
-    <a href="#/weathers">Back to Search</a>
+    <a href="#/">Back to Search</a>
 </p>
 
 Forecast for {{ city }}
 <hr />
-Days: <a href="#/forecast/2" ng-class="{ 'bg-primary': WeatherController.days === '2' }">2</a> | <a href="#/forecast/5" ng-class="{ 'bg-primary': WeatherController.days === '5' }">5</a> | <a href="#/forecast/7" ng-class="{ 'bg-primary': WeatherController.days === '7' }">7</a>
+Days: <a href="#/forecast/2" ng-class="{ 'bg-primary': days === '2' }">2</a> | <a href="#/forecast/5" ng-class="{ 'bg-primary': days === '5' }">5</a> | <a href="#/forecast/7" ng-class="{ 'bg-primary': days === '7' }">7</a>
 <hr />
 <div ng-repeat="w in weatherResult.list">
     <div class="row">
@@ -14,5 +12,4 @@ Days: <a href="#/forecast/2" ng-class="{ 'bg-primary': WeatherController.days ==
             <weather-report weather-day="w" convert-to-standard="convertToFahrenheit(daytimeTemp)" convert-to-date="convertToDate(dt)" date-format="MMMM d, y"></weather-report>
         </div>
     </div>
-</div>
 </div>

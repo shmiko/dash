@@ -46,7 +46,9 @@ angular.module('app').config(['$routeProvider','uiGmapGoogleMapApiProvider', fun
         {
             url: '/weathers',
             config: {
-                template: '<wwa-weathers></wwa-weathers>'
+                //template: '<wwa-weathers></wwa-weathers>'
+                templateUrl: 'app/directives/wwaWeatherDirective/pages/home.htm',
+                controller: 'weathersController'
 
             }
         },
@@ -54,7 +56,7 @@ angular.module('app').config(['$routeProvider','uiGmapGoogleMapApiProvider', fun
             url: '/forecast',
             config: {
                 templateUrl: 'app/directives/wwaWeatherDirective/pages/forecast.htm',
-                controller: 'weatherController'
+                controller: 'forecastController'
 
             }
         },
@@ -62,7 +64,7 @@ angular.module('app').config(['$routeProvider','uiGmapGoogleMapApiProvider', fun
             url: '/forecast/:days',
             config: {
                 templateUrl: 'app/directives/wwaWeatherDirective/pages/forecast.htm',
-                controller: 'weatherController'
+                controller: 'forecastController'
 
             }
         }

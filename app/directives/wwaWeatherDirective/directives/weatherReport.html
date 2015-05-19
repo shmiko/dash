@@ -1,30 +1,8 @@
-<!--<script src="app/directives/wwaWeatherDirective/routes.js"></script>-->
-<div ng-controller="weatherController as WeatherController">
-
-
-<div class="row">
-    <div class="col-md-6 col-md-offset-3">
-        <h4>Forecast by City</h4>
-        <div class="form-group">
-            <input type="text" ng-model="city" class="form-control" placeholder="New York, NY"/>
-        </div>
-        <a href="#/forecast" class="btn btn-primary">Get Forecast</a>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">{{ convertToDate({ dt: weatherDay.dt }) | date: dateFormat }}</h3>
     </div>
-</div>
-
-</div>
-<div class="panel-body">
-    <div class="col-md-offset-3 col-md-3">
-        <div>Developed by:</div>
-        <h3>Paul Jones</h3>
-
-        <div>pjones@calmapit.com</div>
-        <a href="http://calmapit.com" target="_blank">CalMapIt</a><br>
-        <a href="http://tripscope.meteor.com" target="_blank">My Blog</a>
-    </div>
-    <div class="col-md-3">
-        <div>Art work by:</div>
-        <h3>Shmik</h3>
-        <a href="http://shmik.com/" target="_blank">shmik.com</a>
+    <div class="panel-body">
+        Daytime temperature: {{ convertToStandard({ daytimeTemp: weatherDay.temp.day }) }}
     </div>
 </div>
