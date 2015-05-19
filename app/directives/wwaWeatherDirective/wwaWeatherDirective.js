@@ -2,11 +2,11 @@
 "use strict";
 
 angular.module('app')
-    .directive("wwaWeathers", function() {
+    .directive("weatherReport", function() {
        return {
-           //restrict: 'E',
-           controller: weathersController,
-           templateUrl: 'app/directives/wwaWeatherDirective/pages/home.html',
+           restrict: 'E',
+           //controller: weathersController,
+           templateUrl: 'app/directives/wwaWeatherDirective/directives/weatherReport.html',
            replace: true,
            scope: {
                weatherDay: "=",
