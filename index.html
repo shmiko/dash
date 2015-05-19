@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>CalMapit</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="../content/bootstrap.css" rel="stylesheet" />
+    <link href="../bower_components/fullcalendar/fullcalendar.css" rel="stylesheet"/>
+    <link href="../content/font-awesome.min.css" rel="stylesheet" />
+    <link href="../content/angular-gridster.min.css" rel="stylesheet" />
+    <link href="../app/app.css" rel="stylesheet" />
+    <link href="../dist/cmFramework.css" rel="stylesheet" />
+    <!--content/bootstrap.css-->
+    <!-- Vendor Scripts -->
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/jquery-ui/ui/jquery-ui.js"></script>
+    <script src="/lib/ace-builds/src-min-noconflict/ace.js"></script>
+    <script src="/lib/angular/angular.min.js"></script>
+    <script src="/lib/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="/lib/angular-route/angular-route.min.js"></script>
+    <!--<script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>-->
+    <script src="/lib/lodash/dist/lodash.min.js"></script>
+    <script src="/lib/moment/min/moment.min.js"></script>
+    <script src="/lib/spin.js/spin.js"></script>
+    <script src="/lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+    <script src="/lib/angular-ui-calendar/src/calendar.js"></script>
+    <script src="/lib/fullcalendar/fullcalendar.min.js"></script>
+    <script src="/lib/angular-google-maps/dist/angular-google-maps.min.js"></script>
+    <script src="/lib/angular-ui-ace/ui-ace.min.js"></script>
+    <script src="/lib/showdown/compressed/Showdown.js"></script>
+    <script src="/lib/angular-ui-grid/ui-grid.min.js"></script>
+    <script src="/lib/csv-js/csv.js"></script>
+    <script src="/lib/angular-ui-select/dist/select.min.js"></script>
+    <script src="/lib/angular-ui-alias/src/alias.js"></script>
+
+    <!--Material Design-->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+
+    <!-- widget css -->
+    <link href="/app/widgets/wwaTemperature/wwaTemperature.css" rel="stylesheet" />
+    <link href="/app/widgets/wwaInventory/wwaInventory.css" rel="stylesheet" />
+    <link href="/app/widgets/wwaEmployee/wwaEmployee.css" rel="stylesheet" />
+    <link href="/app/widgets/wwaMap/wwaMap.css" rel="stylesheet" />
+    <link href="/app/widgets/wwaWeather/wwaWeather.css" rel="stylesheet" />
+    <link href="/app/static/tests.css" rel="stylesheet" />
+
+    <!--<script src="bower_components/jquery/dist/jquery.min.js"></script>-->
+    <!--<script src="bower_components/jquery-ui/ui/jquery-ui.js"></script>-->
+    <!--<script src="bower_components/angular/angular.min.js"></script>-->
+    <script src="/bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="/bower_components/angular-route/angular-route.min.js"></script>
+    <script src="/bower_components/angular-gridster.min.js"></script>
+    <script src="/bower_components/bootstrap.min.js"></script>
+    <script src="/bower_components/angular-aria/angular-aria.js"></script>
+    <script src="/bower_components/angular-material/angular-material.js"></script>
+    <script src="/bower_components/angular-resource/angular-resource.js"></script>
+
+    <!--<script src="bower_components/angular-ui/ui-bootstrap-tpls.min.js"></script>-->
+    <!--<script src="bower_components/angular-ui-calendar/src/calendar.js"></script>-->
+    <!--<script src="bower_components/fullcalendar/fullcalendar.js"></script>-->
+    <script src="/Scripts/ngStorage.min.js"></script>
+
+    <script src="/dist/cmFramework.js"></script>
+
+    <script src="/app/appModule.js"></script>
+    <script src="/app/appConfig.js"></script>
+    <script src="/app/appRouteConfig.js"></script>
+    <script src="/app/appController.js"></script>
+    <script src="/app/directives/wwaCalendarDirective/calendarController.js"></script>
+    <script src="/app/directives/wwaMapsDirective/mapController.js"></script>
+    <script src="/app/directives/wwaWeatherDirective/weathersController.js"></script>
+    <!--<script src="app/directives/wwaWeatherDirective/directives/weatherReport.html"></script>-->
+    <script src="/app/services/dataService.js"></script>
+    <script src="/app/services/weatherService.js"></script>
+
+    <!-- Directives JavaScript files
+    <script src="app/widgets/widgetsController.js"></script>-->
+    <script src="/app/directives/wwaDashboardDirective.js"></script>
+    <script src="/app/directives/wwaMapsDirective/wwaMapsDirective.js"></script>
+    <script src="/app/directives/wwaCalendarDirective/wwaCalendarDirective.js"></script>
+    <script src="/app/directives/wwaTestsDirective.js"></script>
+    <script src="/app/directives/wwaColorsDirective/wwaColorsDirective.js"></script>
+    <script src="/app/directives/wwaWeatherDirective/wwaWeatherDirective.js"></script>
+
+    <!-- widget JavaScript files -->
+    <script src="/app/widgets/wwaTemperature/wwaTemperatureDirective.js"></script>
+    <script src="/app/widgets/wwaInventory/wwaInventoryDirective.js"></script>
+    <script src="/app/widgets/wwaEmployee/wwaEmployeeDirective.js"></script>
+    <script src="/app/widgets/wwaMap/wwaMapDirective.js"></script>
+    <script src="/app/widgets/wwaWeather/wwaWeatherDirective.js"></script>
+
+    <!-- setting dialogs -->
+    <script src="/app/dialogs/wwaSelectEmployeeController.js"></script>
+    <script src="/app/dialogs/wwaSelectLocationController.js"></script>
+
+</head>
+<body class="container-fluid" ng-controller="appController">
+
+    <div ng-switch on="state">
+        <div ng-switch-when="unauthorised" class="sign-in-form">
+            <h2>CalMapit Dashboard</h2>
+            <h4>Sign In</h4>
+            <form>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="text" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control"/>
+                </div>
+            </form>
+            <button class="btn btn-default" ng-click="signIn()">Sign In</button>
+        </div>
+        <div ng-switch-default>
+            <cm-framework title="TripStomp Adventures"
+                  subtitle="Smashboard Control"
+                  icon-file="images/calmapit_icon_55.png">
+
+                <cm-menu>
+                    <cm-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></cm-menu-item>
+                    <cm-menu-item label="Calendar" icon="fa-location-arrow" route="cal"></cm-menu-item>
+                    <cm-menu-item label="Maps & Guides" icon="fa-car" route="maps"></cm-menu-item>
+                    <cm-menu-group label="Tests" icon="fa-gears">
+                        <cm-menu-item label="Tests" icon="fa-user" route="tests"></cm-menu-item>
+                        <cm-menu-item label="Colors" icon="fa-unlink" route="colors"></cm-menu-item>
+                        <cm-menu-item label="Weather" icon="fa-magic" route="weathers"></cm-menu-item>
+                        <cm-menu-item label="Get Lost" icon="fa-life-ring" route="lost"></cm-menu-item>
+                    </cm-menu-group>
+                </cm-menu>
+
+
+            </cm-framework>
+        </div>
+    </div>
+
+
+</body>
+</html>

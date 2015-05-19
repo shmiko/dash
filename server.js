@@ -32,12 +32,12 @@ app.use(methodOverride('X-HTTP-Method-Override'));
 // set the static files location /public/img will be /img for users
 app.use(express.static(__dirname + '/app'));
 
-app.get('*', function(req, res) {
-    res.sendFile('indexO.html'); // load our public/index.html file
-});
+//app.get('*', function(req, res) {
+//    res.sendFile('indexO.html'); // load our public/index.html file
+//});
 
 // routes ==================================================
-//require('./app/appModule')(app); // configure our routes
+//require('appModule')(app); // configure our routes
 
 // start app ===============================================
 // startup our app at http://localhost:8080
