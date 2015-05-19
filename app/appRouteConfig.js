@@ -42,6 +42,29 @@ angular.module('app').config(['$routeProvider','uiGmapGoogleMapApiProvider', fun
                 template: '<wwa-colors></wwa-colors>'
 
             }
+        },
+        {
+            url: '/weather',
+            config: {
+                template: '<wwa-weathers></wwa-weathers>'
+
+            }
+        },
+        {
+            url: '/forecast',
+            config: {
+                templateUrl: 'app/directives/wwaWeatherDirective/pages/forecast.htm',
+                controller: 'weatherController'
+
+            }
+        },
+        {
+            url: '/forecast/:days',
+            config: {
+                templateUrl: 'app/directives/wwaWeatherDirective/pages/forecast.htm',
+                controller: 'weatherController'
+
+            }
         }
     ];
 

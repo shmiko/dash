@@ -1,0 +1,50 @@
+<script src="app/directives/wwaWeatherDirective/routes.js"></script>
+<div ng-controller="weatherController as WeatherController">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">{{ WeatherController.convertToDate({ dt: WeatherController.weatherDay.dt }) | date: WeatherController.dateFormat }}</h3>
+        </div>
+        <div class="panel-body">
+            Daytime temperature: {{ WeatherController.convertToStandard({ daytimeTemp: WeatherController.weatherDay.temp.day }) }}
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <h4>Forecast by City</h4>
+        <div class="form-group">
+            <input type="text" ng-model="city" class="form-control" />
+        </div>
+        <a href="#/forecast" class="btn btn-primary">Get Forecast</a>
+    </div>
+</div>
+<p>
+    <a href="#/">Back to Search</a>
+</p>
+
+Forecast for {{ city }}
+<hr />
+Days: <a href="#/forecast/2" ng-class="{ 'bg-primary': days === '2' }">2</a> | <a href="#/forecast/5" ng-class="{ 'bg-primary': days === '5' }">5</a> | <a href="#/forecast/7" ng-class="{ 'bg-primary': days === '7' }">7</a>
+<hr />
+<div ng-repeat="w in weatherResult.list">
+    <div class="row">
+        <div class="col-md-12">
+            <weather-report weather-day="w" convert-to-standard="convertToFahrenheit(daytimeTemp)" convert-to-date="convertToDate(dt)" date-format="MMMM d, y"></weather-report>
+        </div>
+    </div>
+</div>
+<div class="panel-body">
+    <div class="col-md-offset-3 col-md-3">
+        <div>Developed by:</div>
+        <h3>Paul Jones</h3>
+
+        <div>pjones@calmapit.com</div>
+        <a href="http://calmapit.com" target="_blank">CalMapIt</a><br>
+        <a href="http://tripscope.meteor.com" target="_blank">My Blog</a>
+    </div>
+    <div class="col-md-3">
+        <div>Art work by:</div>
+        <h3>Shmik</h3>
+        <a href="http://shmik.com/" target="_blank">shmik.com</a>
+    </div>
+</div>
