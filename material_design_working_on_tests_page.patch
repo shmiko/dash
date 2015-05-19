@@ -1,0 +1,408 @@
+Index: index-copy.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- index-copy.html	(revision 758b7fb11d744ab44d9df27893d15eb7761ae6a9)
++++ index-copy.html	(revision )
+@@ -50,8 +50,8 @@
+ 
+     <!-- Directives JavaScript files -->
+     <script src="app/directives/wwaDashboardDirective.js"></script>
+-    <script src="app/directives/wwaMapsDirective.js"></script>
+-    <script src="app/directives/wwaCalendarDirective.js"></script>
++    <script src="app/directives/wwaMapsDirective/wwaMapsDirective.js"></script>
++    <script src="app/directives/wwaCalendarDirective/wwaCalendarDirective.js"></script>
+ 
+     <!-- widget JavaScript files -->
+     <script src="app/widgets/wwaTemperature/wwaTemperatureDirective.js"></script>
+Index: app/directives/wwaTestsDirective.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/directives/wwaTestsDirective.js	(revision 758b7fb11d744ab44d9df27893d15eb7761ae6a9)
++++ app/directives/wwaTestsDirective.js	(revision )
+@@ -1,10 +1,55 @@
+ "use strict";
+ 
+-angular.module('app').directive('wwaTests', [function () {
++angular.module('app')
++    .directive('wwaTests', [function () {
+-    return {
+-        scope: {
+-        },
+-        //template: '<h1>Tests Page</h1>'
+-        templateUrl: 'app/tests.html'
+-    }
++        return {
++            scope: {
++            },
++            //template: '<h1>Tests Page</h1>'
++            templateUrl: 'app/tests.html'
++        }
+-}]);
+\ No newline at end of file
++    }])
++    .controller('testController', ['$scope',
++        function($scope) {
++
++
++            $scope.alerts = [
++                {
++                    icon: 'glyphicon-user',
++                    colour:'btn-success',
++                    total: '20,408',
++                    description: 'TOTAL CUSTOMERS'
++                },
++                {
++                    icon: 'glyphicon-calendar',
++                    colour: 'btn-primary',
++                    total: '8,382',
++                    description: 'UPCOMING EVENTS'
++                },
++                {
++                    icon: 'glyphicon-edit',
++                    colour: 'btn-success',
++                    total: '527',
++                    description: 'NEW CUSTOMERS IN 24H'
++                },
++                {
++                    icon: 'glyphicon-record',
++                    colour: 'btn-info',
++                    total: '85,000',
++                    description: 'EMAILS SENT'
++                },
++                {
++                    icon: 'glyphicon-eye-open',
++                    colour: 'btn-warning',
++                    total: '268',
++                    description: 'FOLLOW UPS REQUIRED'
++                },
++                {
++                    icon: 'glyphicon-flag',
++                    colour:'btn-danger',
++                    total: '348',
++                    description:'REFERRALS TO MODERATE'
++                }
++            ];
++        }
++    ]);
+\ No newline at end of file
+Index: app/directives/wwaMapsDirective.js
+===================================================================
+--- app/directives/wwaMapsDirective.js	(revision 758b7fb11d744ab44d9df27893d15eb7761ae6a9)
++++ app/directives/wwaMapsDirective/wwaMapsDirective.js	(revision )
+@@ -1,0 +1,0 @@
+Index: app/calendar.html
+===================================================================
+--- app/calendar.html	(revision 758b7fb11d744ab44d9df27893d15eb7761ae6a9)
++++ app/directives/wwaCalendarDirective/calendar.html	(revision )
+@@ -1,0 +1,0 @@
+Index: app/widgets/wwaMap/wwaMap.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/widgets/wwaMap/wwaMap.css	(revision 758b7fb11d744ab44d9df27893d15eb7761ae6a9)
++++ app/widgets/wwaMap/wwaMap.css	(revision )
+@@ -1,1 +1,73 @@
++.wwa-map-widget {
++    height: 100%;
++    width: 100%;
++    font-size: 16px;
++    min-height: 200px;
++}
++
++.wwa-map-heading {
++    background-color: darkblue;
++    color: white;
++    height: 32px;
++    font-size: 15px;
++    line-height: 32px;
++}
++
++.wwa-map-icon {
++    height: 24px;
++    width: 24px;
++    margin-left: 4px;
++    margin-right: 4px;
++}
++
++.wwa-map-river-name {
++    height: 30px;
++    font-size: 14px;
++    font-weight: bold;
++    margin-top: 8px;
++    color: black;
++}
++
++.wwa-map-body {
++    position: relative;
++    text-align: center;
++    background-size: cover;
++    background-position: center;
++    background-color: lavender;
++    height: 100%;
++    min-height: 180px;
++}
++
++.wwa-map-area {
++    position: absolute;
++    width: 350px;
++    margin: auto;
++    top: 5px;
++    left: 5px;
++    right: 5px;
++    background-color: rgba(255,255,255,.7);
++    border: 1px solid black;
++}
++
++.wwa-map-item {
++    display: inline-block;
++    margin: 0 15px;
++    font-size: 16px;
++    color: black;
++}
++
++.wwa-map-item img {
++    display: inline-block;
++    vertical-align: top;
++    margin-top: 0;
++    width: 40px;
++    height: 40px;
++}
++
++.wwa-map-amount {
++    font-size: 25px;
++}
++.wwa-map-caption {
++    display: block;
++    margin-top: -5px;
++}
+ 
+\ No newline at end of file
+Index: app/calCtrl.js
+===================================================================
+--- app/calCtrl.js	(revision 758b7fb11d744ab44d9df27893d15eb7761ae6a9)
++++ app/directives/wwaCalendarDirective/calCtrl.js	(revision )
+@@ -1,0 +1,0 @@
+Index: app/tests.html
+===================================================================
+--- app/tests.html	(revision 758b7fb11d744ab44d9df27893d15eb7761ae6a9)
++++ app/static/tests.html	(revision )
+@@ -1,0 +1,0 @@
+Index: Scripts/angular.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Scripts/angular.js	(revision 758b7fb11d744ab44d9df27893d15eb7761ae6a9)
++++ Scripts/angular.js	(revision )
+@@ -20596,7 +20596,7 @@
+    * input field will be updated with the new model value and any pending operations are cancelled.
+    *
+    * <example name="ng-model-cancel-update" module="cancel-update-example">
+-   *   <file name="app.js">
++   *   <file name="testController.js">
+    *     angular.module('cancel-update-example', [])
+    *
+    *     .controller('CancelUpdateController', ['$scope', function($scope) {
+@@ -21130,7 +21130,7 @@
+          <pre>user.name = <span ng-bind="user.name()"></span></pre>
+        </div>
+      </file>
+-     <file name="app.js">
++     <file name="testController.js">
+        angular.module('getterSetterExample', [])
+          .controller('ExampleController', ['$scope', function($scope) {
+            var _name = 'Brian';
+@@ -21393,7 +21393,7 @@
+  * ### Example with Validation
+  *
+  * <example name="ngList-directive" module="listExample">
+- *   <file name="app.js">
++ *   <file name="testController.js">
+  *      angular.module('listExample', [])
+  *        .controller('ExampleController', ['$scope', function($scope) {
+  *          $scope.names = ['morpheus', 'neo', 'trinity'];
+@@ -21640,7 +21640,7 @@
+         <pre>user.name = <span ng-bind="user.name"></span></pre>
+       </div>
+     </file>
+-    <file name="app.js">
++    <file name="testController.js">
+       angular.module('optionsExample', [])
+         .controller('ExampleController', ['$scope', function($scope) {
+           $scope.user = { name: 'say', data: '' };
+@@ -21692,7 +21692,7 @@
+         <pre>user.name = <span ng-bind="user.name"></span></pre>
+       </div>
+     </file>
+-    <file name="app.js">
++    <file name="testController.js">
+       angular.module('optionsExample', [])
+         .controller('ExampleController', ['$scope', function($scope) {
+           $scope.user = { name: 'say' };
+@@ -21714,7 +21714,7 @@
+         <pre>user.name = <span ng-bind="user.name()"></span></pre>
+       </div>
+     </file>
+-    <file name="app.js">
++    <file name="testController.js">
+       angular.module('getterSetterExample', [])
+         .controller('ExampleController', ['$scope', function($scope) {
+           var _name = 'Brian';
+@@ -22558,7 +22558,7 @@
+  *     </ul>
+  *    </div>
+  *   </file>
+- *   <file name="app.js">
++ *   <file name="testController.js">
+  *    angular.module('controllerAsExample', [])
+  *      .controller('SettingsController1', SettingsController1);
+  *
+@@ -22641,7 +22641,7 @@
+  *    </ul>
+  *   </div>
+  *  </file>
+- *  <file name="app.js">
++ *  <file name="testController.js">
+  *   angular.module('controllerExample', [])
+  *     .controller('SettingsController2', ['$scope', SettingsController2]);
+  *
+\ No newline at end of file
+Index: app/widgets/wwaTemperature/wwaTemperatureTemplate.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/widgets/wwaTemperature/wwaTemperatureTemplate.html	(revision 758b7fb11d744ab44d9df27893d15eb7761ae6a9)
++++ app/widgets/wwaTemperature/wwaTemperatureTemplate.html	(revision )
+@@ -8,7 +8,7 @@
+ 
+     <div class="wwa-temperature-body" ng-style="selectedLocation != null && {'background-image': 'url(/images/' + selectedLocation.image + ')'}">
+         <div ng-if="!isLoaded && !hasError">
+-            <i class="fa fa-refresh fa-2x fa-spin"></i>
++            <!--<i class="fa fa-refresh fa-2x fa-spin"></i>-->
+             <md-progress-circular md-mode="indeterminate"></md-progress-circular>
+         </div>
+         <div ni-if="isLoaded" class="wwa-temperature-view">
+\ No newline at end of file
+Index: app/static/tests.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/static/tests.css	(revision )
++++ app/static/tests.css	(revision )
+@@ -0,0 +1,18 @@
++.buttondemoBasicUsage section {
++    background: #f7f7f7;
++    border-radius: 3px;
++    text-align: center;
++    margin: 1em;
++    position: relative !important;
++    padding-bottom: 10px; }
++.buttondemoBasicUsage md-content {
++    margin-right: 7px; }
++.buttondemoBasicUsage section .md-button {
++    margin-top: 16px;
++    margin-bottom: 16px; }
++.buttondemoBasicUsage .label {
++    position: absolute;
++    bottom: 5px;
++    left: 7px;
++    font-size: 14px;
++    opacity: 0.54; }
+\ No newline at end of file
+Index: app/cal.css
+===================================================================
+--- app/cal.css	(revision 758b7fb11d744ab44d9df27893d15eb7761ae6a9)
++++ app/directives/wwaCalendarDirective/cal.css	(revision )
+@@ -1,0 +1,0 @@
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- index.html	(revision 758b7fb11d744ab44d9df27893d15eb7761ae6a9)
++++ index.html	(revision )
+@@ -42,7 +42,10 @@
+     <link href="app/widgets/wwaTemperature/wwaTemperature.css" rel="stylesheet" />
+     <link href="app/widgets/wwaInventory/wwaInventory.css" rel="stylesheet" />
+     <link href="app/widgets/wwaEmployee/wwaEmployee.css" rel="stylesheet" />
++    <link href="app/widgets/wwaMap/wwaMap.css" rel="stylesheet" />
+ 
++    <link href="app/static/tests.css" rel="stylesheet" />
++
+     <!--<script src="bower_components/jquery/dist/jquery.min.js"></script>-->
+     <!--<script src="bower_components/jquery-ui/ui/jquery-ui.js"></script>-->
+     <!--<script src="bower_components/angular/angular.min.js"></script>-->
+@@ -64,15 +67,15 @@
+     <script src="app/appConfig.js"></script>
+     <script src="app/appRouteConfig.js"></script>
+     <script src="app/appController.js"></script>
+-    <script src="app/calendarController.js"></script>
++    <script src="app/directives/wwaCalendarDirective/calendarController.js"></script>
+     <script src="app/mapController.js"></script>
+     <script src="app/services/dataService.js"></script>
+ 
+     <!-- Directives JavaScript files
+     <script src="app/widgets/widgetsController.js"></script>-->
+     <script src="app/directives/wwaDashboardDirective.js"></script>
+-    <script src="app/directives/wwaMapsDirective.js"></script>
+-    <script src="app/directives/wwaCalendarDirective.js"></script>
++    <script src="app/directives/wwaMapsDirective/wwaMapsDirective.js"></script>
++    <script src="app/directives/wwaCalendarDirective/wwaCalendarDirective.js"></script>
+     <script src="app/directives/wwaTestsDirective.js"></script>
+ 
+     <!-- widget JavaScript files -->
+Index: app/calendarController.js
+===================================================================
+--- app/calendarController.js	(revision 758b7fb11d744ab44d9df27893d15eb7761ae6a9)
++++ app/directives/wwaCalendarDirective/calendarController.js	(revision )
+@@ -1,0 +1,0 @@
+Index: app/cal.html
+===================================================================
+--- app/cal.html	(revision 758b7fb11d744ab44d9df27893d15eb7761ae6a9)
++++ app/directives/wwaCalendarDirective/cal.html	(revision )
+@@ -1,0 +1,0 @@
+Index: app/directives/wwaCalendarDirective.js
+===================================================================
+--- app/directives/wwaCalendarDirective.js	(revision 758b7fb11d744ab44d9df27893d15eb7761ae6a9)
++++ app/directives/wwaCalendarDirective/wwaCalendarDirective.js	(revision )
+@@ -1,0 +1,0 @@
+Index: app/app.js
+===================================================================
+--- app/app.js	(revision 758b7fb11d744ab44d9df27893d15eb7761ae6a9)
++++ app/static/testController.js	(revision )
+@@ -1,7 +1,7 @@
+ (function(angular, undefined){
+     "use strict";
+-    angular.module('sidenavDemo1', ['ngMaterial'])
+-        .controller('AppCtrl', function($scope, $timeout, $mdSidenav, $mdComponentRegistry, $log) {
++    angular.module('app', ['ngMaterial'])
++        .controller('testController', function($scope, $timeout, $mdSidenav, $mdComponentRegistry, $log) {
+ 
+             // Option #1
+             //
+\ No newline at end of file
+Index: app/widgets/wwaMap/wwaMapTemplate.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/widgets/wwaMap/wwaMapTemplate.html	(revision 758b7fb11d744ab44d9df27893d15eb7761ae6a9)
++++ app/widgets/wwaMap/wwaMapTemplate.html	(revision )
+@@ -7,7 +7,8 @@
+ 
+     <div class="wwa-map-body" ng-style="selectedLocation != null && {'background-image': 'url(/images/' + selectedLocation.image + ')'}">
+         <div ng-if="!isLoaded && !hasError">
+-            <i class="fa fa-refresh fa-2x fa-spin"></i>
++            <!--<i class="fa fa-refresh fa-2x fa-spin"></i>-->
++            <md-progress-circular md-mode="indeterminate"></md-progress-circular>
+         </div>
+         <div ni-if="isLoaded" class="wwa-map-view">
+             <ui-gmap-google-map
+\ No newline at end of file
