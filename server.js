@@ -47,4 +47,4 @@ http.createServer(function(req, res){
         res.write('500 Internal Error\n');
         res.end();
     }
-}).listen(process.env.PORT );
+}).listen(process.env.PORT || 8080);
