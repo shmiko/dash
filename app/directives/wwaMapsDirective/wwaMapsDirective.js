@@ -12,7 +12,7 @@ angular.module('app').directive('wwaMaps', [function () {
             scope.title = "Tripstomp Maps";
             scope.activate = activate;
             scope.location = {
-                address: "10 Castlereagh Street",
+                address: "100 Castlereagh Street",
                 Suburb: "Riverstone",
                 state: "NSW",
                 country: "Australia",
