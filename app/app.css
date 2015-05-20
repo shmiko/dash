@@ -9,6 +9,10 @@ body {
     padding: 0;
 }
 
+.strange-ways{
+    height: 120px;
+}
+
 .sign-in-form {
 	padding-bottom: 80px;
 }
