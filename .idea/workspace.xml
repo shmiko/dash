@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0281c158-8fe1-45f5-9612-0b722f3c33aa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/dialogs/wwaSelectWeatherLocationTemplate.html" afterPath="$PROJECT_DIR$/app/dialogs/wwaSelectWeatherLocationTemplate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/widgets/wwaWeather/wwaWeatherDirective.js" afterPath="$PROJECT_DIR$/app/widgets/wwaWeather/wwaWeatherDirective.js" />
     </list>
     <list id="1257a8f8-6ab7-4e43-a8e9-7cdaf914b7c3" name="New changelist" comment="" />
     <ignored path="dash.iws" />
@@ -37,11 +37,31 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="wwaSelectWeatherLocationTemplate.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="wwaSelectWeatherLocationTemplate.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/dialogs/wwaSelectWeatherLocationTemplate.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3375">
+                <state vertical-scroll-proportion="-5.625">
                   <caret line="9" column="65" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="weatherService.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/services/weatherService.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="6" column="13" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="wwaWeatherDirective.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/widgets/wwaWeather/wwaWeatherDirective.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.5660377">
+                  <caret line="81" column="77" selection-start-line="81" selection-start-column="77" selection-end-line="81" selection-end-column="77" />
                   <folding />
                 </state>
               </provider>
@@ -157,26 +177,6 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="wwaSelectEmployeeTemplate.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/dialogs/wwaSelectEmployeeTemplate.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="wwaEmployeeDirective.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/widgets/wwaEmployee/wwaEmployeeDirective.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="11" column="53" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="53" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
@@ -239,7 +239,6 @@
         <option value="$PROJECT_DIR$/app/widgets/wwaWeather/wwaWeatherDirectiveO.js" />
         <option value="$PROJECT_DIR$/app/appModule.js" />
         <option value="$PROJECT_DIR$/app/widgets/wwaWeather/wwaWeather.css" />
-        <option value="$PROJECT_DIR$/app/widgets/wwaWeather/wwaWeatherDirective.js" />
         <option value="$PROJECT_DIR$/app/widgets/wwaWeather/wwaWeatherTemplate.html" />
         <option value="$PROJECT_DIR$/app/directives/wwaWeatherDirective/directives.js" />
         <option value="$PROJECT_DIR$/app/directives/wwaWeatherDirective/services.js" />
@@ -271,6 +270,7 @@
         <option value="$PROJECT_DIR$/app/directives/wwaMapsDirective/wwaMapsDirective.js" />
         <option value="$PROJECT_DIR$/app/app.css" />
         <option value="$PROJECT_DIR$/app/dialogs/wwaSelectWeatherLocationTemplate.html" />
+        <option value="$PROJECT_DIR$/app/widgets/wwaWeather/wwaWeatherDirective.js" />
       </list>
     </option>
   </component>
@@ -521,6 +521,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="wwaWeather" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widgets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="wwaEmployee" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -697,12 +719,6 @@
       <created>1430390572026</created>
       <option name="number" value="Default" />
       <updated>1430390572026</updated>
-    </task>
-    <task id="LOCAL-00062" summary="add todo's 2">
-      <created>1431859887802</created>
-      <option name="number" value="00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1431859887806</updated>
     </task>
     <task id="LOCAL-00063" summary="add todo's 2b">
       <created>1431859952728</created>
@@ -992,7 +1008,13 @@
       <option name="project" value="LOCAL" />
       <updated>1432211670839</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="working on weather widget refactor">
+      <created>1432242424923</created>
+      <option name="number" value="00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1432242424923</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1066,7 +1088,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="." />
     <MESSAGE value="adding weather api widget" />
     <MESSAGE value="adding weather api widget config" />
     <MESSAGE value="adding weather api widget style" />
@@ -1091,20 +1112,14 @@
     <MESSAGE value="changed address" />
     <MESSAGE value="css" />
     <MESSAGE value="working on weather widget" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on weather widget" />
+    <MESSAGE value="working on weather widget refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on weather widget refactor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/directives/wwaCalendarDirective/cal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2020958">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1339,14 +1354,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/weatherService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/dialogs/wwaSelectLocationController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1485,8 +1492,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/dialogs/wwaSelectWeatherLocationTemplate.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3375">
+        <state vertical-scroll-proportion="-5.625">
           <caret line="9" column="65" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/weatherService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/widgets/wwaWeather/wwaWeatherDirective.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5660377">
+          <caret line="81" column="77" selection-start-line="81" selection-start-column="77" selection-end-line="81" selection-end-column="77" />
           <folding />
         </state>
       </provider>
