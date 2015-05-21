@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0281c158-8fe1-45f5-9612-0b722f3c33aa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/widgets/wwaWeather/wwaWeatherDirective.js" afterPath="$PROJECT_DIR$/app/widgets/wwaWeather/wwaWeatherDirective.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/dialogs/wwaSelectWeatherLocationTemplate.html" afterPath="$PROJECT_DIR$/app/dialogs/wwaSelectWeatherLocationTemplate.html" />
     </list>
     <list id="1257a8f8-6ab7-4e43-a8e9-7cdaf914b7c3" name="New changelist" comment="" />
     <ignored path="dash.iws" />
@@ -37,11 +37,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="wwaSelectWeatherLocationTemplate.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="wwaSelectWeatherLocationTemplate.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/dialogs/wwaSelectWeatherLocationTemplate.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-5.625">
-                  <caret line="9" column="65" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
+                <state vertical-scroll-proportion="0.5625">
+                  <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -57,10 +57,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="wwaWeatherDirective.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="wwaWeatherDirective.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/widgets/wwaWeather/wwaWeatherDirective.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5660377">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="81" column="77" selection-start-line="81" selection-start-column="77" selection-end-line="81" selection-end-column="77" />
                   <folding />
                 </state>
@@ -269,8 +269,8 @@
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/app/directives/wwaMapsDirective/wwaMapsDirective.js" />
         <option value="$PROJECT_DIR$/app/app.css" />
-        <option value="$PROJECT_DIR$/app/dialogs/wwaSelectWeatherLocationTemplate.html" />
         <option value="$PROJECT_DIR$/app/widgets/wwaWeather/wwaWeatherDirective.js" />
+        <option value="$PROJECT_DIR$/app/dialogs/wwaSelectWeatherLocationTemplate.html" />
       </list>
     </option>
   </component>
@@ -720,12 +720,6 @@
       <option name="number" value="Default" />
       <updated>1430390572026</updated>
     </task>
-    <task id="LOCAL-00063" summary="add todo's 2b">
-      <created>1431859952728</created>
-      <option name="number" value="00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1431859952728</updated>
-    </task>
     <task id="LOCAL-00064" summary="add todo's 2c">
       <created>1431860015820</created>
       <option name="number" value="00064" />
@@ -1014,7 +1008,13 @@
       <option name="project" value="LOCAL" />
       <updated>1432242424923</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="working on weather widget refactor.">
+      <created>1432242653498</created>
+      <option name="number" value="00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1432242653498</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1088,7 +1088,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="adding weather api widget" />
     <MESSAGE value="adding weather api widget config" />
     <MESSAGE value="adding weather api widget style" />
     <MESSAGE value=".." />
@@ -1113,7 +1112,8 @@
     <MESSAGE value="css" />
     <MESSAGE value="working on weather widget" />
     <MESSAGE value="working on weather widget refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on weather widget refactor" />
+    <MESSAGE value="working on weather widget refactor." />
+    <option name="LAST_COMMIT_MESSAGE" value="working on weather widget refactor." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1490,14 +1490,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/dialogs/wwaSelectWeatherLocationTemplate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.625">
-          <caret line="9" column="65" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/services/weatherService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1508,8 +1500,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/widgets/wwaWeather/wwaWeatherDirective.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5660377">
+        <state vertical-scroll-proportion="0.0">
           <caret line="81" column="77" selection-start-line="81" selection-start-column="77" selection-end-line="81" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/dialogs/wwaSelectWeatherLocationTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5625">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
           <folding />
         </state>
       </provider>
