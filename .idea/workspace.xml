@@ -40,8 +40,8 @@
           <file leaf-file-name="wwaSelectWeatherLocationTemplate.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/dialogs/wwaSelectWeatherLocationTemplate.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5625">
-                  <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+                <state vertical-scroll-proportion="0.2625">
+                  <caret line="7" column="87" selection-start-line="7" selection-start-column="87" selection-end-line="7" selection-end-column="87" />
                   <folding />
                 </state>
               </provider>
@@ -184,8 +184,8 @@
           <file leaf-file-name="home.htm" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/directives/wwaWeatherDirective/pages/home.htm">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.27439025">
-                  <caret line="6" column="69" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="69" />
+                <state vertical-scroll-proportion="0.41158536">
+                  <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -720,12 +720,6 @@
       <option name="number" value="Default" />
       <updated>1430390572026</updated>
     </task>
-    <task id="LOCAL-00064" summary="add todo's 2c">
-      <created>1431860015820</created>
-      <option name="number" value="00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1431860015820</updated>
-    </task>
     <task id="LOCAL-00065" summary="sign in dashboard">
       <created>1431896893845</created>
       <option name="number" value="00065" />
@@ -1014,7 +1008,13 @@
       <option name="project" value="LOCAL" />
       <updated>1432242653498</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="working on weather widget refactor..">
+      <created>1432242753238</created>
+      <option name="number" value="00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1432242753238</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1088,7 +1088,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="adding weather api widget config" />
     <MESSAGE value="adding weather api widget style" />
     <MESSAGE value=".." />
     <MESSAGE value="routes" />
@@ -1113,7 +1112,8 @@
     <MESSAGE value="working on weather widget" />
     <MESSAGE value="working on weather widget refactor" />
     <MESSAGE value="working on weather widget refactor." />
-    <option name="LAST_COMMIT_MESSAGE" value="working on weather widget refactor." />
+    <MESSAGE value="working on weather widget refactor.." />
+    <option name="LAST_COMMIT_MESSAGE" value="working on weather widget refactor.." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1482,14 +1482,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/directives/wwaWeatherDirective/pages/home.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27439025">
-          <caret line="6" column="69" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/services/weatherService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1506,10 +1498,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/directives/wwaWeatherDirective/pages/home.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41158536">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/dialogs/wwaSelectWeatherLocationTemplate.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5625">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.2625">
+          <caret line="7" column="87" selection-start-line="7" selection-start-column="87" selection-end-line="7" selection-end-column="87" />
           <folding />
         </state>
       </provider>
