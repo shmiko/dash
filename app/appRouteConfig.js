@@ -75,6 +75,14 @@ angular.module('app').config(['$routeProvider','uiGmapGoogleMapApiProvider', fun
                 controller: 'appController'
 
             }
+        },
+        {
+            url: '/modal',
+            config: {
+                templateUrl: 'modal.html',
+                controller: 'ModalController'
+
+            }
         }
     ];
 
