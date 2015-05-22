@@ -35,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modals.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="modals.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modals.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5139594">
-              <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+            <state vertical-scroll-proportion="-18.125">
+              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -75,22 +75,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modal.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="modal.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.408867">
+              <caret line="428" column="22" selection-start-line="428" selection-start-column="22" selection-end-line="428" selection-end-column="22" />
               <folding>
                 <element signature="e#121#1858#0" expanded="false" />
                 <element signature="e#2336#3457#0" expanded="false" />
-                <element signature="e#3939#4396#0" expanded="false" />
-                <element signature="e#4876#5602#0" expanded="false" />
-                <element signature="e#6128#9235#0" expanded="false" />
                 <element signature="e#6210#6256#0" expanded="false" />
                 <element signature="e#6300#6415#0" expanded="false" />
-                <element signature="e#6851#7988#0" expanded="false" />
-                <element signature="e#8076#8120#0" expanded="false" />
-                <element signature="e#9571#10749#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -327,56 +321,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dash" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dash" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular-animate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dash" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dash" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dash" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dash" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -542,12 +486,6 @@
       <created>1430390572026</created>
       <option name="number" value="Default" />
       <updated>1430390572026</updated>
-    </task>
-    <task id="LOCAL-00071" summary="gridster options2">
-      <created>1431925842328</created>
-      <option name="number" value="00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1431925842328</updated>
     </task>
     <task id="LOCAL-00072" summary="gridster options3">
       <created>1431934025814</created>
@@ -837,7 +775,13 @@
       <option name="project" value="LOCAL" />
       <updated>1432302090965</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="modal working">
+      <created>1432328399285</created>
+      <option name="number" value="00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1432328399285</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="TodoView">
@@ -911,7 +855,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="weather directive page" />
     <MESSAGE value="weather directive page." />
     <MESSAGE value="weather directive page.." />
     <MESSAGE value="got api working but directive wont load" />
@@ -936,7 +879,8 @@
     <MESSAGE value="..lost" />
     <MESSAGE value="testing modals" />
     <MESSAGE value="testing modals....." />
-    <option name="LAST_COMMIT_MESSAGE" value="testing modals....." />
+    <MESSAGE value="modal working" />
+    <option name="LAST_COMMIT_MESSAGE" value="modal working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1328,25 +1272,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding>
-            <element signature="e#121#1858#0" expanded="false" />
-            <element signature="e#2336#3457#0" expanded="false" />
-            <element signature="e#3939#4396#0" expanded="false" />
-            <element signature="e#4876#5602#0" expanded="false" />
-            <element signature="e#6128#9235#0" expanded="false" />
-            <element signature="e#6210#6256#0" expanded="false" />
-            <element signature="e#6300#6415#0" expanded="false" />
-            <element signature="e#6851#7988#0" expanded="false" />
-            <element signature="e#8076#8120#0" expanded="false" />
-            <element signature="e#9571#10749#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modal.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-31.583334">
@@ -1357,9 +1282,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modals.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5139594">
-          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        <state vertical-scroll-proportion="-18.125">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.408867">
+          <caret line="428" column="22" selection-start-line="428" selection-start-column="22" selection-end-line="428" selection-end-column="22" />
+          <folding>
+            <element signature="e#121#1858#0" expanded="false" />
+            <element signature="e#2336#3457#0" expanded="false" />
+            <element signature="e#6210#6256#0" expanded="false" />
+            <element signature="e#6300#6415#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
