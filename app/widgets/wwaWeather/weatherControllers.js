@@ -6,7 +6,21 @@
 
     angular.module('app')
 
+
         .controller('weatherController', ['$scope', '$resource', '$routeParams', 'weatherService', function($scope, $resource, $routeParams, weatherService) {
+            //$scope.city = weatherService.city;
+
+
+            $scope.isLoaded = false;
+            dataService.getLocations().then(function (data) {
+                $scope.locations = data;
+                $scope.isLoaded = true;
+
+                for (var i = 0; i < data.length; i++) {
+                    if (data[i].id == $scope.item.widgetSettings.id)
+                        $scope.selectedLocation = data[i];
+                }
+            });
 
             $scope.city = weatherService.city;
 
@@ -14,19 +28,12 @@
                 weatherService.city = $scope.city;
             });
 
-
-
-        }])
-        .controller('forecastController', ['$scope', '$resource', '$routeParams', 'weatherService', function($scope, $resource, $routeParams, weatherService) {
-
-            $scope.city = weatherService.city;
-
-            $scope.days = $routeParams.days || '2';
+            $scope.days = $routeParams.days || '7';
 
             $scope.weatherAPI = $resource("http://api.openweathermap.org/data/2.5/forecast/daily", { callback: "JSON_CALLBACK" }, { get: { method: "JSONP" }});
 
             $scope.weatherResult = $scope.weatherAPI.get({ q: $scope.city, cnt: $scope.days });
-            //console.log($scope.weatherResult);
+            console.log($scope.weatherResult);
 
             $scope.convertToFahrenheit = function(degK) {
 
@@ -38,6 +45,12 @@
 
                 return new Date(dt * 1000);
 
+            };
+
+            $scope.saveSettings = function () {
+                $scope.item.widgetSettings.id = $scope.selectedLocation.id;
+                $scope.$parent.selectedLocation = $scope.selectedLocation;
+                $scope.$close();
             };
 
         }])

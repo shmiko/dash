@@ -126,8 +126,8 @@ angular.module('app')
                         template: '<wwa-weather></wwa-weather>',
                         widgetSettings: {
                             id: 7000,
-                            templateUrl: 'app/dialogs/wwaSelectLocationTemplate.html',
-                            controller: 'wwaSelectLocationController'
+                            templateUrl: '/app/widgets/wwaWeather/pages/forecast.htm',
+                            controller: 'wwaSelectWeatherController'
                         }
                     }
                 }
