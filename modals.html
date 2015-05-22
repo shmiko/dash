@@ -25,6 +25,7 @@
 	</li>
 	<li>
 		<a ng-click="promptSomething()">Prompt something</a>
+		name?  {{name}}
 	</li>
 </ul>
 
@@ -205,6 +206,7 @@
 
 
 				// I open a Prompt-type modal.
+				$scope.name = "tester";
 				$scope.promptSomething = function() {
 
 					// The .open() method returns a promise that will be either 
@@ -219,7 +221,7 @@
 
 					promise.then(
 							function handleResolve( response ) {
-
+								$scope.name = response;
 								console.log( "Prompt resolved with [ %s ].", response );
 
 							},
@@ -229,6 +231,7 @@
 
 							}
 					);
+
 
 				};
 

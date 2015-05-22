@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0281c158-8fe1-45f5-9612-0b722f3c33aa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modalModule.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modals.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modals.html" afterPath="$PROJECT_DIR$/modals.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="1257a8f8-6ab7-4e43-a8e9-7cdaf914b7c3" name="New changelist" comment="" />
@@ -40,8 +38,8 @@
       <file leaf-file-name="modals.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modals.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4568528">
-              <caret line="220" column="64" selection-start-line="220" selection-start-column="64" selection-end-line="220" selection-end-column="64" />
+            <state vertical-scroll-proportion="0.5139594">
+              <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -545,12 +543,6 @@
       <option name="number" value="Default" />
       <updated>1430390572026</updated>
     </task>
-    <task id="LOCAL-00070" summary="gridster options">
-      <created>1431924804459</created>
-      <option name="number" value="00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1431924804459</updated>
-    </task>
     <task id="LOCAL-00071" summary="gridster options2">
       <created>1431925842328</created>
       <option name="number" value="00071" />
@@ -839,7 +831,13 @@
       <option name="project" value="LOCAL" />
       <updated>1432295481830</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="testing modals.....">
+      <created>1432302090965</created>
+      <option name="number" value="00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1432302090965</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TodoView">
@@ -913,7 +911,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="weather widget almost working." />
     <MESSAGE value="weather directive page" />
     <MESSAGE value="weather directive page." />
     <MESSAGE value="weather directive page.." />
@@ -938,7 +935,8 @@
     <MESSAGE value="..." />
     <MESSAGE value="..lost" />
     <MESSAGE value="testing modals" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing modals" />
+    <MESSAGE value="testing modals....." />
+    <option name="LAST_COMMIT_MESSAGE" value="testing modals....." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1359,8 +1357,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modals.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4568528">
-          <caret line="220" column="64" selection-start-line="220" selection-start-column="64" selection-end-line="220" selection-end-column="64" />
+        <state vertical-scroll-proportion="0.5139594">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
           <folding />
         </state>
       </provider>
