@@ -71,6 +71,7 @@
                 controllerAs: 'vm',
                 bindToController: true,
                 //templateUrl: 'app/widgets/wwaWeather/wwaWeatherTemplate.html',
+                //templateUrl: 'app/widgets/wwaWeather/pages/forecast.htm',
                 templateUrl: 'app/dialogs/wwaSelectWeatherLocationTemplate.html',
                 link: function (scope, el, attrs) {
                     scope.isLoaded = false;
