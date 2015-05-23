@@ -4,7 +4,6 @@
     <list default="true" id="0281c158-8fe1-45f5-9612-0b722f3c33aa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/directives/wwaDashboardDirective.js" afterPath="$PROJECT_DIR$/app/directives/wwaDashboardDirective.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/widgets/wwaInventory/wwaInventory.css" afterPath="$PROJECT_DIR$/app/widgets/wwaInventory/wwaInventory.css" />
     </list>
     <list id="1257a8f8-6ab7-4e43-a8e9-7cdaf914b7c3" name="New changelist" comment="" />
     <list id="32dbec54-3e89-4361-bd4f-75a02143f04e" name="Failed commit: Default" comment="adding to framework scope" />
@@ -70,8 +69,8 @@
       <file leaf-file-name="wwaDashboardDirective.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/directives/wwaDashboardDirective.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6499261">
-              <caret line="106" column="32" selection-start-line="106" selection-start-column="32" selection-end-line="106" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.71639585">
+              <caret line="109" column="38" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -598,12 +597,6 @@
       <option name="number" value="Default" />
       <updated>1430390572026</updated>
     </task>
-    <task id="LOCAL-00080" summary=" map changed">
-      <created>1431945527115</created>
-      <option name="number" value="00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1431945527116</updated>
-    </task>
     <task id="LOCAL-00081" summary="colors directive">
       <created>1431947595438</created>
       <option name="number" value="00081" />
@@ -892,7 +885,13 @@
       <option name="project" value="LOCAL" />
       <updated>1432419658299</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="gridster alignment">
+      <created>1432420239479</created>
+      <option name="number" value="00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1432420239479</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="TodoView">
@@ -944,7 +943,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="adding sabre." />
     <MESSAGE value="adding node again" />
     <MESSAGE value="adding node again, route issues" />
     <MESSAGE value="adding node again, route issues??????" />
@@ -969,7 +967,8 @@
     <MESSAGE value="Trying to save menu state to localstorage" />
     <MESSAGE value="adding to framework scope" />
     <MESSAGE value="title to tripSTOMP" />
-    <option name="LAST_COMMIT_MESSAGE" value="title to tripSTOMP" />
+    <MESSAGE value="gridster alignment" />
+    <option name="LAST_COMMIT_MESSAGE" value="gridster alignment" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1367,8 +1366,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/directives/wwaDashboardDirective.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6499261">
-          <caret line="106" column="32" selection-start-line="106" selection-start-column="32" selection-end-line="106" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.71639585">
+          <caret line="109" column="38" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
           <folding />
         </state>
       </provider>
