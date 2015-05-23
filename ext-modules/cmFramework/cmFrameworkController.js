@@ -3,8 +3,8 @@
 angular.module("cmFramework").controller("cmFrameworkController",
     ['$scope', '$window', '$timeout', '$rootScope', '$location',
         function ($scope, $window, $timeout, $rootScope, $location) {
-
-            $scope.isMenuVisible = true;
+            $scope.title = "Tripstomp";
+            $scope.isMenuVisible = false;
             $scope.isMenuButtonVisible = false;
             $scope.isMenuVertical = false;
 
