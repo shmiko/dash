@@ -17,7 +17,7 @@ angular.module('app')
 	])
 	.controller('BottomSheetExample', function($scope, $timeout, $mdBottomSheet) {
 		$scope.alert = '';
-
+		$scope.title = "Tripstomp";
 		$scope.showGridBottomSheet = function($event) {
 			$scope.alert = '';
 			$mdBottomSheet.show({
