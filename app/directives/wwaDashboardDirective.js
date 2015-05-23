@@ -18,23 +18,23 @@ angular.module('app')
                 //pushing: true,
                 //floating: true,
                 //swapping: false
-                columns: 6, // the width of the grid, in columns
+                columns: 12, // the width of the grid, in columns
                 pushing: true, // whether to push other items out of the way on move or resize
                 floating: true, // whether to automatically float items up so they stack (you can temporarily disable if you are adding unsorted items with ng-repeat)
                 swapping: false, // whether or not to have items of the same size switch places instead of pushing down if they are the same size
                 width: 'auto', // can be an integer or 'auto'. 'auto' scales gridster to be the full width of its containing element
                 colWidth: 'auto', // can be an integer or 'auto'.  'auto' uses the pixel width of the element divided by 'columns'
                 rowHeight: 'match', // can be an integer or 'match'.  Match uses the colWidth, giving you square widgets.
-                margins: [60, 60], // the pixel distance between each widget
-                outerMargin: false, // whether margins apply to outer edges of the grid
+                margins: [30, 30], // the pixel distance between each widget
+                outerMargin: true, // whether margins apply to outer edges of the grid
                 isMobile: false, // stacks the grid items if true
                 mobileBreakPoint: 600, // if the screen is not wider that this, remove the grid layout and stack the items
                 mobileModeEnabled: true, // whether or not to toggle mobile mode when screen width is less than mobileBreakPoint
-                minColumns: 1, // the minimum columns the grid must have
+                minColumns: 2, // the minimum columns the grid must have
                 minRows: 2, // the minimum height of the grid, in rows
                 maxRows: 100,
-                defaultSizeX: 2, // the default width of a gridster item, if not specifed
-                defaultSizeY: 1, // the default height of a gridster item, if not specified
+                defaultSizeX: 4, // the default width of a gridster item, if not specifed
+                defaultSizeY: 2, // the default height of a gridster item, if not specified
                 minSizeX: 1, // minimum column width of an item
                 maxSizeX: null, // maximum column width of an item
                 minSizeY: 1, // minumum row height of an item
@@ -59,10 +59,10 @@ angular.module('app')
                 {
                     title: 'Temperature',
                     settings: {
-                        sizeX: 3,
-                        sizeY: 3,
-                        minSizeX: 2,
-                        minSizeY: 2,
+                        sizeX: 6,
+                        sizeY: 4,
+                        minSizeX: 6,
+                        minSizeY: 4,
                         template: '<wwa-temperature></wwa-temperature>',
                         widgetSettings: {
                             id: 1000,
@@ -89,10 +89,10 @@ angular.module('app')
                 {
                     title: 'Employee',
                     settings: {
-                        sizeX: 5,
-                        sizeY: 3,
-                        minSizeX: 2,
-                        minSizeY: 2,
+                        sizeX: 1,
+                        sizeY: 1,
+                        minSizeX: 1,
+                        minSizeY: 1,
                         template: '<wwa-employee></wwa-employee>',
                         widgetSettings: {
                             id: 4000,
@@ -104,7 +104,7 @@ angular.module('app')
                 {
                     title: 'Map',
                     settings: {
-                        sizeX: 5,
+                        sizeX: 3,
                         sizeY: 3,
                         minSizeX: 2,
                         minSizeY: 2,
