@@ -1,7 +1,7 @@
 ﻿"use strict";
 
 angular.module('app')
-    .directive('wwaDashboard', ['$localStorage', 
+    .directive('wwaDashboard', ['$localStorage',
         function ($localStorage) {
     return {
         scope: {
@@ -139,6 +139,8 @@ angular.module('app')
 
             scope.$watch('widgets', function (){
                 $localStorage.widgets = scope.widgets;
+                $localStorage.isMenuVertical = scope.isMenuVertical;
+               // cmMenu.isMenuVertical
             }, true);
         }
     }

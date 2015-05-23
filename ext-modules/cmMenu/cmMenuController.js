@@ -4,7 +4,7 @@ angular.module('cmMenu').controller('cmMenuController',
     ['$scope', '$rootScope',
         function ($scope, $rootScope) {
 
-            $scope.isVertical = true;
+            $scope.isVertical = false;
             $scope.openMenuScope = null;
             $scope.showMenu = true;
             $scope.allowHorizontalToggle = true;

@@ -5,8 +5,8 @@ angular.module("cmFramework").controller("cmFrameworkController",
         function ($scope, $window, $timeout, $rootScope, $location) {
 
             $scope.isMenuVisible = true;
-            $scope.isMenuButtonVisible = true;
-            $scope.isMenuVertical = true;
+            $scope.isMenuButtonVisible = false;
+            $scope.isMenuVertical = false;
 
             $scope.$on('cm-menu-item-selected-event', function (evt, data) {
                 $scope.routeString = data.route;

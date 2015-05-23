@@ -17,7 +17,7 @@ angular.module('cmMenu').directive('cmMenuItem', function () {
 
             scope.isVertical = function () {
                 return ctrl.isVertical() || el.parents('.cm-subitem-section').length > 0;
-            }
+            };
 
             el.on('click', function (evt) {
                 evt.stopPropagation();
