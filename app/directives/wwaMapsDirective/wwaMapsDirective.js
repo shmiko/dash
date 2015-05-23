@@ -10,14 +10,14 @@ angular.module('app').directive('wwaMaps', [function () {
 
            // var vm = this;
             scope.title = "Tripstomp Maps";
-            scope.activate = activate;
+            //scope.activate = activate;
             scope.location = {
                 address: "100 Castlereagh Street",
                 Suburb: "Riverstone",
                 state: "NSW",
                 country: "Australia",
                 name: "Home"};
-            scope.refreshMap = refreshMap;
+            //scope.refreshMap = refreshMap;
             //vm.save = save;
             //scope.title = 'Maps';//($stateParams.id ? 'Edit Location': 'Add Location');
 
@@ -39,42 +39,42 @@ angular.module('app').directive('wwaMaps', [function () {
                 //coords: currentPosition.coords
             };
 
-            activate();
+            //activate();
 
             ////////////////
 
-            function activate() {
-                if (scope.location.address){
-                    refreshMap();
-                }
-            }
-
-            function refreshMap(){
-                var geocoder = new maps.Geocoder();
-                geocoder.geocode({ address: scope.location.address }, function(result){
-                    if (result.length > 0) {
-                        var addrLocation = result[0].geometry.location;
-
-                        $timeout(function(){
-                            scope.map.center = {
-                                latitude: addrLocation.lat(),
-                                longitude: addrLocation.lng()
-                            };
-
-                            scope.marker = {
-                                id: 1,
-                                coords: {
-                                    latitude: scope.map.center.latitude,
-                                    longitude: scope.map.center.longitude
-                                },
-                                options: {
-                                    title: scope.location.name
-                                }
-                            };
-                        }, 0);
-                    }
-                });
-            }
+            //function activate() {
+            //    if (scope.location.address){
+            //        refreshMap();
+            //    }
+            //}
+            //
+            //function refreshMap(){
+            //    var geocoder = new maps.Geocoder();
+            //    geocoder.geocode({ address: scope.location.address }, function(result){
+            //        if (result.length > 0) {
+            //            var addrLocation = result[0].geometry.location;
+            //
+            //            $timeout(function(){
+            //                scope.map.center = {
+            //                    latitude: addrLocation.lat(),
+            //                    longitude: addrLocation.lng()
+            //                };
+            //
+            //                scope.marker = {
+            //                    id: 1,
+            //                    coords: {
+            //                        latitude: scope.map.center.latitude,
+            //                        longitude: scope.map.center.longitude
+            //                    },
+            //                    options: {
+            //                        title: scope.location.name
+            //                    }
+            //                };
+            //            }, 0);
+            //        }
+            //    });
+            //}
         }
     }
 }]);

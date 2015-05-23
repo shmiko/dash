@@ -58,4 +58,5 @@ angular.module("cmFramework").controller("cmFrameworkController",
             }, 0);
 
         }
-    ]);
+    ])
+    ;
