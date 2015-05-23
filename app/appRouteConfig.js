@@ -71,8 +71,8 @@ angular.module('app').config(['$routeProvider','uiGmapGoogleMapApiProvider', fun
         {
             url: '/lost',
             config: {
-                templateUrl: 'app/static/lost.html',
-                controller: 'appController'
+                templateUrl: 'app/static/lost.html'
+                //controller: 'appController'
 
             }
         },
@@ -81,6 +81,14 @@ angular.module('app').config(['$routeProvider','uiGmapGoogleMapApiProvider', fun
             config: {
                 templateUrl: 'modal.html',
                 controller: 'ModalController'
+
+            }
+        },
+        {
+            url: '/back',
+            config: {
+                templateUrl: 'app/static/back.html'
+                //controller: 'AppCtrl'
 
             }
         }
