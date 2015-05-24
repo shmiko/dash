@@ -16,6 +16,12 @@ angular.module('cmFramework').directive('cmUserProfile', function () {
     };
 });
 
+angular.module('cmFramework').directive('cmControl', function () {
+    return {
+        templateUrl: 'ext-modules/cmFramework/cmControl/cmControlTemplate.html'
+    };
+});
+
 
 angular.module("cmMenu", ["ngAnimate"]);
 angular.module("cmMenu").run(["$templateCache", function($templateCache) {$templateCache.put("ext-modules/cmMenu/cmMenuGroupTemplate.html","\r\n<li class=\"cm-selectable-item\" ng-click=\"clicked()\" ng-class=\"{\'cm-item-horizontal\': !isVertical()}\">\r\n    <div class=\"cm-noselect\">\r\n        <i class=\"fa {{icon}} cm-menu-icon\"></i>\r\n        {{label}}\r\n        <i ng-if=\"isVertical()\"\r\n           class=\"fa fa-chevron-left cm-group-indicator-left\"\r\n           ng-class=\"{\'fa-rotate-270\': isOpen}\"></i>\r\n    </div>\r\n</li>\r\n<div ng-show=\"isOpen\" class=\"cm-subitem-section cm-fade-in-animation\" ng-class=\"{\'cm-popup-menu\': !isVertical() }\">\r\n    <ul ng-transclude></ul>\r\n</div>");
@@ -111,7 +117,10 @@ angular.module('cmMenu').directive('cmMenu', ['$timeout', function ($timeout) {
 angular.module('cmMenu').controller('cmMenuController',
     ['$scope', '$rootScope',
         function ($scope, $rootScope) {
-
+            $scope.layouts = [
+                { name: 'Boring', url: 'red' },
+                { name: 'In Your Face', url: 'blue' }
+            ];
             $scope.isVertical = true;
             $scope.openMenuScope = null;
             $scope.showMenu = true;

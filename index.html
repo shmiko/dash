@@ -9,13 +9,16 @@
     <link href="/content/font-awesome.min.css" rel="stylesheet" />
     <link href="/content/angular-gridster.min.css" rel="stylesheet" />
     <link href="/app/app.css" rel="stylesheet" />
-    <link rel="stylesheet" ng-href="/app/{{ layout }}.css">
     <link href="/dist/cmFramework.css" rel="stylesheet" />
     <link href="demo.css" rel="stylesheet"/>
     <!--content/bootstrap.css-->
     <!--Material Design-->
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+
+    <!--ex module css-->
+    <!--<link href="ext-modules/cmFramework/cmFramework.css" rel="stylesheet" />-->
+    <!--<link href="ext-modules/cmMenu/cmMenu.css" rel="stylesheet" />-->
 
     <!-- widget css -->
     <link href="/app/widgets/wwaTemperature/wwaTemperature.css" rel="stylesheet" />
@@ -25,6 +28,8 @@
     <link href="/app/widgets/wwaWeather/wwaWeather.css" rel="stylesheet" />
     <link href="/app/static/tests.css" rel="stylesheet" />
     <!--<link href="/app/static/test_background.css" rel="stylesheet" />-->
+
+    <link href="ext-modules/cmDashboard/cmDashboard.css" rel="stylesheet" />
 
     <!-- Vendor Scripts -->
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
@@ -64,6 +69,24 @@
     <!--<script src="bower_components/angular-ui-calendar/src/calendar.js"></script>-->
     <!--<script src="bower_components/fullcalendar/fullcalendar.js"></script>-->
     <script src="/Scripts/ngStorage.min.js"></script>
+
+    <!--ex module files-->
+    <!--<script src="ext-modules/cmMenu/cmMenuModule.js"></script>-->
+    <!--<script src="ext-modules/cmMenu/cmMenuController.js"></script>-->
+    <!--<script src="ext-modules/cmMenu/cmMenuDirective.js"></script>-->
+    <!--<script src="ext-modules/cmMenu/cmMenuItemDirective.js"></script>-->
+    <!--<script src="ext-modules/cmMenu/cmMenuGroupDirective.js"></script>-->
+
+    <!--<script src="ext-modules/cmDashboard/cmDashboardModule.js"></script>-->
+    <!--<script src="ext-modules/cmDashboard/cmDashboardDirective.js"></script>-->
+    <!--<script src="ext-modules/cmDashboard/cmWidgetBodyDirective.js"></script>-->
+
+    <!--<script src="ext-modules/cmFramework/cmFrameworkModule.js"></script>-->
+    <!--<script src="ext-modules/cmFramework/cmFrameworkController.js"></script>-->
+    <!--<script src="ext-modules/cmFramework/cmFrameworkDirective.js"></script>-->
+    <!--<script src="ext-modules/cmFramework/cmUserProfile/cmUserProfileSmallDirective.js"></script>-->
+    <!--<script src="ext-modules/cmFramework/cmUserProfile/cmUserProfileDirective.js"></script>-->
+    <!--<script src="ext-modules/cmFramework/cmControl/cmControlDirective.js"></script>-->
 
     <script src="/dist/cmFramework.js"></script>
 
@@ -123,8 +146,7 @@
             <button class="btn btn-default" ng-click="signIn()">Sign In</button>
         </div>
         <div ng-switch-default>
-            <cm-framework
-                    title="TripSTOMP"
+            <cm-framework title="TripStomp Adventures"
                   subtitle="Smashboard Control"
                   icon-file="images/calmapit_icon_55.png">
 

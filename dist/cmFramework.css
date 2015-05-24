@@ -4,6 +4,23 @@
     width: 100%;
 }
 
+
+.cm-control {
+    color: #333;
+    padding-top: 4px;
+}
+
+.cm-control > span {
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.cm-control img {
+    width: 40px;
+    height: 40px;
+}
+
 .gridster .gridster-item {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     background: white;
