@@ -104,10 +104,14 @@ angular.module('app')
                 {
                     title: 'Map',
                     settings: {
-                        sizeX: 3,
-                        sizeY: 3,
-                        minSizeX: 2,
-                        minSizeY: 2,
+                        //sizeX: 6,
+                        //sizeY: 3,
+                        //minSizeX: 6,
+                        //minSizeY: 3,
+                        sizeX: 1,
+                        sizeY: 1,
+                        minSizeX: 1,
+                        minSizeY: 1,
                         template: '<wwa-map></wwa-map>',
                         widgetSettings: {
                             id: 5000,
