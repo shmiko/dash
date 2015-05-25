@@ -3,7 +3,13 @@
 angular.module("cmFramework").controller("cmFrameworkController",
     ['$scope', '$window', '$timeout', '$rootScope', '$location',
         function ($scope, $window, $timeout, $rootScope, $location) {
+            //$scope.layout = 'normal';
 
+            //$scope.layouts = [
+            //    { name: 'Boring', url: 'normal' },
+            //    { name: 'Circles', url: 'circle' },
+            //    { name: 'In Your Face', url: 'large' }
+            //];
             $scope.isMenuVisible = false;
             $scope.isMenuButtonVisible = false;
             $scope.isMenuVertical = false;
