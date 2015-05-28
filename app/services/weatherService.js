@@ -1,4 +1,3 @@
-// SERVICES
 "use strict";
 
 var app = angular.module('app');// DIRECTIVES
