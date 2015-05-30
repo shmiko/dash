@@ -9,7 +9,7 @@
 }
 
 .wwa-weather-heading {
-    background-color: red;
+    background-color: #ff9432;
     color: white;
     height: 32px;
     padding-top: 2px;
@@ -41,7 +41,7 @@
 }
 
 .wwa-weather-view {
-    background-color: rgba(255, 56, 230, 0.7);
+    background-color: rgba(255, 32, 66, 0.7);
     /*position: absolute;*/
     /*right: 5px;*/
     /*bottom: 38px;*/
