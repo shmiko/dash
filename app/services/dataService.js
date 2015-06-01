@@ -6,6 +6,8 @@ angular.module('app').factory('dataService',
 
             var home = [];
 
+            var test = '';
+
             var locations = [
                 {
                     id: 1000,
