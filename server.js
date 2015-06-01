@@ -14,6 +14,7 @@ var mimeTypes = {
     "css" : "text/css"
 };
 
+var port = process.env.PORT || 8080;
 // Create Server
 http.createServer(function(req, res){
     var uri = url.parse(req.url).pathname;
@@ -47,4 +48,6 @@ http.createServer(function(req, res){
         res.write('500 Internal Error\n');
         res.end();
     }
-}).listen(process.env.PORT || 8080);
+}).listen(port, function(){
+    console.log('Listening on ' + port);
+});
