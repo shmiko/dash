@@ -4,6 +4,8 @@ angular.module('app').factory('dataService',
     ['$timeout',
         function ($timeout) {
 
+            var home = [];
+
             var locations = [
                 {
                     id: 1000,
