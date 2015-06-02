@@ -8,6 +8,7 @@ angular.module('app').factory('dataService',
 
             var test = '';
 
+            var two = {};
 
             var locations = [
                 {
