@@ -3,7 +3,7 @@
 angular.module("app", ["ngRoute", "cmFramework", "ngStorage", "ui.calendar", "uiGmapgoogle-maps",'ngMaterial',"ngResource"])
     .config(function($mdThemingProvider) {
         $mdThemingProvider.theme('default')
-            .primaryPalette('pink')
-            .accentPalette('orange');
+            .primaryPalette('orange')
+            .accentPalette('blue');
     });
 

@@ -33,6 +33,4 @@ module.exports = function(app) {
         showStack: true
     }));
 
-};/**
- * Created by pauljones on 19/05/15.
- */
+};
