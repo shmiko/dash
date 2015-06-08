@@ -3,7 +3,7 @@
  */
 "use strict";
 
-angular.module('cmFramework').directive('cmControl', function () {
+angular.module("cmFramework").directive("cmControl", function () {
     return {
         templateUrl: 'ext-modules/cmFramework/cmControl/cmControlTemplate.html'
     };

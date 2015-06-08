@@ -87,8 +87,8 @@ angular.module('app').config(['$routeProvider','uiGmapGoogleMapApiProvider', fun
         {
             url: '/back',
             config: {
-                templateUrl: 'app/static/back.html'
-                //controller: 'AppCtrl'
+                templateUrl: 'app/static/back.html',
+                controller: 'AppCtrl'
 
             }
         }
