@@ -1,6 +1,8 @@
-document.body.innerHTML = document.body.innerHTML.replace(/{{{amp}}}/g, '&');
 
-angular.module('app')
+(function() {
+    "use strict";
+
+    angular.module('app')
     .controller('materialController', function ($scope, $timeout, $mdSidenav, $mdUtil, $log) {
 
         $scope.toggleLeft = buildToggler('left');
@@ -40,3 +42,4 @@ angular.module('app')
                 });
         };
     });
+})();
