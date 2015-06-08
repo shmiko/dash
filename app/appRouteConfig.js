@@ -94,7 +94,7 @@ angular.module('app')
             }
         },
         {
-            url: '/home',
+            url: '/layout',
             config: {
                 template: '<cm-layout></cm-layout>'
 
