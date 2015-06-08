@@ -12,4 +12,4 @@ angular.module('app')
             templateUrl: 'app/directives/cmLayoutDirective/layout.html'
             //controller: colorsController
         }
-    }])
+    }]);

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0281c158-8fe1-45f5-9612-0b722f3c33aa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/directives/cmLayoutDirective/layoutController.js" afterPath="$PROJECT_DIR$/app/directives/cmLayoutDirective/layoutController.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/directives/cmLayoutDirective/layoutDirective.js" afterPath="$PROJECT_DIR$/app/directives/cmLayoutDirective/cmLayoutDirective.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="1257a8f8-6ab7-4e43-a8e9-7cdaf914b7c3" name="New changelist" comment="" />
@@ -65,10 +66,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layoutController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="layoutController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/directives/cmLayoutDirective/layoutController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5973451">
+            <state vertical-scroll-proportion="0.0">
               <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
               <folding>
                 <element signature="e#0#43#0" expanded="false" />
@@ -100,8 +101,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.5">
-              <caret line="80" column="83" selection-start-line="80" selection-start-column="83" selection-end-line="80" selection-end-column="83" />
+            <state vertical-scroll-proportion="-15.625">
+              <caret line="101" column="67" selection-start-line="101" selection-start-column="67" selection-end-line="101" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -117,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layoutDirective.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/directives/cmLayoutDirective/layoutDirective.js">
+      <file leaf-file-name="cmLayoutDirective.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/directives/cmLayoutDirective/cmLayoutDirective.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.26548672">
+              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
               <folding>
                 <element signature="e#0#43#0" expanded="false" />
               </folding>
@@ -178,7 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/modals.html" />
         <option value="$PROJECT_DIR$/app/static/lost.html" />
         <option value="$PROJECT_DIR$/app/static/test_background.css" />
         <option value="$PROJECT_DIR$/bower_components/fullcalendar/gcal.js" />
@@ -225,10 +225,11 @@
         <option value="$PROJECT_DIR$/app/directives/wwaColorsDirective/colorsController.js" />
         <option value="$PROJECT_DIR$/app/directives/cmLayoutDirective/layout.html" />
         <option value="$PROJECT_DIR$/app/static/materialController.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/app/appRouteConfig.js" />
         <option value="$PROJECT_DIR$/app/directives/cmLayoutDirective/layoutDirective.js" />
         <option value="$PROJECT_DIR$/app/directives/cmLayoutDirective/layoutController.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/app/directives/cmLayoutDirective/cmLayoutDirective.js" />
       </list>
     </option>
   </component>
@@ -603,12 +604,6 @@
       <option name="number" value="Default" />
       <updated>1430390572026</updated>
     </task>
-    <task id="LOCAL-00119" summary="testing modals.....">
-      <created>1432302090965</created>
-      <option name="number" value="00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1432302090965</updated>
-    </task>
     <task id="LOCAL-00120" summary="modal working">
       <created>1432328399285</created>
       <option name="number" value="00120" />
@@ -897,7 +892,13 @@
       <option name="project" value="LOCAL" />
       <updated>1433750772343</updated>
     </task>
-    <option name="localTasksCounter" value="168" />
+    <task id="LOCAL-00168" summary="material design add directive">
+      <created>1433750890877</created>
+      <option name="number" value="00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1433750890877</updated>
+    </task>
+    <option name="localTasksCounter" value="169" />
     <servers />
   </component>
   <component name="TodoView">
@@ -911,7 +912,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1173" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32562444" sideWeight="0.49224183" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991727" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1114,6 +1115,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1208,6 +1210,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5230312">
           <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1332,14 +1335,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5">
-          <caret line="80" column="83" selection-start-line="80" selection-start-column="83" selection-end-line="80" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/static/materialController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1364,16 +1359,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/directives/cmLayoutDirective/layoutDirective.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/directives/cmLayoutDirective/layout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
@@ -1392,6 +1377,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/directives/cmLayoutDirective/layoutController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.625">
+          <caret line="101" column="67" selection-start-line="101" selection-start-column="67" selection-end-line="101" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/directives/wwaMapsDirective/wwaMapsDirective.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1400,10 +1403,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/directives/cmLayoutDirective/layoutController.js">
+    <entry file="file://$PROJECT_DIR$/app/directives/cmLayoutDirective/cmLayoutDirective.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5973451">
-          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.26548672">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
           <folding>
             <element signature="e#0#43#0" expanded="false" />
           </folding>
