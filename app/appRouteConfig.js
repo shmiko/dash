@@ -96,8 +96,7 @@ angular.module('app')
         {
             url: '/home',
             config: {
-                templateUrl: 'app/directives/cmLayoutDirective/layout.html',
-                controller: 'layoutController'
+                template: '<cm-layout></cm-layout>'
 
             }
         }

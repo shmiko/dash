@@ -1,7 +1,6 @@
 document.body.innerHTML = document.body.innerHTML.replace(/{{{amp}}}/g, '&');
 
-angular
-    .module('app')
+angular.module('app')
     .controller('materialController', function ($scope, $timeout, $mdSidenav, $mdUtil, $log) {
 
         $scope.toggleLeft = buildToggler('left');
