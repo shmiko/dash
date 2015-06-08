@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0281c158-8fe1-45f5-9612-0b722f3c33aa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/appRouteConfig.js" afterPath="$PROJECT_DIR$/app/appRouteConfig.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="1257a8f8-6ab7-4e43-a8e9-7cdaf914b7c3" name="New changelist" comment="" />
@@ -70,8 +70,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5733945">
-              <caret line="92" column="45" selection-start-line="92" selection-start-column="45" selection-end-line="92" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.6880734">
+              <caret line="104" column="68" selection-start-line="104" selection-start-column="68" selection-end-line="104" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -180,13 +180,13 @@
         <option value="$PROJECT_DIR$/ext-modules/cmFramework/cmFrameworkTemplate.html" />
         <option value="$PROJECT_DIR$/app/appController.js" />
         <option value="$PROJECT_DIR$/app/static/materialController.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/app/static/back.html" />
         <option value="$PROJECT_DIR$/app/directives/cmLayoutDirective/layoutDirective.js" />
         <option value="$PROJECT_DIR$/app/directives/wwaColorsDirective/colorsController.js" />
         <option value="$PROJECT_DIR$/app/directives/cmLayoutDirective/layoutController.js" />
         <option value="$PROJECT_DIR$/app/directives/cmLayoutDirective/layout.html" />
         <option value="$PROJECT_DIR$/app/appRouteConfig.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -499,12 +499,6 @@
       <option name="number" value="Default" />
       <updated>1430390572026</updated>
     </task>
-    <task id="LOCAL-00115" summary="working on weather widget refactor...">
-      <created>1432243627017</created>
-      <option name="number" value="00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1432243627017</updated>
-    </task>
     <task id="LOCAL-00116" summary="...">
       <created>1432281535219</created>
       <option name="number" value="00116" />
@@ -793,7 +787,13 @@
       <option name="project" value="LOCAL" />
       <updated>1433749819479</updated>
     </task>
-    <option name="localTasksCounter" value="164" />
+    <task id="LOCAL-00164" summary="material design add directive">
+      <created>1433749978441</created>
+      <option name="number" value="00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1433749978441</updated>
+    </task>
+    <option name="localTasksCounter" value="165" />
     <servers />
   </component>
   <component name="TodoView">
@@ -807,7 +807,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1173" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293247" sideWeight="0.49099362" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15294118" sideWeight="0.45130315" order="2" side_tool="true" content_ui="tabs" />
@@ -819,7 +819,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15282215" sideWeight="0.5486968" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34690103" sideWeight="0.5235328" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34690103" sideWeight="0.47646716" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34690103" sideWeight="0.47646716" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1297,8 +1297,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5733945">
-          <caret line="92" column="45" selection-start-line="92" selection-start-column="45" selection-end-line="92" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.6880734">
+          <caret line="104" column="68" selection-start-line="104" selection-start-column="68" selection-end-line="104" selection-end-column="68" />
           <folding />
         </state>
       </provider>
