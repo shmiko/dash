@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0281c158-8fe1-45f5-9612-0b722f3c33aa" name="Default" comment="tidy">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/appRouteConfig.js" afterPath="$PROJECT_DIR$/app/appRouteConfig.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ext-modules/cmFramework/cmControl/cmControlDirective.js" afterPath="$PROJECT_DIR$/ext-modules/cmFramework/cmControl/cmControlDirective.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ext-modules/cmFramework/cmFrameworkTemplate.html" afterPath="$PROJECT_DIR$/ext-modules/cmFramework/cmFrameworkTemplate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.html" afterPath="$PROJECT_DIR$/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index-copy.html" afterPath="$PROJECT_DIR$/index-copy.html" />
+    <list default="true" id="0281c158-8fe1-45f5-9612-0b722f3c33aa" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/materialController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/directives/wwaMapsDirective/map.html" afterPath="$PROJECT_DIR$/app/directives/wwaMapsDirective/map.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="1257a8f8-6ab7-4e43-a8e9-7cdaf914b7c3" name="New changelist" comment="" />
@@ -42,11 +37,33 @@
           <file leaf-file-name="back.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/static/back.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-19.75">
-                  <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+                <state vertical-scroll-proportion="-13.125">
+                  <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="materialController.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/static/materialController.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.44247788">
+                  <caret line="20" column="75" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
+                  <folding>
+                    <element signature="e#1292#1335#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-15.833333">
+                  <caret line="78" column="51" selection-start-line="78" selection-start-column="51" selection-end-line="78" selection-end-column="51" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -71,11 +88,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="appRouteConfig.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="appRouteConfig.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/appRouteConfig.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="1.1548673">
-                  <caret line="90" column="16" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="77" column="10" selection-start-line="77" selection-start-column="10" selection-end-line="77" selection-end-column="10" />
                   <folding />
                 </state>
               </provider>
@@ -86,6 +103,16 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
                   <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="tests.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/static/tests.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-0.0">
+                  <caret line="0" column="33" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="33" />
                   <folding />
                 </state>
               </provider>
@@ -123,8 +150,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="Html5" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -134,7 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/demo.css" />
         <option value="$PROJECT_DIR$/modalModule.js" />
         <option value="$PROJECT_DIR$/modal.js" />
@@ -160,7 +186,6 @@
         <option value="$PROJECT_DIR$/ext-modules/cmMenu/cmMenuController.js" />
         <option value="$PROJECT_DIR$/ext-modules/cmMenu/cmMenuModule.js" />
         <option value="$PROJECT_DIR$/ext-modules/cmDashboard/cmDashboardDirective.js" />
-        <option value="$PROJECT_DIR$/app/appController.js" />
         <option value="$PROJECT_DIR$/app/widgets/wwaInventory/wwaInventory.css" />
         <option value="$PROJECT_DIR$/app/directives/wwaDashboardDirective.js" />
         <option value="$PROJECT_DIR$/ext-modules/cmFramework/cmFrameworkController.js" />
@@ -182,9 +207,11 @@
         <option value="$PROJECT_DIR$/index-copy.html" />
         <option value="$PROJECT_DIR$/ext-modules/cmFramework/cmControl/cmControlDirective.js" />
         <option value="$PROJECT_DIR$/ext-modules/cmFramework/cmFrameworkTemplate.html" />
+        <option value="$PROJECT_DIR$/app/appRouteConfig.js" />
+        <option value="$PROJECT_DIR$/app/appController.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/app/static/back.html" />
-        <option value="$PROJECT_DIR$/app/appRouteConfig.js" />
+        <option value="$PROJECT_DIR$/app/static/materialController.js" />
       </list>
     </option>
   </component>
@@ -315,6 +342,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="directives" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -456,12 +519,6 @@
       <created>1430390572026</created>
       <option name="number" value="Default" />
       <updated>1430390572026</updated>
-    </task>
-    <task id="LOCAL-00108" summary="changed address">
-      <created>1432157683974</created>
-      <option name="number" value="00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1432157683974</updated>
     </task>
     <task id="LOCAL-00109" summary="css">
       <created>1432157848096</created>
@@ -751,7 +808,13 @@
       <option name="project" value="LOCAL" />
       <updated>1433631263926</updated>
     </task>
-    <option name="localTasksCounter" value="157" />
+    <task id="LOCAL-00157" summary="semantics">
+      <created>1433734913187</created>
+      <option name="number" value="00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1433734913188</updated>
+    </task>
+    <option name="localTasksCounter" value="158" />
     <servers />
   </component>
   <component name="TodoView">
@@ -765,14 +828,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1912" height="1173" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32562444" sideWeight="0.49224183" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293247" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991727" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34690103" sideWeight="0.5235328" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34690103" sideWeight="0.47646716" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34690103" sideWeight="0.47646716" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15294118" sideWeight="0.45130315" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293247" sideWeight="0.49099362" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963988" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -825,7 +888,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="testing modals....." />
     <MESSAGE value="modal working" />
     <MESSAGE value="modal working add md" />
     <MESSAGE value="MD sidebars" />
@@ -850,7 +912,8 @@
     <MESSAGE value="tidy" />
     <MESSAGE value="fulllist" />
     <MESSAGE value="wc3" />
-    <option name="LAST_COMMIT_MESSAGE" value="wc3" />
+    <MESSAGE value="semantics" />
+    <option name="LAST_COMMIT_MESSAGE" value="semantics" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -866,13 +929,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ext-modules/cmMenu/cmMenuTemplate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25267994">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ext-modules/cmMenu/cmMenuModule.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1185,30 +1241,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8023774">
-          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/appController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34433284">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/static/tests.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="33" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ext-modules/cmFramework/cmControl/cmControlTemplate.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20059435">
@@ -1222,24 +1254,6 @@
         <state vertical-scroll-proportion="0.19368723">
           <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/directives/wwaTestsDirective.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/static/back.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.75">
-          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1261,9 +1275,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/appRouteConfig.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1548673">
-          <caret line="90" column="16" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="77" column="10" selection-start-line="77" selection-start-column="10" selection-end-line="77" selection-end-column="10" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/directives/wwaTestsDirective.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/tests.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="33" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.833333">
+          <caret line="78" column="51" selection-start-line="78" selection-start-column="51" selection-end-line="78" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/appController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19911504">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/back.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.125">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/materialController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44247788">
+          <caret line="20" column="75" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
+          <folding>
+            <element signature="e#1292#1335#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
