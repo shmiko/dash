@@ -1,6 +1,7 @@
 ﻿"use strict";
 
-angular.module('app').config(['$routeProvider','uiGmapGoogleMapApiProvider', function ($routeProvider,uiGmapGoogleMapApiProvider) {
+angular.module('app')
+    .config(['$routeProvider','uiGmapGoogleMapApiProvider', function ($routeProvider,uiGmapGoogleMapApiProvider) {
     uiGmapGoogleMapApiProvider.configure({
         //    key: 'your api key',
         v: '3.17'
@@ -87,8 +88,8 @@ angular.module('app').config(['$routeProvider','uiGmapGoogleMapApiProvider', fun
         {
             url: '/back',
             config: {
-                templateUrl: 'app/static/back.html'
-                //controller: 'AppCtrl'
+                templateUrl: 'app/static/back.html',
+                controller: 'testController'
 
             }
         }
