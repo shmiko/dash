@@ -1,8 +1,12 @@
+document.body.innerHTML = document.body.innerHTML.replace(/{{{amp}}}/g, '&');
+
 angular
-    .module('app', ['ngMaterial'])
-    .controller('AppCtrl', function ($scope, $timeout, $mdSidenav, $mdUtil, $log) {
+    .module('app')
+    .controller('materialController', function ($scope, $timeout, $mdSidenav, $mdUtil, $log) {
+
         $scope.toggleLeft = buildToggler('left');
         $scope.toggleRight = buildToggler('right');
+
         /**
          * Build handler to open/close a SideNav; when animation finishes
          * report completion in console
@@ -15,8 +19,10 @@ angular
                         $log.debug("toggle " + navID + " is done");
                     });
             },300);
+
             return debounceFn;
         }
+
     })
     .controller('LeftCtrl', function ($scope, $timeout, $mdSidenav, $log) {
         $scope.close = function () {
@@ -24,6 +30,7 @@ angular
                 .then(function () {
                     $log.debug("close LEFT is done");
                 });
+
         };
     })
     .controller('RightCtrl', function ($scope, $timeout, $mdSidenav, $log) {
@@ -33,6 +40,4 @@ angular
                     $log.debug("close RIGHT is done");
                 });
         };
-    });/**
- * Created by pauljones on 8/06/15.
- */
+    });
