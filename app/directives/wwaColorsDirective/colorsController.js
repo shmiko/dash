@@ -1,6 +1,6 @@
 (function(){
     "use strict";
-    angular.module('app', ['ngMaterial'])
+    angular.module("app")
         .controller('testController', function($scope, $timeout, $mdSidenav, $mdComponentRegistry, $log) {
 
             // Option #1
