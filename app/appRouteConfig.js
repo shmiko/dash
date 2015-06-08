@@ -106,6 +106,7 @@ angular.module('app')
         $routeProvider.when(route.url, route.config);
     });
 
-    $routeProvider.otherwise({ redirectTo: '/dashboard' });
+    $routeProvider.otherwise({ redirectTo: '/layout' });
+    //$routeProvider.otherwise({ redirectTo: '/dashboard' });
 
 }]);
