@@ -25,6 +25,12 @@ body {
     width: 36px;
 }
 
+md-sidenav.md-locked-open {
+    width: 354px;
+    min-width: 304px;
+    max-width: 404px;
+}
+
 md-toolbar h1 {
     font-weight: normal;
 }
