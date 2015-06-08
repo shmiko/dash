@@ -92,6 +92,14 @@ angular.module('app')
                 controller: 'testController'
 
             }
+        },
+        {
+            url: '/home',
+            config: {
+                templateUrl: 'app/directives/cmLayoutDirective/layout.html',
+                controller: 'layoutController'
+
+            }
         }
     ];
 
