@@ -74,8 +74,8 @@
       <file leaf-file-name="layout.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/directives/cmLayoutDirective/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7618438">
-              <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.4353393">
+              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -595,18 +595,6 @@
       <option name="number" value="Default" />
       <updated>1430390572026</updated>
     </task>
-    <task id="LOCAL-00133" summary=".">
-      <created>1432677337368</created>
-      <option name="number" value="00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1432677337368</updated>
-    </task>
-    <task id="LOCAL-00134" summary="css">
-      <created>1432725871048</created>
-      <option name="number" value="00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1432725871049</updated>
-    </task>
     <task id="LOCAL-00135" summary="update to latest working">
       <created>1432726214976</created>
       <option name="number" value="00135" />
@@ -889,7 +877,19 @@
       <option name="project" value="LOCAL" />
       <updated>1433797230588</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <task id="LOCAL-00182" summary="material design add layout directive">
+      <created>1433968505257</created>
+      <option name="number" value="00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1433968505257</updated>
+    </task>
+    <task id="LOCAL-00183" summary="material design add layout directive">
+      <created>1434058982126</created>
+      <option name="number" value="00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1434058982126</updated>
+    </task>
+    <option name="localTasksCounter" value="184" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1415,8 +1415,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/directives/cmLayoutDirective/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7618438">
-          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.4353393">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
