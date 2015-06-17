@@ -32,6 +32,7 @@ http.createServer(function(req, res){
     }
 
 
+
     // Check if file/directory
     if(stats.isFile()){
         var mimeType = mimeTypes[path.extname(fileName).split(".").reverse()[0]];
