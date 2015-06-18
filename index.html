@@ -1,132 +1,132 @@
 ﻿<!DOCTYPE html>
 <html ng-app="app">
     <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>CalMapit</title>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href="/content/bootstrap.css" rel="stylesheet" />
-    <link href="/bower_components/fullcalendar/fullcalendar.css" rel="stylesheet"/>
-    <link href="/content/font-awesome.min.css" rel="stylesheet" />
-    <link href="/content/angular-gridster.min.css" rel="stylesheet" />
-    <link href="/dist/cmFramework.css" rel="stylesheet" />
-    <link href="demo.css" rel="stylesheet"/>
-    <!--content/bootstrap.css-->
-    <!--Material Design-->
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
-    <link href="/app/app.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>CalMapit</title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link href="/content/bootstrap.css" rel="stylesheet" />
+        <link href="/bower_components/fullcalendar/fullcalendar.css" rel="stylesheet"/>
+        <link href="/content/font-awesome.min.css" rel="stylesheet" />
+        <link href="/content/angular-gridster.min.css" rel="stylesheet" />
+        <link href="/dist/cmFramework.css" rel="stylesheet" />
+        <link href="demo.css" rel="stylesheet"/>
+        <!--content/bootstrap.css-->
+        <!--Material Design-->
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+        <link href="/app/app.css" rel="stylesheet" />
 
-    <!--ex module css-->
-    <link href="ext-modules/cmFramework/cmFramework.css" rel="stylesheet" />
-    <link href="ext-modules/cmMenu/cmMenu.css" rel="stylesheet" />
+        <!--ex module css-->
+        <link href="ext-modules/cmFramework/cmFramework.css" rel="stylesheet" />
+        <link href="ext-modules/cmMenu/cmMenu.css" rel="stylesheet" />
 
-    <!-- widget css -->
-    <link href="/app/widgets/wwaTemperature/wwaTemperature.css" rel="stylesheet" />
-    <link href="/app/widgets/wwaInventory/wwaInventory.css" rel="stylesheet" />
-    <link href="/app/widgets/wwaEmployee/wwaEmployee.css" rel="stylesheet" />
-    <link href="/app/widgets/wwaMap/wwaMap.css" rel="stylesheet" />
-    <link href="/app/widgets/wwaWeather/wwaWeather.css" rel="stylesheet" />
-    <link href="/app/static/tests.css" rel="stylesheet" />
-    <!--<link href="/app/static/test_background.css" rel="stylesheet" />-->
+        <!-- widget css -->
+        <link href="/app/widgets/wwaTemperature/wwaTemperature.css" rel="stylesheet" />
+        <link href="/app/widgets/wwaInventory/wwaInventory.css" rel="stylesheet" />
+        <link href="/app/widgets/wwaEmployee/wwaEmployee.css" rel="stylesheet" />
+        <link href="/app/widgets/wwaMap/wwaMap.css" rel="stylesheet" />
+        <link href="/app/widgets/wwaWeather/wwaWeather.css" rel="stylesheet" />
+        <link href="/app/static/tests.css" rel="stylesheet" />
+        <!--<link href="/app/static/test_background.css" rel="stylesheet" />-->
 
-    <link href="ext-modules/cmDashboard/cmDashboard.css" rel="stylesheet" />
+        <link href="ext-modules/cmDashboard/cmDashboard.css" rel="stylesheet" />
 
-    <!-- Vendor Scripts -->
-    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="/bower_components/jquery-ui/ui/jquery-ui.js"></script>
-    <script src="/bower_components/moment/min/moment.min.js"></script>
-    <script src="/bower_components/angular/angular.min.js"></script>
-    <script src="/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
-    <script src="/bower_components/angular-route/angular-route.min.js"></script>
-    <script src="/bower_components/angular-animate/angular-animate.min.js"></script>
-    <script src="/bower_components/angular-ui-calendar/src/calendar.js"></script>
-    <script src="/bower_components/fullcalendar/fullcalendar.js"></script>
-    <script src="/bower_components/fullcalendar/gcal.js"></script>
-    <!--<script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>-->
-    <script src="/bower_components/lodash/dist/lodash.min.js"></script>
-    <script src="/bower_components/spin.js/spin.js"></script>
-    <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-    <script src="/bower_components/ace-builds/src-min-noconflict/ace.js"></script>
+        <!-- Vendor Scripts -->
+        <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="/bower_components/jquery-ui/ui/jquery-ui.js"></script>
+        <script src="/bower_components/moment/min/moment.min.js"></script>
+        <script src="/bower_components/angular/angular.min.js"></script>
+        <script src="/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+        <script src="/bower_components/angular-route/angular-route.min.js"></script>
+        <script src="/bower_components/angular-animate/angular-animate.min.js"></script>
+        <script src="/bower_components/angular-ui-calendar/src/calendar.js"></script>
+        <script src="/bower_components/fullcalendar/fullcalendar.js"></script>
+        <script src="/bower_components/fullcalendar/gcal.js"></script>
+        <!--<script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>-->
+        <script src="/bower_components/lodash/dist/lodash.min.js"></script>
+        <script src="/bower_components/spin.js/spin.js"></script>
+        <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+        <script src="/bower_components/ace-builds/src-min-noconflict/ace.js"></script>
 
-    <script src="/bower_components/angular-google-maps/dist/angular-google-maps.min.js"></script>
-    <script src="/bower_components/angular-ui-ace/ui-ace.min.js"></script>
-    <script src="/bower_components/showdown/compressed/Showdown.js"></script>
-    <script src="/bower_components/angular-ui-grid/ui-grid.min.js"></script>
-    <script src="/bower_components/csv-js/csv.js"></script>
-    <script src="/bower_components/angular-ui-select/dist/select.min.js"></script>
-    <script src="/bower_components/angular-ui-alias/src/alias.js"></script>
+        <script src="/bower_components/angular-google-maps/dist/angular-google-maps.min.js"></script>
+        <script src="/bower_components/angular-ui-ace/ui-ace.min.js"></script>
+        <script src="/bower_components/showdown/compressed/Showdown.js"></script>
+        <script src="/bower_components/angular-ui-grid/ui-grid.min.js"></script>
+        <script src="/bower_components/csv-js/csv.js"></script>
+        <script src="/bower_components/angular-ui-select/dist/select.min.js"></script>
+        <script src="/bower_components/angular-ui-alias/src/alias.js"></script>
 
-     <!--<script src="bower_components/jquery/dist/jquery.min.js"></script>-->
-    <!--<script src="bower_components/jquery-ui/ui/jquery-ui.js"></script>-->
-    <!--<script src="bower_components/angular/angular.min.js"></script>-->
-    <script src="/bower_components/angular-gridster.min.js"></script>
-    <script src="/bower_components/bootstrap.min.js"></script>
-    <script src="/bower_components/angular-aria/angular-aria.js"></script>
-    <script src="/bower_components/angular-material/angular-material.js"></script>
-    <script src="/bower_components/angular-resource/angular-resource.js"></script>
+         <!--<script src="bower_components/jquery/dist/jquery.min.js"></script>-->
+        <!--<script src="bower_components/jquery-ui/ui/jquery-ui.js"></script>-->
+        <!--<script src="bower_components/angular/angular.min.js"></script>-->
+        <script src="/bower_components/angular-gridster.min.js"></script>
+        <script src="/bower_components/bootstrap.min.js"></script>
+        <script src="/bower_components/angular-aria/angular-aria.js"></script>
+        <script src="/bower_components/angular-material/angular-material.js"></script>
+        <script src="/bower_components/angular-resource/angular-resource.js"></script>
 
-    <!--<script src="bower_components/angular-ui/ui-bootstrap-tpls.min.js"></script>-->
-    <!--<script src="bower_components/angular-ui-calendar/src/calendar.js"></script>-->
-    <!--<script src="bower_components/fullcalendar/fullcalendar.js"></script>-->
-    <script src="/Scripts/ngStorage.min.js"></script>
+        <!--<script src="bower_components/angular-ui/ui-bootstrap-tpls.min.js"></script>-->
+        <!--<script src="bower_components/angular-ui-calendar/src/calendar.js"></script>-->
+        <!--<script src="bower_components/fullcalendar/fullcalendar.js"></script>-->
+        <script src="/Scripts/ngStorage.min.js"></script>
 
-    <!--ex module files-->
-    <script src="ext-modules/cmMenu/cmMenuModule.js"></script>
-    <script src="ext-modules/cmMenu/cmMenuController.js"></script>
-    <script src="ext-modules/cmMenu/cmMenuDirective.js"></script>
-    <!--<script src="ext-modules/cmMenu/cmMenuItemDirective.js"></script>-->
-    <!--<script src="ext-modules/cmMenu/cmMenuGroupDirective.js"></script>-->
-    <!--<script src="ext-modules/cmDashboard/cmDashboardModule.js"></script>-->
-    <!--<script src="ext-modules/cmDashboard/cmDashboardDirective.js"></script>-->
-    <!--<script src="ext-modules/cmDashboard/cmWidgetBodyDirective.js"></script>-->
+        <!--ex module files-->
+        <script src="ext-modules/cmMenu/cmMenuModule.js"></script>
+        <script src="ext-modules/cmMenu/cmMenuController.js"></script>
+        <script src="ext-modules/cmMenu/cmMenuDirective.js"></script>
+        <!--<script src="ext-modules/cmMenu/cmMenuItemDirective.js"></script>-->
+        <!--<script src="ext-modules/cmMenu/cmMenuGroupDirective.js"></script>-->
+        <!--<script src="ext-modules/cmDashboard/cmDashboardModule.js"></script>-->
+        <!--<script src="ext-modules/cmDashboard/cmDashboardDirective.js"></script>-->
+        <!--<script src="ext-modules/cmDashboard/cmWidgetBodyDirective.js"></script>-->
 
-    <!--<script src="ext-modules/cmFramework/cmFrameworkModule.js"></script>-->
-    <!--<script src="ext-modules/cmFramework/cmFrameworkController.js"></script>-->
-    <!--<script src="ext-modules/cmFramework/cmFrameworkDirective.js"></script>-->
-    <!--<script src="ext-modules/cmFramework/cmUserProfile/cmUserProfileSmallDirective.js"></script>-->
-    <!--<script src="ext-modules/cmFramework/cmUserProfile/cmUserProfileDirective.js"></script>-->
-    <!--<script src="ext-modules/cmFramework/cmControl/cmControlDirective.js"></script>-->
+        <!--<script src="ext-modules/cmFramework/cmFrameworkModule.js"></script>-->
+        <!--<script src="ext-modules/cmFramework/cmFrameworkController.js"></script>-->
+        <!--<script src="ext-modules/cmFramework/cmFrameworkDirective.js"></script>-->
+        <!--<script src="ext-modules/cmFramework/cmUserProfile/cmUserProfileSmallDirective.js"></script>-->
+        <!--<script src="ext-modules/cmFramework/cmUserProfile/cmUserProfileDirective.js"></script>-->
+        <!--<script src="ext-modules/cmFramework/cmControl/cmControlDirective.js"></script>-->
 
-    <script src="/dist/cmFramework.js"></script>
+        <script src="/dist/cmFramework.js"></script>
 
-    <script src="/app/appModule.js"></script>
-    <script src="/app/appConfig.js"></script>
-    <script src="/app/appRouteConfig.js"></script>
-    <script src="/app/appController.js"></script>
-    <script src="/app/directives/wwaCalendarDirective/calendarController.js"></script>
-    <!--<script src="/app/directives/wwaMapsDirective/mapController.js"></script>-->
-    <script src="/app/directives/wwaWeatherDirective/weathersController.js"></script>
-    <!--<script src="app/directives/wwaWeatherDirective/directives/weatherReport.html"></script>-->
-    <script src="/app/services/dataService.js"></script>
-    <script src="/app/services/weatherService.js"></script>
-    <!--<script src="app/static/materialController.js"></script>-->
-    <!-- Directives JavaScript files-->
-    <!--<script src="app/directives/wwaMapsDirective/mapController.js"></script>-->
-    <script src="/app/directives/wwaDashboardDirective.js"></script>
-    <script src="/app/directives/wwaMapsDirective/wwaMapsDirective.js"></script>
-    <script src="/app/directives/wwaCalendarDirective/wwaCalendarDirective.js"></script>
-    <script src="/app/directives/wwaTestsDirective.js"></script>
-    <script src="/app/directives/wwaColorsDirective/wwaColorsDirective.js"></script>
-    <script src="/app/directives/wwaWeatherDirective/wwaWeatherDirective.js"></script>
-    <script src="/app/directives/cmLayoutDirective/cmLayoutDirective.js"></script>
+        <script src="/app/appModule.js"></script>
+        <script src="/app/appConfig.js"></script>
+        <script src="/app/appRouteConfig.js"></script>
+        <script src="/app/appController.js"></script>
+        <script src="/app/directives/wwaCalendarDirective/calendarController.js"></script>
+        <!--<script src="/app/directives/wwaMapsDirective/mapController.js"></script>-->
+        <script src="/app/directives/wwaWeatherDirective/weathersController.js"></script>
+        <!--<script src="app/directives/wwaWeatherDirective/directives/weatherReport.html"></script>-->
+        <script src="/app/services/dataService.js"></script>
+        <script src="/app/services/weatherService.js"></script>
+        <!--<script src="app/static/materialController.js"></script>-->
+        <!-- Directives JavaScript files-->
+        <!--<script src="app/directives/wwaMapsDirective/mapController.js"></script>-->
+        <script src="/app/directives/wwaDashboardDirective.js"></script>
+        <script src="/app/directives/wwaMapsDirective/wwaMapsDirective.js"></script>
+        <script src="/app/directives/wwaCalendarDirective/wwaCalendarDirective.js"></script>
+        <script src="/app/directives/wwaTestsDirective.js"></script>
+        <script src="/app/directives/wwaColorsDirective/wwaColorsDirective.js"></script>
+        <script src="/app/directives/wwaWeatherDirective/wwaWeatherDirective.js"></script>
+        <script src="/app/directives/cmLayoutDirective/cmLayoutDirective.js"></script>
 
-    <!-- widget JavaScript files -->
-    <script src="/app/widgets/wwaTemperature/wwaTemperatureDirective.js"></script>
-    <script src="/app/widgets/wwaInventory/wwaInventoryDirective.js"></script>
-    <script src="/app/widgets/wwaEmployee/wwaEmployeeDirective.js"></script>
-    <script src="/app/widgets/wwaMap/wwaMapDirective.js"></script>
-    <script src="/app/widgets/wwaWeather/wwaWeatherDirective.js"></script>
-    <script src="/app/directives/cmLayoutDirective/layoutController.js"></script>
+        <!-- widget JavaScript files -->
+        <script src="/app/widgets/wwaTemperature/wwaTemperatureDirective.js"></script>
+        <script src="/app/widgets/wwaInventory/wwaInventoryDirective.js"></script>
+        <script src="/app/widgets/wwaEmployee/wwaEmployeeDirective.js"></script>
+        <script src="/app/widgets/wwaMap/wwaMapDirective.js"></script>
+        <script src="/app/widgets/wwaWeather/wwaWeatherDirective.js"></script>
+        <script src="/app/directives/cmLayoutDirective/layoutController.js"></script>
 
-    <!-- setting dialogs -->
-    <script src="/app/dialogs/wwaSelectEmployeeController.js"></script>
-    <script src="/app/dialogs/wwaSelectLocationController.js"></script>
-    <!-- // <script src="/app/dialogs/wwaSelectWeatherLocationController.js"></script> -->
-    <!--<script src="modalModule.js"></script>-->
-    <script src="modalModule.js"></script>
-    <!--<script src="/app/static/background.js"></script>-->
+        <!-- setting dialogs -->
+        <script src="/app/dialogs/wwaSelectEmployeeController.js"></script>
+        <script src="/app/dialogs/wwaSelectLocationController.js"></script>
+        <!-- // <script src="/app/dialogs/wwaSelectWeatherLocationController.js"></script> -->
+        <!--<script src="modalModule.js"></script>-->
+        <script src="modalModule.js"></script>
+        <!--<script src="/app/static/background.js"></script>-->
 
-</head>
+    </head>
     <body class="container-fluid" ng-controller="appController">
 
         <main ng-switch on="state">
