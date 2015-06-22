@@ -66,8 +66,8 @@
       <file leaf-file-name="layout.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/directives/cmLayoutDirective/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5390525">
-              <caret line="44" column="91" selection-start-line="44" selection-start-column="91" selection-end-line="44" selection-end-column="91" />
+            <state vertical-scroll-proportion="0.5006402">
+              <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -431,12 +431,6 @@
       <option name="number" value="Default" />
       <updated>1430390572026</updated>
     </task>
-    <task id="LOCAL-00161" summary="material design fix still...">
-      <created>1433749531024</created>
-      <option name="number" value="00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1433749531024</updated>
-    </task>
     <task id="LOCAL-00162" summary="material design add directive">
       <created>1433749627250</created>
       <option name="number" value="00162" />
@@ -725,7 +719,13 @@
       <option name="project" value="LOCAL" />
       <updated>1434981595590</updated>
     </task>
-    <option name="localTasksCounter" value="210" />
+    <task id="LOCAL-00210" summary="layout c3w">
+      <created>1434981633563</created>
+      <option name="number" value="00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1434981633563</updated>
+    </task>
+    <option name="localTasksCounter" value="211" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1216,8 +1216,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/directives/cmLayoutDirective/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5390525">
-          <caret line="44" column="91" selection-start-line="44" selection-start-column="91" selection-end-line="44" selection-end-column="91" />
+        <state vertical-scroll-proportion="0.5006402">
+          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
