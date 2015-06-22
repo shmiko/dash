@@ -67,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/app/directives/cmLayoutDirective/layout.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.86555696">
-              <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
+              <caret line="64" column="14" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -431,12 +431,6 @@
       <option name="number" value="Default" />
       <updated>1430390572026</updated>
     </task>
-    <task id="LOCAL-00157" summary="semantics">
-      <created>1433734913187</created>
-      <option name="number" value="00157" />
-      <option name="project" value="LOCAL" />
-      <updated>1433734913188</updated>
-    </task>
     <task id="LOCAL-00158" summary="material design fix">
       <created>1433736197997</created>
       <option name="number" value="00158" />
@@ -725,7 +719,13 @@
       <option name="project" value="LOCAL" />
       <updated>1434981443399</updated>
     </task>
-    <option name="localTasksCounter" value="206" />
+    <task id="LOCAL-00206" summary="layout c3w">
+      <created>1434981464740</created>
+      <option name="number" value="00206" />
+      <option name="project" value="LOCAL" />
+      <updated>1434981464740</updated>
+    </task>
+    <option name="localTasksCounter" value="207" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1217,7 +1217,7 @@
     <entry file="file://$PROJECT_DIR$/app/directives/cmLayoutDirective/layout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.86555696">
-          <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
+          <caret line="64" column="14" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
