@@ -15,5 +15,4 @@
         console.log(error.stack);
         console.log(error);
     });
-
 })();
