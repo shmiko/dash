@@ -2,7 +2,6 @@
     'use strict';
     var express = require('express');
     var app = express();
-
     require('./config/config_app')(app);
     require('./config/config_routes')(app);
     // START THE SERVER
