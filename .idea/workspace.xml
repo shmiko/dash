@@ -66,8 +66,8 @@
       <file leaf-file-name="demo.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8198758">
-              <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.8695652">
+              <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -451,12 +451,6 @@
       <option name="number" value="Default" />
       <updated>1430390572026</updated>
     </task>
-    <task id="LOCAL-00184" summary="material design add layout directive">
-      <created>1434138415862</created>
-      <option name="number" value="00184" />
-      <option name="project" value="LOCAL" />
-      <updated>1434138415863</updated>
-    </task>
     <task id="LOCAL-00185" summary="material design add layout directive">
       <created>1434234153401</created>
       <option name="number" value="00185" />
@@ -745,7 +739,13 @@
       <option name="project" value="LOCAL" />
       <updated>1436530997296</updated>
     </task>
-    <option name="localTasksCounter" value="233" />
+    <task id="LOCAL-00233" summary="css">
+      <created>1436531090225</created>
+      <option name="number" value="00233" />
+      <option name="project" value="LOCAL" />
+      <updated>1436531090225</updated>
+    </task>
+    <option name="localTasksCounter" value="234" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1224,8 +1224,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8198758">
-          <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.8695652">
+          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
           <folding />
         </state>
       </provider>
