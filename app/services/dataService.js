@@ -18,7 +18,7 @@ angular.module('app').factory('dataService',
                     guides: 20,
                     rafts: 18,
                     vests: 200,
-                    image: 'mb-bg-fb-06.png'
+                    image: '/gifs/orange-grello.gif'
                 },
                 {
                     id: 1001,
@@ -27,7 +27,7 @@ angular.module('app').factory('dataService',
                     guides: 36,
                     rafts: 22,
                     vests: 250,
-                    image: '11.jpg'
+                    image: '/gifs/greens.gif'
                 },
                 {
                     id: 1002,
@@ -36,7 +36,7 @@ angular.module('app').factory('dataService',
                     guides: 56,
                     rafts: 40,
                     vests: 500,
-                    image: 'mb-bg-fb-08.png'
+                    image: '/gifs/green-lightgreen.gif'
                 },
                 {
                     id: 1003,
@@ -45,7 +45,7 @@ angular.module('app').factory('dataService',
                     guides: 8,
                     rafts: 10,
                     vests: 40,
-                    image: '13.jpg'
+                    image: '/gifs/gold-orange.gif'
                 },
                 {
                     id: 1004,
@@ -54,7 +54,7 @@ angular.module('app').factory('dataService',
                     guides: 8,
                     rafts: 8,
                     vests: 100,
-                    image: 'mb-bg-fb-09.png'
+                    image: '/gifs/bright-reds.gif'
                 },
                 {
                     id: 1005,
@@ -63,7 +63,7 @@ angular.module('app').factory('dataService',
                     guides: 22,
                     rafts: 12,
                     vests: 230,
-                    image: '15.jpg'
+                    image: '/gifs/bright-greens.gif'
                 },
                 {
                     id: 1006,
@@ -72,7 +72,7 @@ angular.module('app').factory('dataService',
                     guides: 20,
                     rafts: 24,
                     vests: 420,
-                    image: '9.jpg'
+                    image: '/gifs/bright-blurples.gif'
                 },
                 {
                     id: 1007,
@@ -81,7 +81,7 @@ angular.module('app').factory('dataService',
                     guides: 12,
                     rafts: 8,
                     vests: 225,
-                    image: 'mb-bg-fb-07.png'
+                    image: '/gifs/bright-blues.gif'
                 }
             ];
 
@@ -90,31 +90,31 @@ angular.module('app').factory('dataService',
                     id: 5000,
                     name: 'Paul Jones',
                     location: 'Yosemite',
-                    image: 'employee-andy.png'
+                    image: '/gifs/apricot-grey.gif'
                 },
                 {
                     id: 5001,
                     name: 'Lilia Jones',
                     location: 'New York',
-                    image: 'user.jpg'
+                    image: '/gifs/aqua-green.gif'
                 },
                 {
                     id: 5002,
                     name: 'Jack Jones',
                     location: 'Texas',
-                    image: 'user2.jpg'
+                    image: '/gifs/blue-black-grey.gif'
                 },
                 {
                     id: 5003,
                     name: 'Wendy Jones',
                     location: 'Las Vegas',
-                    image: 'user3.jpg'
+                    image: '/gifs/blue-purple.gif'
                 },
                 {
                     id: 5004,
                     name: 'Cats Galore',
                     location: 'Calendar',
-                    image: 'mb-bg-fb-09.png'
+                    image: '/gifs/blues.gif'
                 }
             ];
 
