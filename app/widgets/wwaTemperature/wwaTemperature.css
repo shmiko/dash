@@ -14,6 +14,8 @@
     height: 32px;
     padding-top: 2px;
     font-size: 18px;
+    /*margin-left:2px;*/
+    font-weight: bold;
     /*line-height: 12px;*/
     /*margin-bottom: 3px;*/
 }
@@ -22,8 +24,8 @@
     height: 44px;
     width: 24px;
     margin-top: -2px;
-    margin-left: 14px;
-    margin-bottom: 10px;
+    left: 4px;
+    margin-bottom: 2px !important;
     /*content:"\e063";*/
 }
 
@@ -45,7 +47,7 @@
 }
 
 .wwa-temperature-view {
-    background-color: rgba(255,255,255,.7);
+    background-color: rgba(238, 154, 0, 0.7);
     position: absolute;
     right: 5px;
     bottom: 38px;
@@ -63,6 +65,7 @@
 .wwa-temperature-degrees {
     font-size: 64px;
     margin-top: -20px;
+    color: #1c0328;
 }
 
 .progressCirculardemoBasicUsage body {

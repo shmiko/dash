@@ -65,11 +65,12 @@
 .cm-widget-menu-area .dropdown-menu {
     left: -20px;
     padding-left: 15px;
+    color: #1c0328;
 }
 
 
 .cm-widget-menu-area a {
-    color: white;
+    color: #1c0328;
 }
 
 .cm-widget-menu-area i {
