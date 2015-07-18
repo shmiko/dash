@@ -2,9 +2,10 @@
 <div class="wwa-temperature-widget">
 
     <div class="wwa-temperature-heading">
-        <span class="glyphicon glyphicon-calendar"  alt="calendar" />Calendar</span>
+        <!--<span class="glyphicon glyphicon-calendar wwa-temperature-icon"  alt="calendar" />Calendar</span>-->
         <!-- wwa-temperature-icon ng-src="images/therm-icon.png"-->
-        <!--<span class="www-temperature-title">Calendar</span>-->
+        <span class="glyphicon glyphicon-calendar"></span>
+            <span class="www-temperature-icon glyphicon glyphicon-calendar ">Calendar</span>
     </div>
 
     <div class="wwa-temperature-body" ng-style="selectedLocation != null && {'background-image': 'url(/images/' + selectedLocation.image + ')'}">
@@ -27,3 +28,4 @@
     </div>
 
 </div>
+
