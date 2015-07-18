@@ -13,7 +13,7 @@ angular.module('app').factory('dataService',
             var locations = [
                 {
                     id: 1000,
-                    name: 'Calendar',
+                    name: 'Temp',
                     temperature: 55,
                     guides: 20,
                     rafts: 18,
