@@ -42,21 +42,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wwaTemperatureTemplate.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="wwaTemperatureTemplate.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperatureTemplate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34571064">
-              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+            <state vertical-scroll-proportion="-4.375">
+              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wwaTemperature.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="wwaTemperature.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperature.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.29813665">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -198,8 +198,8 @@
         <option value="$PROJECT_DIR$/demo.css" />
         <option value="$PROJECT_DIR$/ext-modules/cmFramework/cmFramework.css" />
         <option value="$PROJECT_DIR$/app/services/dataService.js" />
-        <option value="$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperature.css" />
         <option value="$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperatureTemplate.html" />
+        <option value="$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperature.css" />
       </list>
     </option>
   </component>
@@ -530,12 +530,6 @@
       <option name="number" value="Default" />
       <updated>1430390572026</updated>
     </task>
-    <task id="LOCAL-00198" summary="layout c3w">
-      <created>1434661985167</created>
-      <option name="number" value="00198" />
-      <option name="project" value="LOCAL" />
-      <updated>1434661985168</updated>
-    </task>
     <task id="LOCAL-00199" summary="layout c3w">
       <created>1434749579720</created>
       <option name="number" value="00199" />
@@ -824,7 +818,13 @@
       <option name="project" value="LOCAL" />
       <updated>1437219377137</updated>
     </task>
-    <option name="localTasksCounter" value="247" />
+    <task id="LOCAL-00247" summary="temp widget to calendar icons css">
+      <created>1437219776103</created>
+      <option name="number" value="00247" />
+      <option name="project" value="LOCAL" />
+      <updated>1437219776104</updated>
+    </task>
+    <option name="localTasksCounter" value="248" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1304,18 +1304,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperature.css">
+    <entry file="file://$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperatureTemplate.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state vertical-scroll-proportion="-4.375">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperatureTemplate.html">
+    <entry file="file://$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperature.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34571064">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.29813665">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
           <folding />
         </state>
       </provider>
