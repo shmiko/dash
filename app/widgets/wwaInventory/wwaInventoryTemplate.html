@@ -3,7 +3,7 @@
 
     <div class="wwa-inventory-heading">
         <!--<img class="wwa-inventory-icon" ng-src="images/inventory-icon.png" alt="inventory" />-->
-        <span class="www-inventory-title">Inventory</span>
+        <span class="www-inventory-title">Explore & Discover</span>
     </div>
 
     <div class="wwa-inventory-body" ng-style="selectedLocation != null && {'background-image': 'url(/images/' + selectedLocation.image + ')'}">
@@ -21,12 +21,12 @@
             <div class="wwa-inventory-item">
                 <img src="/images/vest-icon.png" />
                 <span class="wwa-inventory-amount">{{selectedLocation.vests}}</span>
-                <span class="wwa-inventory-caption">VESTS</span>
+                <span class="wwa-inventory-caption">RECOMMENDED</span>
             </div>
             <div class="wwa-inventory-item">
                 <img src="/images/raft-icon.png" />
                 <span class="wwa-inventory-amount">{{selectedLocation.rafts}}</span>
-                <span class="wwa-inventory-caption">RAFTS</span>
+                <span class="wwa-inventory-caption">SUGGESTIONS</span>
             </div>
         </div>
 

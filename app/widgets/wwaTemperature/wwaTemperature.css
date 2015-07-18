@@ -30,7 +30,7 @@
 }
 
 .wwa-temperature-body {
-    position: relative;
+    position: absolute;
     text-align: center;
     background-size: cover;
     background-position: center;
@@ -46,7 +46,7 @@
     top: 10px;
 }
 
-.wwa-temperature-view {
+.wwa-temperature-view1 {
     background-color: rgba(238, 154, 0, 0.7);
     position: absolute;
     right: 5px;
@@ -55,14 +55,14 @@
     border: 1px solid black;
 }
 
-.wwa-temperature-river-name {
+.wwa-temperature-river-name1 {
     height: 30px;
     font-size: 14px;
     font-weight: bold;
     margin-top: 8px;
 }
 
-.wwa-temperature-degrees {
+.wwa-temperature-degrees1 {
     font-size: 64px;
     margin-top: -20px;
     color: #1c0328;

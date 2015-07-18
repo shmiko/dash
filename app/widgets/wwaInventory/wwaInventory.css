@@ -6,11 +6,11 @@
 }
 
 .wwa-inventory-heading {
-    background-color: darkblue;
-    color: white;
+    background-color: #44c28e;
+    color: #1c0328;
     height: 32px;
-    font-size: 15px;
-    line-height: 32px;
+    font-size: 18px;
+    /*line-height: 32px;*/
 }
 
 .wwa-inventory-icon {
@@ -45,7 +45,7 @@
     top: 5px;
     left: 5px; 
     right: 5px;
-    background-color: rgba(255,255,255,.7);
+    background-color: rgba(49, 239, 49, 0.7);
     border: 1px solid black;
 }
 

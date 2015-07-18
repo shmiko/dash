@@ -13,7 +13,7 @@ angular.module('app').factory('dataService',
             var locations = [
                 {
                     id: 1000,
-                    name: 'Temp',
+                    name: 'New York',
                     temperature: 55,
                     guides: 20,
                     rafts: 18,
@@ -112,8 +112,8 @@ angular.module('app').factory('dataService',
                 },
                 {
                     id: 5004,
-                    name: 'Cats Galore',
-                    location: 'Calendar',
+                    name: 'New York',
+                    location: 'Radison on 5th',
                     image: '/gifs/blues.gif'
                 }
             ];

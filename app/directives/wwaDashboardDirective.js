@@ -25,12 +25,12 @@ angular.module('app')
                 width: 'auto', // can be an integer or 'auto'. 'auto' scales gridster to be the full width of its containing element
                 colWidth: 'auto', // can be an integer or 'auto'.  'auto' uses the pixel width of the element divided by 'columns'
                 rowHeight: 'match', // can be an integer or 'match'.  Match uses the colWidth, giving you square widgets.
-                margins: [30, 30], // the pixel distance between each widget
-                outerMargin: true, // whether margins apply to outer edges of the grid
-                isMobile: false, // stacks the grid items if true
-                mobileBreakPoint: 600, // if the screen is not wider that this, remove the grid layout and stack the items
+                margins: [50, 50], // the pixel distance between each widget
+                outerMargin: false, // whether margins apply to outer edges of the grid
+                isMobile: true, // stacks the grid items if true
+                mobileBreakPoint: 3600, // if the screen is not wider that this, remove the grid layout and stack the items
                 mobileModeEnabled: true, // whether or not to toggle mobile mode when screen width is less than mobileBreakPoint
-                minColumns: 2, // the minimum columns the grid must have
+                minColumns: 1, // the minimum columns the grid must have
                 minRows: 2, // the minimum height of the grid, in rows
                 maxRows: 100,
                 defaultSizeX: 4, // the default width of a gridster item, if not specifed
@@ -57,7 +57,7 @@ angular.module('app')
 
             scope.widgetDefinitions = [
                 {
-                    title: 'Temperature',
+                    title: 'Calendar',
                     settings: {
                         sizeX: 6,
                         sizeY: 4,
@@ -72,12 +72,12 @@ angular.module('app')
                     }
                 },
                 {
-                    title: 'Inventory',
+                    title: 'Explore & Discover',
                     settings: {
-                        sizeX: 5,
-                        sizeY: 3,
-                        minSizeX: 2,
-                        minSizeY: 2,
+                        sizeX: 6,
+                        sizeY: 4,
+                        minSizeX: 6,
+                        minSizeY: 4,
                         template: '<wwa-inventory></wwa-inventory>',
                         widgetSettings: {
                             id: 1002,
@@ -87,12 +87,12 @@ angular.module('app')
                     }
                 },
                 {
-                    title: 'Employee',
+                    title: 'Itinerary',
                     settings: {
-                        sizeX: 1,
-                        sizeY: 1,
-                        minSizeX: 1,
-                        minSizeY: 1,
+                        sizeX: 6,
+                        sizeY: 4,
+                        minSizeX: 6,
+                        minSizeY: 4,
                         template: '<wwa-employee></wwa-employee>',
                         widgetSettings: {
                             id: 4000,
@@ -108,10 +108,10 @@ angular.module('app')
                         //sizeY: 3,
                         //minSizeX: 6,
                         //minSizeY: 3,
-                        sizeX: 1,
-                        sizeY: 1,
-                        minSizeX: 1,
-                        minSizeY: 1,
+                        sizeX: 6,
+                        sizeY: 4,
+                        minSizeX: 6,
+                        minSizeY: 4,
                         template: '<wwa-map></wwa-map>',
                         widgetSettings: {
                             id: 5000,
@@ -123,10 +123,10 @@ angular.module('app')
                 {
                     title: 'Weather',
                     settings: {
-                        sizeX: 5,
-                        sizeY: 3,
-                        minSizeX: 2,
-                        minSizeY: 2,
+                        sizeX: 6,
+                        sizeY: 4,
+                        minSizeX: 6,
+                        minSizeY: 4,
                         template: '<wwa-weather></wwa-weather>',
                         widgetSettings: {
                             id: 7000,
