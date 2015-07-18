@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0281c158-8fe1-45f5-9612-0b722f3c33aa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/widgets/wwaEmployee/wwaEmployeeTemplate.html" afterPath="$PROJECT_DIR$/app/widgets/wwaEmployee/wwaEmployeeTemplate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/widgets/wwaInventory/wwaInventoryTemplate.html" afterPath="$PROJECT_DIR$/app/widgets/wwaInventory/wwaInventoryTemplate.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperature.css" afterPath="$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperature.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperatureTemplate.html" afterPath="$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperatureTemplate.html" />
     </list>
@@ -45,18 +47,38 @@
       <file leaf-file-name="wwaTemperatureTemplate.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperatureTemplate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.375">
-              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+            <state vertical-scroll-proportion="-11.25">
+              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wwaTemperature.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="wwaInventoryTemplate.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/widgets/wwaInventory/wwaInventoryTemplate.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.125">
+              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wwaEmployeeTemplate.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/widgets/wwaEmployee/wwaEmployeeTemplate.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.07682458">
+              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wwaTemperature.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperature.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29813665">
-              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -149,8 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/directives/wwaCalendarDirective/cal.html" />
-        <option value="$PROJECT_DIR$/app/directives/wwaCalendarDirective/wwaCalendarDirective.js" />
         <option value="$PROJECT_DIR$/app/appConfig.js" />
         <option value="$PROJECT_DIR$/app/static/back_bottom.html" />
         <option value="$PROJECT_DIR$/ext-modules/cmMenu/cmMenuTemplate.html" />
@@ -198,8 +218,10 @@
         <option value="$PROJECT_DIR$/demo.css" />
         <option value="$PROJECT_DIR$/ext-modules/cmFramework/cmFramework.css" />
         <option value="$PROJECT_DIR$/app/services/dataService.js" />
-        <option value="$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperatureTemplate.html" />
         <option value="$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperature.css" />
+        <option value="$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperatureTemplate.html" />
+        <option value="$PROJECT_DIR$/app/widgets/wwaInventory/wwaInventoryTemplate.html" />
+        <option value="$PROJECT_DIR$/app/widgets/wwaEmployee/wwaEmployeeTemplate.html" />
       </list>
     </option>
   </component>
@@ -387,6 +409,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="widgets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wwaInventory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="widgets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wwaEmployee" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="services" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -529,18 +595,6 @@
       <created>1430390572026</created>
       <option name="number" value="Default" />
       <updated>1430390572026</updated>
-    </task>
-    <task id="LOCAL-00199" summary="layout c3w">
-      <created>1434749579720</created>
-      <option name="number" value="00199" />
-      <option name="project" value="LOCAL" />
-      <updated>1434749579720</updated>
-    </task>
-    <task id="LOCAL-00200" summary="layout c3w">
-      <created>1434836183978</created>
-      <option name="number" value="00200" />
-      <option name="project" value="LOCAL" />
-      <updated>1434836183978</updated>
     </task>
     <task id="LOCAL-00201" summary="layout c3w">
       <created>1434981225194</created>
@@ -824,7 +878,19 @@
       <option name="project" value="LOCAL" />
       <updated>1437219776104</updated>
     </task>
-    <option name="localTasksCounter" value="248" />
+    <task id="LOCAL-00248" summary="temp widget to calendar icons css">
+      <created>1437219977290</created>
+      <option name="number" value="00248" />
+      <option name="project" value="LOCAL" />
+      <updated>1437219977290</updated>
+    </task>
+    <task id="LOCAL-00249" summary="temp widget to calendar icons css">
+      <created>1437220072962</created>
+      <option name="number" value="00249" />
+      <option name="project" value="LOCAL" />
+      <updated>1437220072963</updated>
+    </task>
+    <option name="localTasksCounter" value="250" />
     <servers />
   </component>
   <component name="TodoView">
@@ -898,7 +964,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="material design fix still" />
     <MESSAGE value="material design fix still..." />
     <MESSAGE value="material design add directive" />
     <MESSAGE value="material design add layout directive" />
@@ -923,7 +988,8 @@
     <MESSAGE value="temp to cal" />
     <MESSAGE value="temp widget to calendar icons" />
     <MESSAGE value="temp widget to calendar icons css" />
-    <option name="LAST_COMMIT_MESSAGE" value="temp widget to calendar icons css" />
+    <MESSAGE value="remove widget icons" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove widget icons" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -939,13 +1005,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/directives/wwaMapsDirective/mapController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/angular-material/angular-material.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26548672">
@@ -1144,14 +1203,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/widgets/wwaEmployee/wwaEmployeeTemplate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/widgets/wwaEmployee/wwaEmployeeDirective.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1304,18 +1355,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperatureTemplate.html">
+    <entry file="file://$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperature.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperature.css">
+    <entry file="file://$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperatureTemplate.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29813665">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        <state vertical-scroll-proportion="-11.25">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/widgets/wwaInventory/wwaInventoryTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.125">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/widgets/wwaEmployee/wwaEmployeeTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07682458">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
           <folding />
         </state>
       </provider>

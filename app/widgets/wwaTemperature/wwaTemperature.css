@@ -19,12 +19,12 @@
 }
 
 .wwa-temperature-icon {
-    height: 24px;
+    height: 44px;
     width: 24px;
     margin-top: -2px;
     margin-left: 14px;
     margin-bottom: 10px;
-    content:"\e063";
+    /*content:"\e063";*/
 }
 
 .wwa-temperature-body {
