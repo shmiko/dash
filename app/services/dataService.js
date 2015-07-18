@@ -130,13 +130,13 @@ angular.module('app').factory('dataService',
                         if (locations[i].id == id)
                             return locations[i];
                     return undefined;
-                }, 1000); //timeout for widget loader
+                }, 300); //timeout for widget loader
             };
 
             var getEmployees = function () {
                 return $timeout(function () {
                     return employees;
-                }, 500);
+                }, 300);
             };
 
             var getEmployee = function (id) {
