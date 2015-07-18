@@ -1,11 +1,11 @@
 ﻿
 .cm-dashboard {
-    margin: 0;
+    margin: -20px;
     width: 100%;
 }
 
 .grid{
-    margin:-45px;
+    /*margin:-45px;*/
 }
 
 .gridster .gridster-item {
