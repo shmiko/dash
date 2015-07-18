@@ -13,12 +13,12 @@ angular.module('app').factory('dataService',
             var locations = [
                 {
                     id: 1000,
-                    name: 'Los Angeles',
+                    name: 'Calendar',
                     temperature: 55,
                     guides: 20,
                     rafts: 18,
                     vests: 200,
-                    image: '10.jpg'
+                    image: 'mb-bg-fb-06.png'
                 },
                 {
                     id: 1001,
@@ -36,7 +36,7 @@ angular.module('app').factory('dataService',
                     guides: 56,
                     rafts: 40,
                     vests: 500,
-                    image: '12.jpg'
+                    image: 'mb-bg-fb-08.png'
                 },
                 {
                     id: 1003,
@@ -54,7 +54,7 @@ angular.module('app').factory('dataService',
                     guides: 8,
                     rafts: 8,
                     vests: 100,
-                    image: '14.jpg'
+                    image: 'mb-bg-fb-09.png'
                 },
                 {
                     id: 1005,
@@ -76,12 +76,12 @@ angular.module('app').factory('dataService',
                 },
                 {
                     id: 1007,
-                    name: 'New Orleans',
+                    name: 'Events',
                     temperature: 38,
                     guides: 12,
                     rafts: 8,
                     vests: 225,
-                    image: '8.jpg'
+                    image: 'mb-bg-fb-07.png'
                 }
             ];
 
@@ -113,8 +113,8 @@ angular.module('app').factory('dataService',
                 {
                     id: 5004,
                     name: 'Cats Galore',
-                    location: 'New Orleans',
-                    image: 'c5.jpg'
+                    location: 'Calendar',
+                    image: 'mb-bg-fb-07.png'
                 }
             ];
 
