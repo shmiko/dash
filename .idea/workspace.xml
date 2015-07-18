@@ -4,7 +4,6 @@
     <list default="true" id="0281c158-8fe1-45f5-9612-0b722f3c33aa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperature.css" afterPath="$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperature.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperatureTemplate.html" afterPath="$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperatureTemplate.html" />
     </list>
     <list id="1257a8f8-6ab7-4e43-a8e9-7cdaf914b7c3" name="New changelist" comment="" />
     <list id="b22ce128-6aa4-4fd1-8b5a-a5912bd41315" name="New changelist2" comment=".." />
@@ -72,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wwaTemperatureTemplate.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="wwaTemperatureTemplate.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperatureTemplate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.09603073">
-              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+            <state vertical-scroll-proportion="-5.0">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -92,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wwaTemperature.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="wwaTemperature.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperature.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.35403726">
+              <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -248,8 +247,8 @@
         <option value="$PROJECT_DIR$/demo.css" />
         <option value="$PROJECT_DIR$/ext-modules/cmFramework/cmFramework.css" />
         <option value="$PROJECT_DIR$/app/services/dataService.js" />
-        <option value="$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperature.css" />
         <option value="$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperatureTemplate.html" />
+        <option value="$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperature.css" />
       </list>
     </option>
   </component>
@@ -562,12 +561,6 @@
       <option name="number" value="Default" />
       <updated>1430390572026</updated>
     </task>
-    <task id="LOCAL-00195" summary="sections">
-      <created>1434661659340</created>
-      <option name="number" value="00195" />
-      <option name="project" value="LOCAL" />
-      <updated>1434661659341</updated>
-    </task>
     <task id="LOCAL-00196" summary="sections and main">
       <created>1434661763369</created>
       <option name="number" value="00196" />
@@ -856,7 +849,13 @@
       <option name="project" value="LOCAL" />
       <updated>1437218713895</updated>
     </task>
-    <option name="localTasksCounter" value="244" />
+    <task id="LOCAL-00244" summary="temp widget to calendar icons">
+      <created>1437218866778</created>
+      <option name="number" value="00244" />
+      <option name="project" value="LOCAL" />
+      <updated>1437218866778</updated>
+    </task>
+    <option name="localTasksCounter" value="245" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1336,18 +1335,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperature.css">
+    <entry file="file://$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperatureTemplate.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        <state vertical-scroll-proportion="-5.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperatureTemplate.html">
+    <entry file="file://$PROJECT_DIR$/app/widgets/wwaTemperature/wwaTemperature.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09603073">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.35403726">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
           <folding />
         </state>
       </provider>
