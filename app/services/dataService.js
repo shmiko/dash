@@ -114,7 +114,7 @@ angular.module('app').factory('dataService',
                     id: 5004,
                     name: 'Cats Galore',
                     location: 'Calendar',
-                    image: 'mb-bg-fb-07.png'
+                    image: 'mb-bg-fb-09.png'
                 }
             ];
 
