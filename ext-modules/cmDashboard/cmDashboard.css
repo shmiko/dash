@@ -52,8 +52,8 @@
     min-height: 50px;
     padding: 8px;
     padding-left: 20px;
-    margin-top:15px;
-    top:91px;
+    margin-top:65px;
+    /*top:191px;*/
 }
 
 
@@ -104,6 +104,6 @@
         min-height: 50px;
         padding: 8px;
         padding-left: 20px;
-        /*margin-top:5px;*/
+        margin-top:65px;
     }
 }
