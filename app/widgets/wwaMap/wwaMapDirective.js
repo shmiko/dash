@@ -25,6 +25,7 @@ angular.module('app').directive('wwaMap',
                 };
 
                 scope.map = {
+                    options: {scrollwheel: false},
                     center: {
                         latitude: -33.561986,
                         longitude: 150.675768
@@ -33,10 +34,8 @@ angular.module('app').directive('wwaMap',
                     //    latitude: currentPosition.coords.latitude,
                     //    longitude: currentPosition.coords.longitude
                     //},
-                    zoom: 12,
-                    zoomControl: false,
-                    scaleControl: false,
-                    scrollwheel: false
+                    zoom: 12
+
 
                 };
 

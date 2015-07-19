@@ -148,8 +148,10 @@
             </section>
             <section ng-switch-default>
                 <cm-framework title="TripStomp Adventures"
-                      subtitle="Smashboard Control"
-                      icon-file="images/calmapit_icon_55.png" route="dashboard">
+                      subtitle="Bought to you by CalMapIt"
+                      icon-file="images/calmapit_icon_55.png"
+                        <cm-menu-item route="dashboard"></cm-menu-item>>
+
                     <cm-menu>
                         <!--<cm-menu-item label="Trip Boards" icon="fa-dashboard" route="dashboard"></cm-menu-item>-->
                         <cm-menu-group label="Calendar" icon="fa-gears">
@@ -195,7 +197,8 @@
         </main>
         <!--<div class="footer" sticky-footer=".wrapper"><span label="Help" icon="fa-location-arrow" route="cal"></span></div>-->
         <footer class="footer-main">
-            I'm the Sticky Footer.
+            <!--<cm-menu-item label="?" route="tests" alt="help" class="footer-text"></cm-menu-item>-->
+            <a href="#tests" class="footer-text fa fa-question"> &nbsp;?</a>
         </footer>
         <!--<footer class="footer">-->
         <!--<section>-->

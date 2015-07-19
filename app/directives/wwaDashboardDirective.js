@@ -9,7 +9,7 @@ angular.module('app')
         template: '<cm-dashboard></cm-dashboard>',
         link: function (scope) {
 
-            scope.title = "TripStomp Smashboard";
+            scope.title = "Tripboard";
 
             //scope.gridsterOpts = {
             //    columns: 12,

@@ -3,7 +3,7 @@
     /*background-color: #4a0991;*/
     /*padding: 0 20px;*/
     /*border-bottom: 10px solid #1c0328;*/
-    background-color: #3d1191;
+    background-color: #4a0991;
     position: fixed;
     width: 100%;
     height: 80px;
@@ -45,14 +45,6 @@
 
 }
 
-@media screen and (max-width: 430px) {
-    .cm-icon {
-        display: none;
-    }
-    .cm-logo-title {
-        font-size: 18px;
-    }
-}
 
 .cm-right-side-controls {
     line-height: 60px;
@@ -62,14 +54,7 @@
     text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-    .cm-right-side-controls > div {
-        text-align: right;       
-    }
-    .cm-logo-area {
-        text-align: left;
-    }
-}
+
 
 .cm-collacmed-menu {
     display: inline-block;
@@ -101,7 +86,7 @@
 
 .cm-user-profile {
     background-color: #4a0991;
-    color: white;
+    color: #31ef31;
     width: 200px;
     min-height: 120px;
     padding-top: 10px;
@@ -129,7 +114,7 @@
 }
 
 .cm-user-profile-small {
-    color: #333;
+    color: #31ef31;
     padding-top: 4px;
 }
 
@@ -142,6 +127,7 @@
 .cm-user-profile-small img {
     width: 40px;
     height: 40px;
+
 }
 
 .cm-control {
@@ -158,4 +144,34 @@
 .cm-control img {
     width: 40px;
     height: 40px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .cm-right-side-controls > div {
+        text-align: right;
+    }
+    .cm-logo-area {
+        text-align: left;
+    }
+    .cm-user-profile-small {
+        display:none;
+    }
+
+}
+
+
+@media screen and (max-width: 430px) {
+    .cm-icon {
+        display: none;
+    }
+    .cm-logo-title {
+        font-size: 18px;
+    }
+    .cm-user-profile {
+        display:none;
+    }
+    .cm-user-profile-small {
+        display:none;
+    }
 }

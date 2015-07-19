@@ -12,7 +12,7 @@
         </div>
         <div ni-if="isLoaded" class="wwa-map-view">
             <ui-gmap-google-map
-                    center="map.center" zoom="map.zoom">
+                    center="map.center" zoom="map.zoom" options="map.options">
                 <ui-gmap-marker idKey="marker.id" coords="marker.coords" options="marker.options"></ui-gmap-marker>
 
             </ui-gmap-google-map>
