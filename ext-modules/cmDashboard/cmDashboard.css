@@ -38,6 +38,10 @@
     padding-bottom: 1px;
 }
 
+.cm-widget-body {
+    position: relative;
+}
+
 .cm-dashboard-header {
     font-size: 20px;
     border-bottom: 1px solid #444;

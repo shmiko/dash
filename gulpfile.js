@@ -4,6 +4,7 @@ var concat = require('gulp-concat');
 var angularFilesort = require('gulp-angular-filesort');
 var strip = require('gulp-strip-line');
 var templateCache = require('gulp-angular-templatecache');
+var nodemon = require('gulp-nodemon');
 
 
 gulp.task('buildMenuTemplateCache', function () {
@@ -66,3 +67,11 @@ gulp.task('buildCSS', function () {
         .pipe(gulp.dest('./dist/'))
         ;
 });
+
+gulp.task('start', function () {
+    nodemon({
+        script: 'server.js'
+        , ext: 'js html'
+        , env: { 'NODE_ENV': 'development' }
+    })
+})
