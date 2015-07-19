@@ -10,8 +10,9 @@
     float: left;
     width: 200px;
     min-height: 100vh;
-    padding-top: 30px;
-    top:81px;
+    /*padding-top: 30px;*/
+    top:77px;
+    border-top: 8px solid #17011e;
 
 }
 
