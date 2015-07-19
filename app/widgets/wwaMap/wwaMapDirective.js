@@ -34,6 +34,8 @@ angular.module('app').directive('wwaMap',
                     //    longitude: currentPosition.coords.longitude
                     //},
                     zoom: 12,
+                    zoomControl: false,
+                    scaleControl: false,
                     scrollwheel: false
 
                 };
