@@ -81,15 +81,19 @@ angular.module('app')
                     }
                 },
                 {
-                    title: 'Explore & Discover',
+                    title: 'Map',
                     settings: {
+                        //sizeX: 6,
+                        //sizeY: 3,
+                        //minSizeX: 6,
+                        //minSizeY: 3,
                         sizeX: 6,
                         sizeY: 4,
                         minSizeX: 6,
                         minSizeY: 4,
-                        template: '<wwa-inventory></wwa-inventory>',
+                        template: '<wwa-map></wwa-map>',
                         widgetSettings: {
-                            id: 1002,
+                            id: 5000,
                             templateUrl: 'app/dialogs/wwaSelectLocationTemplate.html',
                             controller: 'wwaSelectLocationController'
                         }
@@ -111,39 +115,86 @@ angular.module('app')
                     }
                 },
                 {
-                    title: 'Map',
+                    title: 'Explore & Discover',
                     settings: {
-                        //sizeX: 6,
-                        //sizeY: 3,
-                        //minSizeX: 6,
-                        //minSizeY: 3,
                         sizeX: 6,
                         sizeY: 4,
                         minSizeX: 6,
                         minSizeY: 4,
-                        template: '<wwa-map></wwa-map>',
+                        template: '<wwa-inventory></wwa-inventory>',
                         widgetSettings: {
-                            id: 5000,
+                            id: 1002,
                             templateUrl: 'app/dialogs/wwaSelectLocationTemplate.html',
                             controller: 'wwaSelectLocationController'
                         }
                     }
                 },
                 {
-                    title: 'Weather',
+                    title: 'Alerts and Reminders',
                     settings: {
                         sizeX: 6,
                         sizeY: 4,
                         minSizeX: 6,
                         minSizeY: 4,
-                        template: '<wwa-weather></wwa-weather>',
+                        //template: '<wwa-weather></wwa-weather>',
+                        //widgetSettings: {
+                        //    id: 7000,
+                        //    templateUrl: '/app/widgets/wwaWeather/pages/forecast.htm',
+                        //    controller: 'wwaSelectWeatherController'
+                        //}
+                        template: '<wwa-temperature></wwa-temperature>',
                         widgetSettings: {
-                            id: 7000,
-                            templateUrl: '/app/widgets/wwaWeather/pages/forecast.htm',
-                            controller: 'wwaSelectWeatherController'
+                            id: 1000,
+                            templateUrl: 'app/dialogs/wwaSelectLocationTemplate.html',
+                            controller: 'wwaSelectLocationController'
                         }
                     }
-                }
+                },
+                {
+                    title: 'Photos',
+                    settings: {
+                        sizeX: 6,
+                        sizeY: 4,
+                        minSizeX: 6,
+                        minSizeY: 4,
+                        template: '<wwa-temperature></wwa-temperature>',
+                        widgetSettings: {
+                            id: 1000,
+                            templateUrl: 'app/dialogs/wwaSelectLocationTemplate.html',
+                            controller: 'wwaSelectLocationController'
+                        }
+                    }
+                },
+                {
+                    title: 'Badges',
+                    settings: {
+                        sizeX: 6,
+                        sizeY: 4,
+                        minSizeX: 6,
+                        minSizeY: 4,
+                        template: '<wwa-temperature></wwa-temperature>',
+                        widgetSettings: {
+                            id: 1000,
+                            templateUrl: 'app/dialogs/wwaSelectLocationTemplate.html',
+                            controller: 'wwaSelectLocationController'
+                        }
+                    }
+                },
+                {
+                    title: 'Feeds',
+                    settings: {
+                        sizeX: 6,
+                        sizeY: 4,
+                        minSizeX: 6,
+                        minSizeY: 4,
+                        template: '<wwa-temperature></wwa-temperature>',
+                        widgetSettings: {
+                            id: 1000,
+                            templateUrl: 'app/dialogs/wwaSelectLocationTemplate.html',
+                            controller: 'wwaSelectLocationController'
+                        }
+                    }
+                },
             ];
 
             scope.widgets = $localStorage.widgets || [
