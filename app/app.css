@@ -110,6 +110,13 @@ https://github.com/google/material-design-icons
     bottom: 0px;
     border-top: 10px solid #1c0328;
 }
+
+.footer-main-span{
+    margin-left:10px;
+    margin-bottom:7px!important;
+    margin-top: 7px!important;
+    position: fixed;
+}
 /*.footer {*/
     /*font-size: 20px;*/
     /*border-top: 1px solid #444;*/
