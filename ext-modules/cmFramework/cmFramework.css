@@ -1,8 +1,8 @@
 ﻿
 .cm-title-bar {
-    background-color: white;
+    background-color: #4a0991;
     padding: 0 20px;
-    border-bottom: 2px solid black;
+    border-bottom: 10px solid #1c0328;
 }
 
 .cm-logo-area {
@@ -22,11 +22,11 @@
     height: 50px;
     margin: 8px;
     vertical-align: top;
-    border: 1px solid #999;
+    /*border: 1px solid #999;*/
 }
 
 .cm-logo-title {
-    color: #111;
+    color: #ee9a00;
     margin-top: 6px;
     font-size: 22px;
 }
@@ -34,6 +34,8 @@
 .cm-logo-subtitle {
     font-size: 13px;
     margin-top: -13px;
+    color: #ee9a00;
+
 }
 
 @media screen and (max-width: 430px) {
@@ -91,7 +93,7 @@
 
 
 .cm-user-profile {
-    background-color: #333;
+    background-color: #4a0991;
     color: white;
     width: 200px;
     min-height: 120px;

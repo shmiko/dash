@@ -34,7 +34,7 @@ angular.module('app')
                 width: 'auto', // can be an integer or 'auto'. 'auto' scales gridster to be the full width of its containing element
                 colWidth: 'auto', // can be an integer or 'auto'.  'auto' uses the pixel width of the element divided by 'columns'
                 rowHeight: 'match', // can be an integer or 'match'.  Match uses the colWidth, giving you square widgets.
-                margins: [1, 12], // the pixel distance between each widget
+                margins: [-6, 12], // the pixel distance between each widget
                 outerMargin: false, // whether margins apply to outer edges of the grid
                 isMobile: true, // stacks the grid items if true
                 mobileBreakPoint: 3600, // if the screen is not wider that this, remove the grid layout and stack the items

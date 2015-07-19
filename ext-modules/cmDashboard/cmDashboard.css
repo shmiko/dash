@@ -45,8 +45,8 @@
 .cm-dashboard-header {
     font-size: 20px;
     border-bottom: 1px solid #444;
-    color: white;
-    background-color: #659108;
+    color: #ee9a00;
+    background-color: #4a0991;
     margin: -20px;
     margin-bottom: 10px;
     min-height: 50px;
@@ -93,9 +93,9 @@
 @media all and (max-width: 1000px) and (min-width: 800px), (min-width: 1151px) {
     .cm-dashboard-header {
         font-size: 20px;
-        border-bottom: 1px solid #444;
-        color: white;
-        background-color: #659108;
+        /*border-bottom: 1px solid #444;*/
+        color: #ee9a00;
+        background-color: #4a0991;
         margin: -20px;
         margin-bottom: 10px;
         min-height: 50px;
