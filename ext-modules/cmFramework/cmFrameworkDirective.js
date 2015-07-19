@@ -6,7 +6,8 @@ angular.module("cmFramework").directive("cmFramework", function () {
         scope: {
             title: '@',
             subtitle: '@',
-            iconFile: '@'
+            iconFile: '@',
+            route: '@'
         },
         controller: "cmFrameworkController",
         templateUrl: "ext-modules/cmFramework/cmFrameworkTemplate.html"

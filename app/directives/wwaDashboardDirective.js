@@ -18,7 +18,7 @@ angular.module('app')
             //    pushing: true,
             //    floating: true,
             //    swapping: true
-            //};
+            //};Adventures
 
             scope.gridsterOpts = {
                 //columns: 6,
