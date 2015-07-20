@@ -121,7 +121,7 @@ angular.module('app').factory('dataService',
             var getLocations = function () {
                 return $timeout(function () {
                     return locations;
-                }, 500);
+                }, 300);
             };
 
             var getLocation = function (id) {
