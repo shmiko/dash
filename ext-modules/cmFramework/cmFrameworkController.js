@@ -5,7 +5,7 @@ angular.module("cmFramework").controller("cmFrameworkController",
         function ($scope, $window, $timeout, $rootScope, $location) {
             //$scope.layout = 'normal';
             $scope.title="Adventures";
-            $scope.url = '#dashboard';
+            //$scope.url = '#dashboard';
             //$scope.layouts = [
             //    { name: 'Boring', url: 'normal' },
             //    { name: 'Circles', url: 'circle' },
@@ -51,9 +51,7 @@ angular.module("cmFramework").controller("cmFrameworkController",
                 // $scope.$apply();
             };
 
-            $scope.changeLink = function() {
-                $scope.linkVar = '#dashboard'; //or whatever else you want to be in href
-            };
+
 
             var broadcastMenuState = function () {
                 $rootScope.$broadcast('cm-menu-show',

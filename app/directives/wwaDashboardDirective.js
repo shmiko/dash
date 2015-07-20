@@ -11,16 +11,16 @@ angular.module('app')
 
             scope.title = "Tripboard";
 
-            //scope.gridsterOpts = {
-            //    columns: 12,
-            //    margins: [50, 50],
-            //    outerMargin: false,
-            //    pushing: true,
-            //    floating: true,
-            //    swapping: true
-            //};Adventures
-
             scope.gridsterOpts = {
+                columns: 12,
+                margins: [10,-10], // the pixel distance between each widget
+                outerMargin: true,
+                pushing: false,
+                floating: false,
+                swapping: false
+            };
+
+            scope.gridsterOpts2 = {
                 //columns: 6,
                 //margins: [20, 20],
                 //outerMargin: true,
@@ -38,40 +38,40 @@ angular.module('app')
                 outerMargin: false, // whether margins apply to outer edges of the grid
                 isMobile: true, // stacks the grid items if true
                 mobileBreakPoint: 3600, // if the screen is not wider that this, remove the grid layout and stack the items
-                mobileModeEnabled: true // whether or not to toggle mobile mode when screen width is less than mobileBreakPoint
-                //minColumns: 1, // the minimum columns the grid must have
-                //minRows: 2, // the minimum height of the grid, in rows
+                mobileModeEnabled: true ,// whether or not to toggle mobile mode when screen width is less than mobileBreakPoint
+                minColumns: 4, // the minimum columns the grid must have
+                minRows: 1, // the minimum height of the grid, in rows
                 //maxRows: 100,
-                //defaultSizeX: 4, // the default width of a gridster item, if not specifed
-                //defaultSizeY: 2, // the default height of a gridster item, if not specified
-                //minSizeX: 1, // minimum column width of an item
-                //maxSizeX: null, // maximum column width of an item
-                //minSizeY: 1, // minumum row height of an item
-                //maxSizeY: null, // maximum row height of an item
-                //resizable: {
-                //    enabled: true,
-                //    handles: ['n', 'e', 's', 'w', 'ne', 'se', 'sw', 'nw'],
-                //    start: function(event, $element, widget) {}, // optional callback fired when resize is started,
-                //    resize: function(event, $element, widget) {}, // optional callback fired when item is resized,
-                //    stop: function(event, $element, widget) {} // optional callback fired when item is finished resizing
-                //},
-                //draggable: {
-                //    enabled: true, // whether dragging items is supported
+                defaultSizeX: 4, // the default width of a gridster item, if not specifed
+                defaultSizeY: 2, // the default height of a gridster item, if not specified
+                minSizeX: 1, // minimum column width of an item
+                maxSizeX: null, // maximum column width of an item
+                minSizeY: 1, // minumum row height of an item
+                maxSizeY: null, // maximum row height of an item
+                resizable: {
+                    enabled: true,
+                    handles: ['n', 'e', 's', 'w', 'ne', 'se', 'sw', 'nw'],
+                    start: function(event, $element, widget) {}, // optional callback fired when resize is started,
+                    resize: function(event, $element, widget) {}, // optional callback fired when item is resized,
+                    stop: function(event, $element, widget) {} // optional callback fired when item is finished resizing
+                },
+                draggable: {
+                    enabled: true // whether dragging items is supported
                 //    handle: '.my-class', // optional selector for resize handle
                 //    start: function(event, $element, widget) {}, // optional callback fired when drag is started,
                 //    drag: function(event, $element, widget) {}, // optional callback fired when item is moved,
                 //    stop: function(event, $element, widget) {} // optional callback fired when item is finished dragging
-                //}
+                }
             };
 
             scope.widgetDefinitions = [
                 {
                     title: 'Calendar',
                     settings: {
-                        sizeX: 6,
-                        sizeY: 4,
-                        minSizeX: 6,
-                        minSizeY: 4,
+                        sizeX: 12,
+                        sizeY: 1,
+                        minSizeX: 4,
+                        minSizeY: 1,
                         template: '<wwa-temperature></wwa-temperature>',
                         widgetSettings: {
                             id: 1000,
@@ -83,14 +83,10 @@ angular.module('app')
                 {
                     title: 'Map',
                     settings: {
-                        //sizeX: 6,
-                        //sizeY: 3,
-                        //minSizeX: 6,
-                        //minSizeY: 3,
-                        sizeX: 6,
-                        sizeY: 4,
-                        minSizeX: 6,
-                        minSizeY: 4,
+                        sizeX: 12,
+                        sizeY: 1,
+                        minSizeX: 4,
+                        minSizeY: 1,
                         template: '<wwa-map></wwa-map>',
                         widgetSettings: {
                             id: 5000,
@@ -102,10 +98,10 @@ angular.module('app')
                 {
                     title: 'Itinerary',
                     settings: {
-                        sizeX: 6,
-                        sizeY: 4,
-                        minSizeX: 6,
-                        minSizeY: 4,
+                        sizeX: 12,
+                        sizeY: 1,
+                        minSizeX: 4,
+                        minSizeY: 1,
                         template: '<wwa-employee></wwa-employee>',
                         widgetSettings: {
                             id: 4000,
@@ -117,10 +113,10 @@ angular.module('app')
                 {
                     title: 'Explore & Discover',
                     settings: {
-                        sizeX: 6,
-                        sizeY: 4,
-                        minSizeX: 6,
-                        minSizeY: 4,
+                        sizeX: 12,
+                        sizeY: 1,
+                        minSizeX: 4,
+                        minSizeY: 1,
                         template: '<wwa-inventory></wwa-inventory>',
                         widgetSettings: {
                             id: 1002,
@@ -132,10 +128,10 @@ angular.module('app')
                 {
                     title: 'Alerts and Reminders',
                     settings: {
-                        sizeX: 6,
-                        sizeY: 4,
-                        minSizeX: 6,
-                        minSizeY: 4,
+                        sizeX: 12,
+                        sizeY: 1,
+                        minSizeX: 4,
+                        minSizeY: 1,
                         //template: '<wwa-weather></wwa-weather>',
                         //widgetSettings: {
                         //    id: 7000,
@@ -153,10 +149,10 @@ angular.module('app')
                 {
                     title: 'Photos',
                     settings: {
-                        sizeX: 6,
-                        sizeY: 4,
-                        minSizeX: 6,
-                        minSizeY: 4,
+                        sizeX: 12,
+                        sizeY: 1,
+                        minSizeX: 4,
+                        minSizeY: 1,
                         template: '<wwa-temperature></wwa-temperature>',
                         widgetSettings: {
                             id: 1000,
@@ -168,10 +164,10 @@ angular.module('app')
                 {
                     title: 'Badges',
                     settings: {
-                        sizeX: 6,
-                        sizeY: 4,
-                        minSizeX: 6,
-                        minSizeY: 4,
+                        sizeX: 5,
+                        sizeY: 1,
+                        minSizeX: 4,
+                        minSizeY: 1,
                         template: '<wwa-temperature></wwa-temperature>',
                         widgetSettings: {
                             id: 1000,
@@ -183,10 +179,10 @@ angular.module('app')
                 {
                     title: 'Feeds',
                     settings: {
-                        sizeX: 6,
-                        sizeY: 4,
-                        minSizeX: 6,
-                        minSizeY: 4,
+                        sizeX: 5,
+                        sizeY: 1,
+                        minSizeX: 4,
+                        minSizeY: 1,
                         template: '<wwa-temperature></wwa-temperature>',
                         widgetSettings: {
                             id: 1000,
