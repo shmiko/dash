@@ -4,8 +4,7 @@ angular.module("cmFramework").controller("cmFrameworkController",
     ['$scope', '$window', '$timeout', '$rootScope', '$location',
         function ($scope, $window, $timeout, $rootScope, $location) {
             //$scope.layout = 'normal';
-            $scope.title="Adventures";
-            //$scope.url = '#dashboard';
+
             //$scope.layouts = [
             //    { name: 'Boring', url: 'normal' },
             //    { name: 'Circles', url: 'circle' },
@@ -50,8 +49,6 @@ angular.module("cmFramework").controller("cmFrameworkController",
                 broadcastMenuState();
                 // $scope.$apply();
             };
-
-
 
             var broadcastMenuState = function () {
                 $rootScope.$broadcast('cm-menu-show',
