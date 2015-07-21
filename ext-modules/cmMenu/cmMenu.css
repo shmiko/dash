@@ -2,10 +2,11 @@
 .cm-menu-area {
     position: relative;
     background-color: #4a0991;
-    color: #ee9a00;
+    color: #00ffff;
     padding-left: 0;
-    top:77px;
+    top:57px;
     z-index: 10;
+    /*height:100%;*/
 }
 
 .cm-subitem-section{
@@ -15,14 +16,14 @@
 .cm-dashboard-header {
     font-size: 20px;
     border-bottom: 1px solid #444;
-    color: #ee9a00;
+    color: #00ffff;
     background-color: #4a0991;
     margin: -20px;
     margin-bottom: 10px;
     min-height: 50px;
     padding: 8px;
     padding-left: 20px;
-    margin-top:65px;
+    margin-top:38px;
     /*top:191px;*/
 }
 
@@ -30,7 +31,7 @@
 .cm-menu-area .cm-dashboard-header {
     font-size: 20px;
     border-bottom: 1px solid #444;
-    color: #ee9a00;
+    color: #00ffff;
     background-color: #4a0991;
     margin: -20px;
     margin-bottom: 10px;
@@ -46,23 +47,14 @@
     width: 200px;
     min-height: 100vh;
     /*padding-top: 30px;*/
-    /*top:57px;*/
+    top:50px;
     border-top: 8px solid #17011e;
-
+    height:100%
 }
 
 
-.cm-menu-area-vertical .cm-dashboard-header {
-    font-size: 20px;
-    border-bottom: 1px solid #444;
-    color: #ee9a00;
-    background-color: #2484e9;
-    margin: -20px;
-    margin-bottom: 10px;
-    min-height: 50px;
-    padding: 8px;
-    padding-left: 20px;
-    margin-top:15px;
+.cm-dashboard-header .cm-menu-area-vertical {
+    margin-top:12px;
 }
 
 .cm-menu-area ul {
@@ -70,7 +62,7 @@
 }
 
 .cm-menu-area .btn:hover {
-    color: #ee9a00;
+    color: #00ffff;
 }
 
 .cm-menu {
@@ -99,7 +91,7 @@
 .cm-selectable-item:hover {
     background-color: rgba(61, 17, 145, 0.3);;
     /*opacity: 0.5;*/
-    color: #00ffff;
+    color: #ee9a00;
 
 }
 
@@ -212,7 +204,7 @@
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    color: #ee9a00;
+    color: #00ffff;
     font-weight: bold;
     font-size: 1.5em;
 }

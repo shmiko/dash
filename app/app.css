@@ -104,7 +104,7 @@ https://github.com/google/material-design-icons
     top: calc(100vh - 53px);
     font-size: 20px;
     /*border-top: 1px solid #ff55eb;*/
-    color: #ee9a00;
+    color: #00ffff;
     background-color: #4a0991;
     width: 100%;
     bottom: 0px;
@@ -117,7 +117,7 @@ https://github.com/google/material-design-icons
     margin-bottom:7px!important;
     margin-top: 7px!important;
     position: fixed;
-    color: #ee9a00;
+    color: #2484e9;
 
 }
 
