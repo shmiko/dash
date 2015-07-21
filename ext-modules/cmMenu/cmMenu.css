@@ -27,6 +27,9 @@
     /*top:191px;*/
 }
 
+.cm-item-selected{
+    color: red;
+}
 
 .cm-menu-area .cm-dashboard-header {
     font-size: 20px;
