@@ -86,6 +86,14 @@ angular.module('app')
             }
         },
         {
+            url: '/background',
+            config: {
+                templateUrl: 'app/static/back.html',
+                controller: 'testController'
+
+            }
+        },
+        {
             url: '/back',
             config: {
                 templateUrl: 'app/static/back.html',
