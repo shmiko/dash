@@ -6,7 +6,7 @@
     padding-left: 0;
     top:57px;
     z-index: 10;
-    /*height:100%;*/
+    height:100%;
 }
 
 .cm-subitem-section{
@@ -50,13 +50,14 @@
 }
 
 .cm-menu-area-vertical {
+    position: fixed;
     float: left;
     width: 200px;
     min-height: 100vh;
     /*padding-top: 30px;*/
     top:50px;
     border-top: 8px solid #17011e;
-    height:100%
+    height: 100%;
 }
 
 
