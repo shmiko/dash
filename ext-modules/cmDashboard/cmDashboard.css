@@ -104,5 +104,6 @@
         padding: 8px;
         padding-left: 20px;
         margin-top:40px;
+        position: fixed;
     }
 }
