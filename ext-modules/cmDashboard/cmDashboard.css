@@ -108,7 +108,7 @@
     right:20px;
 }
 
-@media all and (max-width: 1000px) and (min-width: 768px), (min-width: 1151px) {
+@media all and (max-width: 1080px) and (min-width: 768px), (min-width: 1151px) {
     .cm-dashboard-header .cm-menu-area-vertical {
         font-size: 20px;
         /*border-bottom: 1px solid #444;*/
