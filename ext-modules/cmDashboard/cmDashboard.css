@@ -132,5 +132,6 @@
 
 .getLost{
     color: rosybrown;
+    flex-basis: inherit;
 }
 /*//test*/
