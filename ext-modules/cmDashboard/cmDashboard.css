@@ -130,5 +130,7 @@
     }
 }
 
-.getLost{}
+.getLost{
+    color: rosybrown;
+}
 /*//test*/
