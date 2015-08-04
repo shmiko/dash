@@ -4,7 +4,7 @@
 
     var app = angular.module('app');
 
-    app.directive('wwaTemperature', ['dataService',
+    app.directive('wcmTemperature', ['dataService',
         function (dataService) {
             var temperatureWidgetController = function() {
                 var vm = this;
@@ -14,7 +14,7 @@
                 controller: temperatureWidgetController,
                 controllerAs: 'vm',
                 bindToController: true,
-                templateUrl: 'app/widgets/wwaTemperature/wwaTemperatureTemplate.html',
+                templateUrl: 'app/widgets/wwaTemperature/cmTemperatureTemplateO.html',
                 link: function (scope, el, attrs) {
                     scope.isLoaded = false;
                     scope.hasError = false;

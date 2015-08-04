@@ -191,6 +191,21 @@ angular.module('app')
                         }
                     }
                 },
+                {
+                    title: 'Weather',
+                    settings: {
+                        sizeX: 5,
+                        sizeY: 1,
+                        minSizeX: 4,
+                        minSizeY: 1,
+                        template: '<cm-temperature></cm-temperature>',
+                        widgetSettings: {
+                            id: 1000,
+                            templateUrl: 'app/widgets/wwaTemperature/cmTemperatureTemplateO.html',
+                            controller: 'cmTemperatureController'
+                        }
+                    }
+                }
             ];
 
             scope.widgets = $localStorage.widgets || [
