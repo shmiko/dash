@@ -111,24 +111,24 @@
      color: red;
  }
 
-@media all and (max-width: 1280px) and (min-width: 768px), (min-width: 1151px) {
-    .cm-dashboard-header .cm-menu-area-vertical {
-        font-size: 20px;
-        /*border-bottom: 1px solid #444;*/
-        color: #eeb432;
-        background-color: #4a0991;
-        /*margin: -20px;*/
-        margin-bottom: 10px;
-        min-height: 50px;
-        /*padding: 8px;*/
-        padding-left: 20px;
-        margin-top:28px;
-        position: fixed;
-        z-index: 20;
-        left: 200px;
-        right:20px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         D
-    }
-}
+/*@media all and (max-width: 1280px) and (min-width: 768px), (min-width: 1151px) {*/
+    /*.cm-dashboard-header .cm-menu-area-vertical {*/
+        /*font-size: 20px;*/
+        /*/!*border-bottom: 1px solid #444;*!/*/
+        /*color: #eeb432;*/
+        /*background-color: #4a0991;*/
+        /*/!*margin: -20px;*!/*/
+        /*margin-bottom: 10px;*/
+        /*min-height: 50px;*/
+        /*/!*padding: 8px;*!/*/
+        /*padding-left: 20px;*/
+        /*margin-top:28px;*/
+        /*position: fixed;*/
+        /*z-index: 20;*/
+        /*left: 200px;*/
+        /*right:20px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         D*/
+    /*}*/
+/*}*/
 
 
 /*//test*/
