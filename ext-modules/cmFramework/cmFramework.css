@@ -354,5 +354,5 @@
     transition: linear all 0.5s;
 }
 .cm-fade-in-animation.ng-hide {
-    opacity: 0;
+    opacity: 10;
 }
