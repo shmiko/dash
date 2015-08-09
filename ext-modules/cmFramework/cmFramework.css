@@ -339,7 +339,9 @@
     line-height: 1.5em !important;
 }
 
-.testing_css{}
+.testing_css{
+    color:red;
+}
 
 
 .cm-popup-menu {
