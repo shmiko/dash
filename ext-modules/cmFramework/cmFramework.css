@@ -342,7 +342,7 @@
 .list{};
 
 
-.flights{};
+.flights{HEIGHT:100PX;};
 
 .cm-popup-menu {
     position: absolute;
