@@ -11,5 +11,5 @@ body { background-color: #fff; padding: 20px; }
    position: relative;
    overflow: hidden;
    color: #000;
-   background: #000 url(../images/backgroung.jpg) no-repeat 0px 0px;
+   background: #000 url(images/quiz_bottom.jpeg) no-repeat 0px 0px;
 }
