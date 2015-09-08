@@ -1,0 +1,50 @@
+[{
+  "question" : "Which is the fastest mode of transport from Sydney to LA?",
+  "answers"  : [
+    {"id"  : 0, "text" : "By Plane" },
+    {"id"  : 1, "text" : "By Boat" },
+    {"id"  : 2, "text" : "Swimming" },
+    {"id"  : 3, "text" : "Hitchhiking" }
+  ],
+  "correct"  : 0
+},{
+  "question" : "Which image shows a close-up of Hawaii?",
+  "answers"  : [
+    {"id"  : 0, "image" : "images/sydney.jpg" },
+    {"id"  : 1, "image" : "images/new_york_1.jpg" },
+    {"id"  : 2, "image" : "images/eifel.jpg" },
+    {"id"  : 3, "image" : "images/hawaii7.jpg" }
+  ],
+  "correct"  : 3
+},
+{
+"question" : "One year travelling is equal to how many years working?",
+"answers"  : [
+{"id"  : 0, "text" : "12"},
+{"id"  : 1, "text" : "6"},
+{"id"  : 2, "text" : "29"},
+{"id"  : 3, "text" : "2"}
+],
+"correct"  : 2
+},
+{
+"question" : "What is the name of New York's most famous department store?",
+"answers"  : [
+{"id"  : 0, "text" : "Racy's"},
+{"id"  : 1, "text" : "Macy's"},
+{"id"  : 2, "text" : "Toys R Us"},
+{"id"  : 3, "text" : "B&H Photo"},
+{"id"  : 4, "text" : "McDonalds"},
+{"id"  : 5, "text" : "Nintendo"}
+],
+"correct"  : 1,
+"feedback" : "Though the names seem similar, Racy's is an actual store."
+},
+{
+"question" : "The Great Wall Of China is visible from Space",
+"answers"  : [
+{"id"  : 0, "text" : "True"},
+{"id"  : 1, "text" : "False"}
+],
+"correct"  : 1
+}]
