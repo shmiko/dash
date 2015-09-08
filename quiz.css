@@ -71,6 +71,11 @@ body { background-color: #fff; padding: 20px; }
    margin: 0px 0px 40px 0px;
 }
 
+#myQuiz .intro h2 {
+   margin-top:50px;
+}
+
+
 #myQuiz .question {
    width: 550px;
    position: absolute;
