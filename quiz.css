@@ -155,7 +155,7 @@ body { background-color: #fff; padding: 20px; }
 #myQuiz .results {
    position: absolute;
    top: 225px;
-   left: 40px;
+   left: 2660px;
    width: 550px;
 }
 #myQuiz .results .share {
