@@ -24,6 +24,14 @@ body { background-color: #fff; padding: 20px; }
    left: 36px;
 }
 
+#myQuiz h1 span{
+   display: block;
+   font-weight: 900;
+   font-family: 'Titillium Web', sans-serif;
+   font-size: 3.2em;
+   line-height: 65px;
+}
+
 #myQuiz h2 {
    font-size: 3em;
    margin: 0px;
