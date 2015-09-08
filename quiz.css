@@ -2,7 +2,7 @@
 
 body { background-color: #fff; padding: 20px; }
 
-#myQuizPlane {
+#myQuiz {
    font-family: 'Roboto', sans-serif;
    font-size: 16px;
    font-weight: 400;
@@ -30,6 +30,7 @@ body { background-color: #fff; padding: 20px; }
    font-family: 'Titillium Web', sans-serif;
    font-size: 3.2em;
    line-height: 65px;
+   color: #000088;
 }
 
 #myQuiz h2 {
