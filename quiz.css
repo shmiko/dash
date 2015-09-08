@@ -8,7 +8,7 @@ body { background-color: #fff; padding: 20px; }
    font-weight: 400;
    background:  url(images/quizimage.jpg) no-repeat 0px 0px;
    z-index: 10;
-   width: 650px;
+   /*width: 700px;*/
    height: 1200px;
    color: #21ff0f;
    text-shadow: 2px 2px #060200;
