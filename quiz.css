@@ -58,7 +58,7 @@ body { background-color: #fff; padding: 20px; }
 #myQuiz .progress {
    width: 550px;
    position: absolute;
-   top: 160px;
+   top: 200px;
    left: 40px;
 }
 #myQuiz .progress div {
@@ -70,7 +70,6 @@ body { background-color: #fff; padding: 20px; }
    border-radius: 50%;
    background-color: rgba(255,255,255,.2);
    transition: background-color 1s;
-
 }
 #myQuiz .progress div::after {
    content: '';
@@ -80,7 +79,7 @@ body { background-color: #fff; padding: 20px; }
    left: -15px;
    width: 65px;
    height: 40px;
-   background: url(imgaes/ring.svg) no-repeat 0px 0px;
+   background: url(images/ring.svg) no-repeat 0px 0px;
    transition: opcaity 1s, top 1s;
 }
 
