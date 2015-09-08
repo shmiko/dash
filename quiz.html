@@ -11,12 +11,13 @@
 		<!-- markup goes here -->
 		<div id="myQuiz" ng-controller="quizController">
 			<h1>Test your knowledge: <span>TripStomp?</span></h1>
-			<div class="progress">
-				<div class="answered correct"></div>
-				<div class="on"></div>
-				<div></div>
+			<div class="progress" ng-repeat="myQuestion in myQuestions">
+				<!--{{totalQuestions}}-->
+				<!--<div class="answered correct"></div>-->
+				<!--<div class="on"></div>-->
+				<!--<div></div>-->
 			</div>
-			<div class="intro">
+			<div class="intro {{ (activeQuestion > -1) ? 'inactive' : 'active' }}">
 				<h2>Welcome</h2>
 				<p>Click begin to test your knowledge.</p>
 				<p class="btn">Begin</p>
