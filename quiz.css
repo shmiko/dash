@@ -156,7 +156,7 @@ body { background-color: #fff; padding: 20px; }
    cursor: pointer;
 }
 #myQuiz .question.unanswered .ans:hover {
-   background-color: rgba(238,189,102,.2);
+   background-color: darkred;
 }
 #myQuiz .question.answered .ans {
    cursor: default;
@@ -165,8 +165,8 @@ body { background-color: #fff; padding: 20px; }
    min-height: 60px;
    padding: 0px;
    background-repeat: no-repeat;
-   background-position: 0px 0px;
-   background-size: 20%;
+   background-position: -180px -70px;
+   background-size: 1550px 160px ;
 }
 /* Feedback */
 #myQuiz .feedback {
@@ -216,7 +216,7 @@ body { background-color: #fff; padding: 20px; }
 }
 
 #myQuiz .active, #myQuiz.inactive {
-   transition: left 1.5s ease-in-out;
+   transition: left 1s ease-in-out;
 }
 
 #myQuiz .active {
