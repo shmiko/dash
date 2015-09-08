@@ -79,7 +79,7 @@ body { background-color: #fff; padding: 20px; }
 #myQuiz .question {
    width: 550px;
    position: absolute;
-   top: 225px;
+   top: 275px;
    left: 40px;
 }
 
@@ -100,3 +100,9 @@ body { background-color: #fff; padding: 20px; }
    position: relative;
 }
 
+#myQuiz .question .ans.selected{
+   border-color: #e3072a;
+}
+#myQuiz .question .ans.correct{
+   border-color: #31ef31;
+}
