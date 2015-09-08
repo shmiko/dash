@@ -12,7 +12,8 @@
 		<div id="myQuiz" ng-controller="quizController">
 			<h1>Test your knowledge: <span>TripStomp?</span></h1>
 			<div class="progress">
-				<div class="{{ ($index === activeQuestion) ? 'on' : 'off' }}" ng-repeat="myQuestion in myQuestions"></div>
+				<div class="{{ ($index === activeQuestion) ? 'on' : 'off' }}"
+					 ng-repeat="myQuestion in myQuestions"></div>
 				<!--{{totalQuestions}}-->
 				<!--<div class="answered correct"></div>-->
 				<!--<div class="on"></div>-->
@@ -21,12 +22,25 @@
 			<div class="intro {{ (activeQuestion > -1) ? 'inactive' : 'active' }}">
 				<h2>Welcome</h2>
 				<p>Click begin to test your knowledge.</p>
-				<p class="btn" ng-click="activeQuestion = 0">Begin</p>
+				<p class="btn" ng-click="activeQuestion = 1">Begin</p>
 
 			</div>
-			<div class="question answered"  ng-repeat="myQuestion in myQuestions">
-				<p class="txt">{{myQuestion.question}}</p>
-				<p class="ans" ng-repeat="Answer in myQuestions[$index].answers">{{Answer.text}}</p>
+			<div class="question
+			{{$index === activeQuestion ? 'active' : 'inactive'}}
+			{{myQuestion.questionState = 'answered'  ? 'answered' : 'unanswered'}}
+			"  ng-repeat="myQuestion in myQuestions">
+				<p class="txt">{{myQuestion.question}} {{myQuestion.selectedAnswer}}</p>
+				<p class="ans"
+				   ng-class="{
+				   image:Answer.image,
+				   selected:isSelected($parent.$index,$index),
+				   correct:isCorrect($parent.$index,$index)
+				   }"
+				   ng-style="{'background-image':'url({{Answer.image}})'}"
+				   ng-click="selectAnswer($parent.$index,$index)"
+				   ng-repeat="Answer in myQuestions[$index].answers">
+					{{Answer.text}}
+				</p>
 				<!--<p class="ans selected">Answer 2</p>-->
 				<!--<p class="ans correct">Answer 3</p>-->
 				<!--<p class="ans">Answer 4</p>-->
