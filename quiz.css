@@ -139,3 +139,18 @@ body { background-color: #fff; padding: 20px; }
 #myQuiz .question.answered .ans {
    cursor: default;
 }
+
+/* Feedback */
+#myQuiz .feedback {
+   color: #ef38df;
+   margin-top: 10px;
+   transition: opacity 1.5s, margin-yop 1.5s;
+}
+
+#myQuiz .feedback .btn {
+   margin-top: 5px;
+}
+
+#myQuiz .feedback strong {
+   color: #fff;
+}
