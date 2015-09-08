@@ -135,3 +135,7 @@ body { background-color: #fff; padding: 20px; }
 #myQuiz .question.unanswered .ans:hover {
    background-color: rgba(238,189,102,.2);
 }
+
+#myQuiz .question.answered .ans {
+   cursor: default;
+}
