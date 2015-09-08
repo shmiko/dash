@@ -43,5 +43,8 @@ body { background-color: #fff; padding: 20px; }
 #myQuiz h3 { font-size: 2.4em; margin: 0px; font-weight: 100}
 #myQuiz p  { margin: 0px 0px 14px 0px;}
 
+#myQuiz .btn  { display: inline-block; cursor: pointer; background-color: #C04B01; color: #fff;
+text-decoration: none; padding: 5px 15px; border-radius: 6px;}
+
 #myQuiz .intro { position: absolute; top: 225px; left: 40px; width: 550px;}
 #myQuiz .intro p  { margin: 0px 0px 40px 0px;}
