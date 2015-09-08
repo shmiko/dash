@@ -106,3 +106,16 @@ body { background-color: #fff; padding: 20px; }
 #myQuiz .question .ans.correct{
    border-color: #31ef31;
 }
+
+#myQuiz .question .ans::after {
+   content: '';
+   display: block;
+   width: 20px;
+   height: 20px;
+   background: #777 no-repeat 0px 0px;
+   background-size: 20px 20px;
+   position: absolute;
+   top: 5px;
+   right: 5px;
+
+}
