@@ -143,8 +143,11 @@ body { background-color: #fff; padding: 20px; }
 /* Feedback */
 #myQuiz .feedback {
    color: #ef38df;
-   margin-top: 10px;
-   transition: opacity 1.5s, margin-yop 1.5s;
+   margin-top: 50px;
+   transition: opacity 1.5s,
+   margin-top 1.5s;
+   visibility: hidden;
+   opacity: 0;
 }
 
 #myQuiz .feedback .btn {
@@ -153,4 +156,10 @@ body { background-color: #fff; padding: 20px; }
 
 #myQuiz .feedback strong {
    color: #fff;
+}
+
+#myQuiz .answered .feedback {
+   visibility: visible;
+   opacity: 1;
+   margin-top: 10px;
 }
