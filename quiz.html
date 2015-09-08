@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html ng-app="myQuiz">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +9,7 @@
 	<body>
 
 		<!-- markup goes here -->
-		<div id="myQuiz">
+		<div id="myQuiz" ng-controller="quizController">
 			<h1>Test your knowledge: <span>TripStomp?</span></h1>
 			<div class="progress">
 				<div class="answered correct"></div>
@@ -45,6 +45,7 @@
 				</div>
 			</div>
 		</div>
-
+		<script src="/bower_components/angular/angular.min.js"></script>
+		<script src="quiz.js"></script>
 	</body>
 </html>
