@@ -3,48 +3,47 @@
 body { background-color: #fff; padding: 20px; }
 
 #myQuizPlane {
-   background:  url(images/quizimage.jpg) no-repeat ;
-   z-index: 10;
-   width: 680px;
-   height: 1200px;
-   /*top: 1900px;*/
-   /*left: 200px;*/
-   /*margin-top: -6px;*/
-}
-
-#myQuizClouds {
    font-family: 'Roboto', sans-serif;
    font-size: 16px;
    font-weight: 400;
-   width: 1800px;
-   height: 200px;
-   position: absolute;
-   /*overflow: hidden;*/
-   color: #000;
-   background:  url(images/clouds1.jpeg) no-repeat ;
-   margin-top: -76px;
-   left: 80px;
-   z-index: 99;
+   background:  url(images/quizimage.jpg) no-repeat 0px 0px;
+   z-index: 10;
+   width: 650px;
+   height: 1200px;
+   color: #0c12ff;
 }
 
-#myQuizRoad {
-   background:  url(images/quiz_bottom.jpeg) no-repeat ;
-   z-index: 0;
-   position: absolute;
-   width: 1000px;
-   height: 200px;
-   /*top: 1900px;*/
-   /*left: 200px;*/
-   margin-top: 117px;
-   left: 80px;
+#myQuiz h2 {
+   font-size: 3em;
+   margin: 0px;
+   font-weight: 100
+}
+#myQuiz h3 {
+   font-size: 2.4em;
+   margin: 0px;
+   font-weight: 100
+}
+#myQuiz p  {
+   margin: 0px 0px 14px 0px;
 }
 
-#myQuiz h2 { font-size: 3em; margin: 0px; font-weight: 100}
-#myQuiz h3 { font-size: 2.4em; margin: 0px; font-weight: 100}
-#myQuiz p  { margin: 0px 0px 14px 0px;}
+#myQuiz .btn  {
+   display: inline-block;
+   cursor: pointer;
+   background-color: #C04B01;
+   color: #fff;
+   text-decoration: none;
+   padding: 5px 15px;
+   border-radius: 6px;
+}
 
-#myQuiz .btn  { display: inline-block; cursor: pointer; background-color: #C04B01; color: #fff;
-text-decoration: none; padding: 5px 15px; border-radius: 6px;}
+#myQuiz .intro {
+   position: absolute;
+   top: 225px;
+   left: 660px;
+   width: 550px;
+}
 
-#myQuiz .intro { position: absolute; top: 225px; left: 660px; width: 550px;}
-#myQuiz .intro p  { margin: 0px 0px 40px 0px;}
+#myQuiz .intro p  {
+   margin: 0px 0px 40px 0px;
+}
