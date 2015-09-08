@@ -13,7 +13,9 @@
         });
 
         $scope.selectAnswer = function(qIndex,aIndex){
+
             var questionState = $scope.myQuestions[qIndex].questionState;
+
             if(questionState != 'answered'){
                 $scope.myQuestions[qIndex].selectedAnswer = aIndex;
                 var correctAnswer = $scope.myQuestions[qIndex].correct;
@@ -27,19 +29,20 @@
                 }
                 $scope.myQuestions[qIndex].questionState = 'answered';
             }
-        }
+            $scope.percentage = (($scope.score / $scope.totalQuestions)*100).toFixed(2);
+        };
 
         $scope.isSelected = function(qIndex,aIndex){
             return  $scope.myQuestions[qIndex].selectedAnswer === aIndex;
-        }
+        };
 
         $scope.isCorrect = function(qIndex,aIndex){
             return  $scope.myQuestions[qIndex].correctAnswer === aIndex;
-        }
+        };
 
         $scope.selectContinue = function(){
             return $scope.activeQuestion += 1;
-        }
+        };
 
     }]);
 
