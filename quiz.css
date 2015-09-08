@@ -127,3 +127,7 @@ body { background-color: #fff; padding: 20px; }
 #myQuiz .question .ans.correct::after {
    background-image: url(images/icon_correct.svg);
 }
+
+#myQuiz .question.unanswered .ans {
+   cursor: pointer;
+}
