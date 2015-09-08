@@ -44,6 +44,15 @@
             return $scope.activeQuestion += 1;
         };
 
+        $scope.createShareLinks = function(percentage){
+            var url = 'http://calmapit.com';
+            var emailLink = '<a class="btn email" href="mailto:?seubject=Try to beat my high score!&amp;body=I scored a '+percentage+'% on this quiz about travel. Try to beat my score at '+url+'">Email a Friend<a/>';
+            var twitterLink = '<a class="btn twitter" target="_blank" href="http://twitter.com/share?text=I scored a '+percentage+'% on this quiz about travel. Try to beat my score at&amp;hashtags=TripStompQuiz&amp;url='+url+'">Tweet your score.<a/>';
+            var newMarkup = emailLink + twitterLink;
+
+            return $sce.trustAsHtml(newMarkup);
+        }
+
     }]);
 
 
