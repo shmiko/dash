@@ -86,7 +86,7 @@ body { background-color: #fff; padding: 20px; }
 }
 #myQuiz .progress div.on,
 #myQuiz .progress div.answered {
-   background-color: #ecff14;
+   background-color: #31ef31;
 }
 #myQuiz .progress div.correct::after {
    top:-5px;
