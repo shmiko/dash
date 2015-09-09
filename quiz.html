@@ -7,8 +7,6 @@
 		<link rel="stylesheet" type="text/css" href="quiz.css">
 	</head>
 	<body>
-
-		<!-- markup goes here -->
 		<div id="myQuiz" ng-controller="quizController">
 			<h1>Test your knowledge: <span>TripStomp?</span></h1>
 			<div class="progress">
@@ -21,7 +19,6 @@
 				<h2>Welcome</h2>
 				<p>Click begin to test your knowledge.</p>
 				<p class="btn" ng-click="activeQuestion = 0">Begin</p>
-
 			</div>
 			<div class="question
 			{{$index === activeQuestion ? 'active' : 'inactive'}}
@@ -39,7 +36,6 @@
 				   ng-repeat="Answer in myQuestions[$index].answers">
 					{{Answer.text}}
 				</p>
-
 				<div class="feedback">
 					<p ng-show="myQuestion.correctness === 'correct'">You are <strong>correct</strong></p>
 					<p ng-show="myQuestion.correctness === 'incorrect'">Oops! That is not correct.</p>
