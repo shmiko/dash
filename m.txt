@@ -1,0 +1,14 @@
+{ "student_id" : { "$minKey" : 1 } } -->> { "student_id" : 0 } on : s2 Timestamp(3, 0)
+			{ "student_id" : 0 } -->> { "student_id" : 2 } on : s0 Timestamp(3, 1)
+			{ "student_id" : 2 } -->> { "student_id" : 3497 } on : s1 Timestamp(3, 2)
+			{ "student_id" : 3497 } -->> { "student_id" : 7778 } on : s1 Timestamp(3, 3)
+			{ "student_id" : 7778 } -->> { "student_id" : { "$maxKey" : 1 } } on : s1 Timestamp(3, 4)
+
+
+mongod --replSet m101 --logpath /data/rs1/logs/rs1.log --dbpath /data/rs1 --port 27017 --smallfiles --oplogSize 64 --fork
+mongod --replSet m101 --logpath /data/rs2/logs/rs2.log --dbpath /data/rs2 --port 27018 --smallfiles --oplogSize 64 --fork
+mongod --replSet m101 --logpath /data/rs3/logs/rs3.log --dbpath /data/rs3 --port 27019 --smallfiles --oplogSize 64 --fork
+
+config = { _id: "m101", members:[{ _id : 0, host : "localhost:27017"},{ _id : 1, host : "localhost:27018"},{ _id : 2, host : "localhost:27019"} ]};
+rs.initiate(config);
+rs.status()--replSet
