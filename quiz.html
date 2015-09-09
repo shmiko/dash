@@ -13,8 +13,8 @@
 			<h1>Test your knowledge: <span>TripStomp?</span></h1>
 			<div class="progress">
 				<div class="{{ ($index === activeQuestion) ? 'on' : 'off' }}
-					{{ (myQuestion.questionState = 'answered') ? 'answered' : 'unanswered'}}
-					{{ (myQuestion.correctness = 'correct') ? 'correct' : 'incorrect'}}
+					{{ (myQuestion.questionState === 'answered') ? 'answered' : 'unanswered'}}
+					{{ (myQuestion.correctness === 'correct') ? 'correct' : 'incorrect'}}
 					" ng-repeat="myQuestion in myQuestions"></div>
 			</div>
 			<div class="intro {{ (activeQuestion > -1) ? 'inactive' : 'active' }}">
@@ -25,7 +25,7 @@
 			</div>
 			<div class="question
 			{{$index === activeQuestion ? 'active' : 'inactive'}}
-			{{myQuestion.questionState = 'answered'  ? 'answered' : 'unanswered'}}
+			{{myQuestion.questionState === 'answered'  ? 'answered' : 'unanswered'}}
 			"  ng-repeat="myQuestion in myQuestions">
 				<p class="txt">{{myQuestion.question}} {{myQuestion.selectedAnswer}}</p>
 				<p class="ans"
@@ -44,7 +44,7 @@
 					<p ng-show="myQuestion.correctness === 'correct'">You are <strong>correct</strong></p>
 					<p ng-show="myQuestion.correctness === 'incorrect'">Oops! That is not correct.</p>
 					<p>{{myQuestion.feedback}}</p>
-					<div class="btn" ng-class="selectContinue())">Continue</div>
+					<div class="btn" ng-class="selectContinue()">Continue</div>
 				</div>
 			</div>
 			<div class="results {{ (totalQuestions === activeQuestion) ? 'active' : 'inactive' }}">
