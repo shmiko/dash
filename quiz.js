@@ -42,7 +42,7 @@
 
         $scope.selectContinue = function(){
             return $scope.activeQuestion += 1;
-        }
+        };
 
         $scope.createShareLinks = function(percentage){
             var url = 'http://calmapit.com';
