@@ -107,6 +107,14 @@ angular.module('app')
                 template: '<cm-layout></cm-layout>'
 
             }
+        },
+        {
+            url: '/mobile',
+            config: {
+                templateUrl: './tripstomp/www/index.html',
+                controller: 'testController'
+
+            }
         }
     ];
 
