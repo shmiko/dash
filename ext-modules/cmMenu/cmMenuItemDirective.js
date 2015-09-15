@@ -3,6 +3,10 @@
 angular.module('cmMenu').directive('cmMenuItem', function () {
     return {
         require: '^cmMenu',
+        //require controller from menu
+
+        //using isolate scope as should menu
+        //This is where we specify fields from the template directive attributes
         scope: {
             label: '@',
             icon: '@',
