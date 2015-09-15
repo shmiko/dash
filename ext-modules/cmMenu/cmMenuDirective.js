@@ -5,6 +5,7 @@ angular.module('cmMenu').directive('cmMenu', ['$timeout', function ($timeout) {
         scope: {
 
         },
+        //restrict: 'AE', As of 1.3 this is the default
         transclude: true,
         templateUrl: 'ext-modules/cmMenu/cmMenuTemplate.html',
         controller: 'cmMenuController',
