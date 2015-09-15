@@ -7,6 +7,7 @@ angular.module('cmMenu').directive('cmMenuItem', function () {
 
         //using isolate scope as should menu
         //This is where we specify fields from the template directive attributes
+        //is framework template and menu template
         scope: {
             label: '@',
             icon: '@',

@@ -5,6 +5,7 @@
         return {
             require: '^cmMenu',
             transclude: true,
+            //to use transclude you would add the ng-transclude to the parent component
             scope: {
                 label: '@',
                 icon: '@'
