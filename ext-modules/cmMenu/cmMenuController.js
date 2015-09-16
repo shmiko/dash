@@ -8,6 +8,7 @@ angular.module('cmMenu').controller('cmMenuController',
             $scope.openMenuScope = null;
             $scope.showMenu = true;
             $scope.allowHorizontalToggle = true;
+            $scope.test = true;
 
             this.getActiveElement = function () {
                 return $scope.activeElement;
