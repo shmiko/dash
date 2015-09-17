@@ -1,0 +1,13 @@
+db.messages.aggregate([
+            {$project:{"headers.From":1,"headers.To":1,_id:0}},
+            {$unwind:"$headers.To"},
+            {$group:{_id:{From:"$headers.From",To:"$headers.To"},number {$sum:1}}},
+            {$sort:{number:-1}},
+            {$limit:3}
+            ]);
+
+
+Exact Query - Correct Answer is 3
+db.messages.aggregate([{$match:{"headers.From":"andrew.fastow@enron.com","headers.To":"jeff.skilling@enron.com"}},{$project:{From:"$headers.From",To:"$headers.To",_id:0}
+},{$unwind:"$To"},{$group:{_id:{From:"$From",To:"$To"},number:{$sum:1}}}
+,{$limit:3},{$sort:{number:-1}}]);
