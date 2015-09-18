@@ -79,11 +79,15 @@ db.messages.aggregate([
 
 
 Qu 3
+Update field via the shell
+1st:
+Find data
 db.messages.find({"headers.Message-ID":"<8147308.1075851042335.JavaMail.evans@thyme>"})
-
+2nd Update
 db.messages.update(
    { "headers.Message-ID":"<8147308.1075851042335.JavaMail.evans@thyme>" },
    { $addToSet: {"headers.To":["mrpotatohead@10gen.com"]}}
 )
 
-
+Qu4
+Blog enhancement likes up/down
