@@ -91,3 +91,38 @@ db.messages.update(
 
 Qu4
 Blog enhancement likes up/down
+# increments the number of likes on a particular comment. Returns the number of documented updated
+    def increment_likes(self, permalink, comment_ordinal):
+
+        #
+        # XXX Final exam
+        # Work here. You need to update the num_likes value in the comment being liked
+        #
+        post = self.posts.find_one({'permalink': permalink})
+        comment = post['comments'][comment_ordinal]
+        if (comment_ordinal != ''):
+            comment['num_likes'] = int(comment['num_likes']) + 1
+            post['comments'][comment_ordinal] = comment
+
+        try:
+
+
+            self.posts.save(post)
+
+            return 0
+        except:
+            print "Could not update the likes, error"
+        #return 0
+
+
+
+python validate.py                                                                                  17:54
+Welcome to the M101 Final Exam, Question 4 Validation Checker
+Trying to grab the blog home page at url and find the first post. http://localhost:8082/
+Found a post url:  /post/mxwnnnqaflufnqwlekfd
+Trying to grab the number of likes for url  http://localhost:8082/post/mxwnnnqaflufnqwlekfd
+Likes value  2
+Clicking on Like link for post:  /post/mxwnnnqaflufnqwlekfd
+Trying to grab the number of likes for url  http://localhost:8082/post/mxwnnnqaflufnqwlekfd
+Likes value  3
+Tests Passed for Final 4. Your validation code is 3f837hhg673ghd93hgf8
