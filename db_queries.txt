@@ -76,3 +76,14 @@ db.messages.aggregate([
 {$match:{uniqueIds:{$gte:1}}},
 {$limit:300},
 {$sort:{number:-1}}]);
+
+
+Qu 3
+db.messages.find({"headers.Message-ID":"<8147308.1075851042335.JavaMail.evans@thyme>"})
+
+db.messages.update(
+   { "headers.Message-ID":"<8147308.1075851042335.JavaMail.evans@thyme>" },
+   { $addToSet: {"headers.To":["mrpotatohead@10gen.com"]}}
+)
+
+
