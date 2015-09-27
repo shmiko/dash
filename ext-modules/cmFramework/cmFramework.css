@@ -90,7 +90,7 @@
 
 .cm-widget-menu-area i {
     cursor: pointer;
-}
+} '??UJ...................     ................................................$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%∫√'
 
 .dropdown-backdrop {
     position: static;
@@ -106,7 +106,7 @@
     text-align: center;
 }
 .cm-logo-area .col-sm-6{
-    left:400px!important;
+    /*left:400px!important;*/
 }
 
 
@@ -137,31 +137,7 @@
     margin-top: -13px;
 }
 
-@media screen and (max-width: 430px) {
-    .cm-icon {
-        display: none;
-    }
-    .cm-logo-title {
-        font-size: 18px;
-    }
-}
 
-.cm-right-side-controls {
-    line-height: 60px;
-}
-
-.cm-right-side-controls > div {
-    text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-    .cm-right-side-controls > div {
-        text-align: right;       
-    }
-    .cm-logo-area {
-        text-align: left;
-    }
-}
 
 .cm-collacmed-menu {
     display: inline-block;
@@ -360,4 +336,35 @@
 }
 .cm-fade-in-animation.ng-hide {
     opacity: 0;
+}
+
+
+@media screen and (max-width: 430px) {
+    .cm-icon {
+        display: none;
+    }
+    .cm-logo-title {
+        font-size: 18px;
+    }
+    .cm-logo-area {
+        font-size: 18px;
+    }
+}
+
+.cm-right-side-controls {
+    line-height: 60px;
+}
+
+.cm-right-side-controls > div {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .cm-right-side-controls > div {
+        text-align: right;
+    }
+    .cm-logo-area {
+        text-align: left;
+        left: 400px;
+    }
 }
