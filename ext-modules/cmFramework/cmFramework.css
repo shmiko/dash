@@ -105,10 +105,14 @@
 .cm-logo-area {
     text-align: center;
 }
+.cm-logo-area .col-sm-6{
+    left:400px!important;
+}
+
 
 .cm-title-area {
     display: inline-block;
-    left:200px;
+
 }
 
 
