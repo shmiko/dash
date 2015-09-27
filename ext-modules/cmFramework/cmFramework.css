@@ -56,13 +56,11 @@
     border-bottom: 1px solid #444;
     color: white;
     background-color: #777;
-    /* margin: 20px; */
+    margin: -20px;
     margin-bottom: 20px;
     min-height: 50px;
     padding: 8px;
     padding-left: 20px;
-    /* top: 170px; */
-    /*margin-top: 30px;*/
 }
 
 .cm-dashboard-controls {
@@ -102,7 +100,6 @@
     background-color: white;
     padding: 0 20px;
     border-bottom: 2px solid black;
-    height: 65px;
 }
 
 .cm-logo-area {
@@ -154,7 +151,7 @@
 
 @media screen and (min-width: 768px) {
     .cm-right-side-controls > div {
-        text-align: right;
+        text-align: right;       
     }
     .cm-logo-area {
         text-align: left;
@@ -177,7 +174,7 @@
 }
 
 .cm-view {
-    margin-left: 200px;
+    /* margin-left: 200px; */
     padding: 20px;
     background-color: #ccc;
     min-height: 100vh;
@@ -186,6 +183,7 @@
 
 .cm-view-full-width {
     margin-left: 0;
+    float: left;
 }
 
 
@@ -334,14 +332,11 @@
 
 .cm-item-horizontal {
     display: inline-block;
-    /*width: 165px !important;*/
-    /*margin-left: 20px;*/
-    /*margin-top: 15px;*/
+    width: 165px !important;
+    margin-left: 20px;
+    margin-top: 5px;
     line-height: 1.5em !important;
 }
-
-.new{}
-
 
 .cm-popup-menu {
     position: absolute;
@@ -358,19 +353,5 @@
     transition: linear all 0.5s;
 }
 .cm-fade-in-animation.ng-hide {
-    opacity: 10;
-}
-
-@media screen and (max-width: 375px) {
-    .cm-menu-title {
-        width: 100%;
-        height: 40px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .cm-menu-title {
-        width: 100%;
-        height: 40px;
-    }
+    opacity: 0;
 }
