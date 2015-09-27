@@ -205,7 +205,7 @@
     .cm-menu-area-vertical {
         position: fixed;
         float: left;
-        width: 150px;
+        width: 200px;
         left: 0;
         top: 0;
         bottom: 0;
@@ -251,7 +251,7 @@
     .cm-menu-area-vertical {
         position: fixed;
         float: left;
-        width: 100px;
+        width: 150px;
         left: 0;
         top: 0;
         bottom: 0;
