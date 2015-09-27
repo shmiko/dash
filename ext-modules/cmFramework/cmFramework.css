@@ -57,7 +57,7 @@
     color: white;
     background-color: #777;
     /* margin: 20px; */
-     margin-bottom: 20px;
+    margin-bottom: 20px;
     min-height: 50px;
     padding: 8px;
     padding-left: 20px;
@@ -153,7 +153,7 @@
 
 @media screen and (min-width: 768px) {
     .cm-right-side-controls > div {
-        text-align: right;       
+        text-align: right;
     }
     .cm-logo-area {
         text-align: left;
@@ -333,9 +333,9 @@
 
 .cm-item-horizontal {
     display: inline-block;
-    width: 165px !important;
-    margin-left: 20px;
-    margin-top: 15px;
+    /*width: 165px !important;*/
+    /*margin-left: 20px;*/
+    /*margin-top: 15px;*/
     line-height: 1.5em !important;
 }
 
