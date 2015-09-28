@@ -105,6 +105,8 @@
 
 .cm-logo-area {
     text-align: center;
+    float: left;
+    left: 120px;
 }
 .cm-logo-area .col-sm-6{
     /*left:400px!important;*/
@@ -360,7 +362,7 @@
     text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     .cm-right-side-controls > div {
         text-align: right;
     }
