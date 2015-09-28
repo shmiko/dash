@@ -2,6 +2,7 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/gulp-jshint/node_modules/jshint/src/platforms" />
       <excludeFolder url="file://$MODULE_DIR$/tripstomp/platforms" />
     </content>
     <orderEntry type="inheritedJdk" />
@@ -9,5 +10,6 @@
     <orderEntry type="library" name="dash node_modules" level="project" />
     <orderEntry type="library" name="dash node_modules" level="project" />
     <orderEntry type="library" name="dashN node_modules" level="project" />
+    <orderEntry type="library" name="dashume node_modules" level="project" />
   </component>
 </module>

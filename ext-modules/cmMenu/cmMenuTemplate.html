@@ -4,6 +4,7 @@
     <a class="btn cm-menu-layout-button" 
        ng-show="allowHorizontalToggle"
        ng-class="{'cm-layout-button-horizontal': !isVertical}"
+       ng-class="{'cm-layout-button-vertical': isVertical}"
        ng-click="toggleMenuOrientation()">
         <i class="fa"
            ng-class="{'fa-chevron-up': isVertical, 'fa-chevron-left': !isVertical}"></i>
