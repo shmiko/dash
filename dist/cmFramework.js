@@ -15,23 +15,32 @@ angular.module('cmFramework').directive('cmUserProfile', function () {
         templateUrl: 'ext-modules/cmFramework/cmUserProfile/cmUserProfileTemplate.html'
     };
 });
+/**
+ * Created by pauljones on 24/05/15.
+ */
 
-angular.module('cmFramework').directive('cmControl', function () {
+
+angular.module("cmFramework").directive("cmControl", function () {
     return {
         templateUrl: 'ext-modules/cmFramework/cmControl/cmControlTemplate.html'
     };
 });
 
 
-angular.module("cmMenu", ["ngAnimate"]);
-angular.module("cmMenu").run(["$templateCache", function($templateCache) {$templateCache.put("ext-modules/cmMenu/cmMenuGroupTemplate.html","\r\n<li class=\"cm-selectable-item\" ng-click=\"clicked()\" ng-class=\"{\'cm-item-horizontal\': !isVertical()}\">\r\n    <div class=\"cm-noselect\">\r\n        <i class=\"fa {{icon}} cm-menu-icon\"></i>\r\n        {{label}}\r\n        <i ng-if=\"isVertical()\"\r\n           class=\"fa fa-chevron-left cm-group-indicator-left\"\r\n           ng-class=\"{\'fa-rotate-270\': isOpen}\"></i>\r\n    </div>\r\n</li>\r\n<div ng-show=\"isOpen\" class=\"cm-subitem-section cm-fade-in-animation\" ng-class=\"{\'cm-popup-menu\': !isVertical() }\">\r\n    <ul ng-transclude></ul>\r\n</div>");
-$templateCache.put("ext-modules/cmMenu/cmMenuItemTemplate.html","\r\n<li class=\"cm-selectable-item\" ng-class=\"{\'cm-item-horizontal\': !isVertical()}\">\r\n    <div class=\"cm-noselect\">\r\n        <i class=\"fa {{icon}} cm-menu-icon\"></i>\r\n        {{label}}\r\n    </div>\r\n    <i ng-if=\"isActive() && isVertical()\"\r\n       class=\"fa fa-2x fa-caret-left cm-menu-active-indicator\"></i>\r\n</li>\r\n");
-$templateCache.put("ext-modules/cmMenu/cmMenuTemplate.html","\r\n<div>\r\n  <ul class=\"cm-menu\" ng-transclude></ul>\r\n    <a class=\"btn cm-menu-layout-button\" \r\n       ng-show=\"allowHorizontalToggle\"\r\n       ng-class=\"{\'cm-layout-button-horizontal\': !isVertical}\"\r\n       ng-click=\"toggleMenuOrientation()\">\r\n        <i class=\"fa\"\r\n           ng-class=\"{\'fa-chevron-up\': isVertical, \'fa-chevron-left\': !isVertical}\"></i>\r\n    </a>\r\n</div>");}]);
+angular.module("cmMenu", ['wwaDashboard']);
+angular.module("cmMenu").run(["$templateCache", function($templateCache) {$templateCache.put("ext-modules/cmMenu/cmMenuGroupTemplate.html","\n<li class=\"cm-selectable-item\" ng-click=\"clicked()\" ng-class=\"{\'cm-item-horizontal\': !isVertical()}\">\n    <div class=\"cm-noselect\">\n        <i class=\"fa {{icon}} cm-menu-icon\"></i>\n        {{label}}\n        <i ng-if=\"isVertical()\"\n           class=\"fa fa-chevron-left cm-group-indicator-left\"\n           ng-class=\"{\'fa-rotate-270\': isOpen}\"></i>\n    </div>\n</li>\n\n<div ng-show=\"isOpen\" class=\"cm-subitem-section cm-fade-in-animation\" ng-class=\"{\'cm-popup-menu\': !isVertical() }\">\n    <ul ng-transclude></ul>\n</div>");
+$templateCache.put("ext-modules/cmMenu/cmMenuItemTemplate.html","\n<li class=\"cm-selectable-item\" ng-class=\"{\'cm-item-horizontal\': !isVertical()}\">\n    <div class=\"cm-noselect\">\n        <i class=\"fa {{icon}} cm-menu-icon\"></i>\n        {{label}}\n    </div>\n    <i ng-if=\"isActive() && isVertical()\"\n       class=\"fa fa-2x fa-caret-left cm-menu-active-indicator\"></i>\n</li>\n\n\n");
+$templateCache.put("ext-modules/cmMenu/cmMenuTemplate.html","\n<div>\n  <ul class=\"cm-menu\" ng-transclude></ul>\n    <a class=\"btn cm-menu-layout-button\" \n       ng-show=\"allowHorizontalToggle\"\n       ng-class=\"{\'cm-layout-button-horizontal\': !isVertical}\"\n       ng-click=\"toggleMenuOrientation()\">\n        <i class=\"fa\"\n           ng-class=\"{\'fa-chevron-up\': isVertical, \'fa-chevron-left\': !isVertical}\"></i>\n    </a>\n</div>\n");}]);
 
 
 angular.module('cmMenu').directive('cmMenuItem', function () {
     return {
         require: '^cmMenu',
+        //require controller from menu
+
+        //using isolate scope as should menu
+        //This is where we specify fields from the template directive attributes
+        //is framework template and menu template
         scope: {
             label: '@',
             icon: '@',
@@ -46,7 +55,7 @@ angular.module('cmMenu').directive('cmMenuItem', function () {
 
             scope.isVertical = function () {
                 return ctrl.isVertical() || el.parents('.cm-subitem-section').length > 0;
-            }
+            };
 
             el.on('click', function (evt) {
                 evt.stopPropagation();
@@ -59,41 +68,44 @@ angular.module('cmMenu').directive('cmMenuItem', function () {
         }
     };
 });
+(function(){
 
 
-angular.module('cmMenu').directive('cmMenuGroup', function () {
-    return {
-        require: '^cmMenu',
-        transclude: true,
-        scope: {
-            label: '@',
-            icon: '@'
-        },
-        templateUrl: 'ext-modules/cmMenu/cmMenuGroupTemplate.html',
-        link: function (scope, el, attrs, ctrl) {
-            scope.isOpen = false;
-            scope.closeMenu = function () {
+    angular.module('cmMenu').directive('cmMenuGroup', function () {
+        return {
+            require: '^cmMenu',
+            transclude: true,
+            //to use transclude you would add the ng-transclude to the parent component
+            scope: {
+                label: '@',
+                icon: '@'
+            },
+            templateUrl: 'ext-modules/cmMenu/cmMenuGroupTemplate.html',
+            link: function (scope, el, attrs, ctrl) {
                 scope.isOpen = false;
-            };
-            scope.clicked = function () {
-                scope.isOpen = !scope.isOpen;
+                scope.closeMenu = function () {
+                    scope.isOpen = false;
+                };
+                scope.clicked = function () {
+                    scope.isOpen = !scope.isOpen;
 
-                if (el.parents('.cm-subitem-section').length == 0)
-                    scope.setSubmenuPosition();
+                    if (el.parents('.cm-subitem-section').length == 0)
+                        scope.setSubmenuPosition();
 
-                ctrl.setOpenMenuScope(scope);
-            };
-            scope.isVertical = function () {
-                return ctrl.isVertical() || el.parents('.cm-subitem-section').length > 0;
-            };
+                    ctrl.setOpenMenuScope(scope);
+                };
+                scope.isVertical = function () {
+                    return ctrl.isVertical() || el.parents('.cm-subitem-section').length > 0;
+                };
 
-            scope.setSubmenuPosition = function () {
-                var pos = el.offset();
-                $('.cm-subitem-section').css({ 'left': pos.left + 20, 'top': 36 });
-            };
-        }
-    };
-});
+                scope.setSubmenuPosition = function () {
+                    var pos = el.offset();
+                    $('.cm-subitem-section').css({ 'left': pos.left + 20, 'top': 36 });
+                };
+            }
+        };
+    });
+})();
 
 
 angular.module('cmMenu').directive('cmMenu', ['$timeout', function ($timeout) {
@@ -101,6 +113,7 @@ angular.module('cmMenu').directive('cmMenu', ['$timeout', function ($timeout) {
         scope: {
 
         },
+        //restrict: 'AE', As of 1.3 this is the default
         transclude: true,
         templateUrl: 'ext-modules/cmMenu/cmMenuTemplate.html',
         controller: 'cmMenuController',
@@ -117,14 +130,12 @@ angular.module('cmMenu').directive('cmMenu', ['$timeout', function ($timeout) {
 angular.module('cmMenu').controller('cmMenuController',
     ['$scope', '$rootScope',
         function ($scope, $rootScope) {
-            $scope.layouts = [
-                { name: 'Boring', url: 'red' },
-                { name: 'In Your Face', url: 'blue' }
-            ];
-            $scope.isVertical = true;
+
+            $scope.isVertical = false;
             $scope.openMenuScope = null;
             $scope.showMenu = true;
             $scope.allowHorizontalToggle = true;
+            $scope.test = true;
 
             this.getActiveElement = function () {
                 return $scope.activeElement;
@@ -178,9 +189,10 @@ angular.module('cmMenu').controller('cmMenuController',
             });
         }
     ]);
-angular.module("cmFramework").run(["$templateCache", function($templateCache) {$templateCache.put("ext-modules/cmFramework/cmFrameworkTemplate.html","\r\n<div class=\"cm-title-bar\">\r\n    <div class=\"row\">\r\n        <div class=\"cm-logo-area col-sm-6\">\r\n            <img class=\"cm-icon\" ng-src=\"{{ iconFile }}\" />\r\n            <div class=\"cm-title-area\">\r\n                <p class=\"cm-logo-title\">{{ title }}</p>\r\n                <p class=\"cm-logo-subtitle\">{{ subtitle }}</p>\r\n            </div>\r\n\r\n            <div ng-if=\"isMenuButtonVisible\" ng-click=\"menuButtonClicked()\" \r\n                 class=\"cm-collacmed-menu pull-right\">\r\n                <button type=\"button\" class=\"btn cm-nav-button\">\r\n                    <i class=\"fa fa-bars\"></i>\r\n                </button>\r\n            </div>\r\n\r\n        </div>\r\n\r\n        <div class=\"cm-right-side-controls col-sm-6\">\r\n            <!-- <div>\r\n                <button class=\"btn btn-primary\">Button 1</button>\r\n                <button class=\"btn btn-success\">Button 2</button>\r\n                <button class=\"btn btn-warning\">Button 3</button>\r\n            </div> -->\r\n            <cm-user-profile-small></cm-user-profile-small>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div class=\"cm-menu-area\"\r\n     ng-show=\"isMenuVisible\"\r\n     ng-class=\"{\'cm-menu-area-vertical\': isMenuVertical, \'cm-menu-area-horizontal\': !isMenuVertical}\">\r\n    <cm-user-profile></cm-user-profile>\r\n    <ng-transclude></ng-transclude>\r\n</div>\r\n\r\n<!-- <ng-transclude></ng-transclude>-->\r\n\r\n<div ng-view class=\"cm-view\"\r\n        ng-class=\"{\'cm-view-full-width\': !isMenuVertical || !isMenuVisible}\">\r\n</div> \r\n\r\n\r\n");
-$templateCache.put("ext-modules/cmFramework/cmUserProfile/cmUserProfileSmallTemplate.html","\r\n<div class=\"cm-user-profile-small pull-right\">\r\n    <img src=\"images/employee-don.png\" alt=\"user image\" />\r\n    <span>Paul Jones</span>\r\n    <button class=\"btn btn-default btn-sm\">\r\n        <i class=\"fa fa-chevron-down\"></i>\r\n    </button>\r\n</div>\r\n");
-$templateCache.put("ext-modules/cmFramework/cmUserProfile/cmUserProfileTemplate.html","\r\n<div class=\"cm-user-profile\" ng-if=\"isMenuVertical && !isMenuButtonVisible\">\r\n    <img src=\"images/employee-don.png\" alt=\"user image\"/>\r\n    <div>\r\n        <p>Paul</p>\r\n        <p>Jones</p>\r\n        <button class=\"btn btn-default btn-sm\">\r\n            <i class=\"fa fa-chevron-down\"></i>\r\n        </button>\r\n    </div>\r\n</div>\r\n");}]);
+angular.module("cmFramework").run(["$templateCache", function($templateCache) {$templateCache.put("ext-modules/cmFramework/cmFrameworkTemplate.html","﻿\n<div class=\"cm-title-bar\">\n    <div class=\"row\">\n        <div class=\"cm-logo-area col-sm-6\">\n            <img class=\"cm-icon\" ng-src=\"{{ iconFile }}\" />\n            <div class=\"cm-title-area\">\n                <p class=\"cm-logo-title\">{{ title }}</p>\n                <p class=\"cm-logo-subtitle\">{{ subtitle }}</p>\n            </div>\n\n            <div ng-if=\"isMenuButtonVisible\" ng-click=\"menuButtonClicked()\"\n                 class=\"cm-collacmed-menu pull-right\">\n                <button type=\"button\" class=\"btn cm-nav-button\">\n                    <i class=\"fa fa-bars\"></i>\n                </button>\n            </div>\n\n        </div>\n\n        <div class=\"cm-right-side-controls col-sm-6\">\n            <!-- <div>\n                <button class=\"btn btn-primary\">Button 1</button>\n                <button class=\"btn btn-success\">Button 2</button>\n                <button class=\"btn btn-warning\">Button 3</button>\n            </div> -->\n            <!--<cm-control></cm-control>-->\n            <!--<cm-user-profile-small></cm-user-profile-small>-->\n        </div>\n    </div>\n</div>\n\n<div class=\"cm-menu-area\"\n     ng-show=\"isMenuVisible\"\n     ng-class=\"{\'cm-menu-area-vertical\': isMenuVertical, \'cm-menu-area-horizontal\': !isMenuVertical}\">\n    <!--<cm-user-profile></cm-user-profile>-->\n    <ng-transclude></ng-transclude>\n</div>\n\n<!-- <ng-transclude></ng-transclude>-->\n\n<div ng-view class=\"cm-view\"\n        ng-class=\"{\'cm-view-full-width\': !isMenuVertical || !isMenuVisible}\">\n</div>\n\n");
+$templateCache.put("ext-modules/cmFramework/cmControl/cmControlTemplate.html","<div class=\"cm-control pull-right\">\n    <i class=\"fa fa-crop\"></i>\n    <form>\n\n        <div class=\"form-group\">\n            <label>Layout</label>\n            <select class=\"form-control\" ng-model=\"layout\" ng-options=\"layout.url as layout.name for layout in layouts\"></select>\n        </div>\n    </form>\n</div>");
+$templateCache.put("ext-modules/cmFramework/cmUserProfile/cmUserProfileSmallTemplate.html","\n<div class=\"cm-user-profile-small pull-right\">\n    <img src=\"images/employee-don.png\" alt=\"user image\" />\n    <span>Paul Jones</span>\n    <button class=\"btn btn-default btn-sm\">\n        <i class=\"fa fa-chevron-down\"></i>\n    </button>\n</div>\n");
+$templateCache.put("ext-modules/cmFramework/cmUserProfile/cmUserProfileTemplate.html","\n<div class=\"cm-user-profile\" ng-if=\"isMenuVertical && !isMenuButtonVisible\">\n    <img src=\"images/employee-don.png\" alt=\"user image\"/>\n    <div>\n        <p>Paul</p>\n        <p>Jones</p>\n        <button class=\"btn btn-default btn-sm\">\n            <i class=\"fa fa-chevron-down\"></i>\n        </button>\n    </div>\n</div>\n");}]);
 
 
 angular.module("cmFramework").directive("cmFramework", function () {
@@ -189,7 +201,8 @@ angular.module("cmFramework").directive("cmFramework", function () {
         scope: {
             title: '@',
             subtitle: '@',
-            iconFile: '@'
+            iconFile: '@',
+            route: '@'
         },
         controller: "cmFrameworkController",
         templateUrl: "ext-modules/cmFramework/cmFrameworkTemplate.html"
@@ -201,10 +214,16 @@ angular.module("cmFramework").directive("cmFramework", function () {
 angular.module("cmFramework").controller("cmFrameworkController",
     ['$scope', '$window', '$timeout', '$rootScope', '$location',
         function ($scope, $window, $timeout, $rootScope, $location) {
+            //$scope.layout = 'normal';
 
-            $scope.isMenuVisible = true;
-            $scope.isMenuButtonVisible = true;
-            $scope.isMenuVertical = true;
+            //$scope.layouts = [
+            //    { name: 'Boring', url: 'normal' },
+            //    { name: 'Circles', url: 'circle' },
+            //    { name: 'In Your Face', url: 'large' }
+            //];
+            $scope.isMenuVisible = false;
+            $scope.isMenuButtonVisible = false;
+            $scope.isMenuVertical = false;
 
             $scope.$on('cm-menu-item-selected-event', function (evt, data) {
                 $scope.routeString = data.route;
@@ -256,11 +275,12 @@ angular.module("cmFramework").controller("cmFrameworkController",
             }, 0);
 
         }
-    ]);
+    ])
+    ;
 
 
 angular.module("cmDashboard", ["gridster", "ui.bootstrap"]);
-angular.module("cmDashboard").run(["$templateCache", function($templateCache) {$templateCache.put("ext-modules/cmDashboard/cmDashboardTemplate.html","<div class=\"cm-dashboard-header\">\r\n    {{ title }}\r\n    <div class=\"cm-dashboard-controls\">\r\n\r\n        <div class=\"dropdown\">\r\n            <button class=\"btn btn-default dropdown-toggle\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-expanded=\"true\">\r\n                <i class=\"fa fa-plus\"></i>\r\n                Add Widget\r\n                <span class=\"caret\"></span>\r\n            </button>\r\n            <ul class=\"dropdown-menu\" role=\"menu\" aria-labelledby=\"dropdownMenu1\">\r\n                <li ng-repeat=\"widget in widgetDefinitions\">\r\n                    <a role=\"menuitem\" ng-click=\"addNewWidget(widget)\">{{widget.title}}</a>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n\r\n    </div>\r\n</div>\r\n<div gridster=\"gridsterOpts\">\r\n    <ul>\r\n        <li gridster-item=\"item\" ng-repeat=\"item in widgets\">\r\n\r\n            <cm-widget-body>\r\n            </cm-widget-body>\r\n        </li>\r\n    </ul>\r\n</div>");
+angular.module("cmDashboard").run(["$templateCache", function($templateCache) {$templateCache.put("ext-modules/cmDashboard/cmDashboardTemplate.html","<div class=\"cm-dashboard-header cm-menu-area-vertical\" ng-class=\" {\'cm-dashboard-header\': !isMenuVertical || !isMenuVisible}\">\n    {{ title }}\n    <div class=\"cm-dashboard-controls\">\n        <div class=\"dropdown\">\n            <button label=\"Add Board\" class=\"btn btn-default dropdown-toggle\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-expanded=\"true\">\n                <i class=\"fa fa-plus\"></i>Add\n                Add Boards\n                <span class=\"caret\"></span>\n            </button>\n            <ul class=\"dropdown-menu\" role=\"menu\" aria-labelledby=\"dropdownMenu1\">\n                <li ng-repeat=\"widget in widgetDefinitions\">\n                    <a role=\"menuitem\" ng-click=\"addNewWidget(widget)\">{{widget.title}}</a>\n                </li>\n            </ul>\n        </div>\n    </div>\n</div>\n<div gridster=\"gridsterOpts\" class=\"grid\">\n    <ul>\n        <li gridster-item=\"item\" ng-repeat=\"item in widgets\">\n            <cm-widget-body>\n            </cm-widget-body>\n        </li>\n    </ul>\n</div>");
 $templateCache.put("ext-modules/cmDashboard/cmWidgetBodyTemplate.html","<div class=\"cm-widget-body\">\n    <div class=\"cm-widget-menu-area btn-group\">\n        <a class=\"dropdown-toggle\" data-toggle=\"dropdown\" aria-expanded=\"false\">\n            <i class=\"fa fa-bars\" ng-click=\"iconClicked()\" />\n        </a>\n\n        <ul class=\"dropdown-menu\" role=\"menu\">\n            <li ng-click=\"close()\"><i class=\"fa fa-2x fa-close\" ng-click=\"iconClicked()\" /></li>\n            <li ng-click=\"settings()\"><i class=\"fa fa-2x fa-gear\" ng-click=\"iconClicked()\" /></li>\n        </ul>\n    </div>\n</div>");}]);
 /**
  * Created by pauljones on 2/05/15.
@@ -302,7 +322,7 @@ angular.module('cmDashboard').directive('cmWidgetBody',
     ]);
 
 
-angular.module('cmDashboard').directive('cmDashboard', function () {
+angular.module('cmDashboard').directive('cmDashboard',["cmMenu"], function () {
     return {
         templateUrl: 'ext-modules/cmDashboard/cmDashboardTemplate.html',
         link: function (scope, element, attrs) {
