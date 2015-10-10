@@ -51,5 +51,5 @@ http.createServer(function(req, res){
         res.end();
     }
 }).listen(port, function(){
-    console.log('Listening on ' + port);
+    console.log('Server Listening on ' + port);
 });

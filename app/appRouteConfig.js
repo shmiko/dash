@@ -1,4 +1,4 @@
-﻿"use strict";
+﻿﻿"use strict";
 
 angular.module('app')
     .config(['$routeProvider','uiGmapGoogleMapApiProvider', function ($routeProvider,uiGmapGoogleMapApiProvider) {
