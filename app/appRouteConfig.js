@@ -18,7 +18,9 @@ angular.module('app')
         {
             url: '/cal',
             config: {
-                template: '<wwa-calendar></wwa-calendar>'
+                //template: '<wwa-calendar></wwa-calendar>',
+                templateUrl: 'app/directives/wwaCalendarDirective/calen.html'
+        
                 //templateUrl: 'app/calendar.html'
             }
         },

@@ -5,11 +5,15 @@
         <title>CalMapit</title>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <link href="/content/bootstrap.css" rel="stylesheet" />
-        <link href="/bower_components/fullcalendar/fullcalendar.css" rel="stylesheet"/>
+        <link href="/bower_components/fullcalendar/dist/fullcalendar.css" rel="stylesheet"/>
         <link href="/content/font-awesome.min.css" rel="stylesheet" />
         <link href="/content/angular-gridster.min.css" rel="stylesheet" />
         <link href="/dist/cmFramework.css" rel="stylesheet" />
         <link href="demo.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="bower_components/bootstrap-css/css/bootstrap.css" />
+        <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.css">
+        <link rel="stylesheet" href="calendarDemo.css" />
+
         <!--content/bootstrap.css-->
         <!--Material Design-->
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.css">
@@ -31,18 +35,28 @@
 
         <link href="ext-modules/cmDashboard/cmDashboard.css" rel="stylesheet" />
 
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.0.js"></script>
+        <script src="bower_components/moment/moment.js"></script>
+        <script src="bower_components/fullcalendar/dist/fullcalendar.js"></script>
+        <script src="bower_components/fullcalendar/dist/gcal.js"></script>
+        <script src="/app/src/calendar.js"></script>
+        <script src="/app/directives/wwaCalendarDirective/calenController.js"></script>
+        
+
         <!-- Vendor Scripts -->
-        <script src="/bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="/bower_components/jquery-ui/ui/jquery-ui.js"></script>
-        <script src="/bower_components/moment/min/moment.min.js"></script>
-        <script src="/bower_components/angular/angular.min.js"></script>
+        <!--<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+         <script src="/bower_components/jquery-ui/ui/jquery-ui.js"></script>-->
+        <!--<script src="/bower_components/moment/min/moment.min.js"></script>-->
+        <!--<script src="/bower_components/angular/angular.min.js"></script>-->
         <script src="/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
         <script src="/bower_components/angular-route/angular-route.min.js"></script>
         <script src="/bower_components/angular-animate/angular-animate.min.js"></script>
-        <script src="/bower_components/angular-ui-calendar/src/calendar.js"></script>
-        <script src="/bower_components/fullcalendar/fullcalendar.js"></script>
-        <script src="/bower_components/fullcalendar/gcal.js"></script>
-        <!--<script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>-->
+        <script type="text/javascript" src="bower_components/angular-ui-calendar/src/calendar.js"></script>
+        <script type="text/javascript" src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+        <script type="text/javascript" src="bower_components/fullcalendar/dist/gcal.js"></script><!--<script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>-->
         <script src="/bower_components/lodash/dist/lodash.min.js"></script>
         <script src="/bower_components/spin.js/spin.js"></script>
         <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
@@ -57,6 +71,9 @@
         <script src="/bower_components/angular-ui-alias/src/alias.js"></script>
 
          <!--<script src="bower_components/jquery/dist/jquery.min.js"></script>-->
+        <link rel="icon" href="favicon.ico" />
+        
+        
         <!--<script src="bower_components/jquery-ui/ui/jquery-ui.js"></script>-->
         <!--<script src="bower_components/angular/angular.min.js"></script>-->
         <script src="/bower_components/angular-gridster.min.js"></script>
@@ -93,13 +110,14 @@
         <script src="/app/appConfig.js"></script>
         <script src="/app/appRouteConfig.js"></script>
         <script src="/app/appController.js"></script>
-        <script src="/app/directives/wwaCalendarDirective/calendarController.js"></script>
         <!--<script src="/app/directives/wwaMapsDirective/mapController.js"></script>-->
         <script src="/app/directives/wwaWeatherDirective/weathersController.js"></script>
         <!--<script src="app/directives/wwaWeatherDirective/directives/weatherReport.html"></script>-->
         <script src="/app/services/dataService.js"></script>
         <script src="/app/services/weatherService.js"></script>
         <!--<script src="app/static/materialController.js"></script>-->
+
+
         <!-- Directives JavaScript files-->
         <!--<script src="app/directives/wwaMapsDirective/mapController.js"></script>-->
         <script src="/app/directives/wwaDashboardDirective.js"></script>
@@ -157,13 +175,13 @@
                             <cm-menu-item label="Where Am I Going" icon="fa-unlink" route="colors"></cm-menu-item>
 
                         </cm-menu-group>
-                        <!--<cm-menu-item label="Calendar" icon="fa-location-arrow" route="cal"></cm-menu-item>-->
-                        <cm-menu-group label="Experience?" icon="fa-gears">
+                        <cm-menu-item label="Calendar" icon="fa-location-arrow" route="cal"></cm-menu-item>
+                        <!-- <cm-menu-group label="Experience?" icon="fa-gears">
                             <cm-menu-item label="Recent Work History" icon="fa-user" route="maps"></cm-menu-item>
                             <cm-menu-item label="Personal Projects" icon="fa-unlink" route="colors"></cm-menu-item>
 
-                        </cm-menu-group>
-                        <!--<cm-menu-item label="Map" icon="fa-car" route="maps"></cm-menu-item>-->
+                        </cm-menu-group> -->
+                        <cm-menu-item label="Map" icon="fa-car" route="maps"></cm-menu-item>
                         <cm-menu-group label="Still Studying!" icon="fa-gears">
                             <cm-menu-item label="Towards Certification" icon="fa-user" route="tests"></cm-menu-item>
                             <cm-menu-item label="Need to Know" icon="fa-unlink" route="colors"></cm-menu-item>

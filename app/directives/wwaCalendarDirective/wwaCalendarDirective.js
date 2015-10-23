@@ -5,7 +5,7 @@ angular.module('app').directive('wwaCalendar', [function () {
         scope: {
         },
         //template: '<h1>Calendar Page</h1>'
-        templateUrl: 'app/directives/wwaCalendarDirective/cal.html',
+        // templateUrl: 'app/directives/wwaCalendarDirective/calen.html',
         //controller: calendarController,
         link: function (scope) {
             scope.events=[]

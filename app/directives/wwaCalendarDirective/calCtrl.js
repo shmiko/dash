@@ -11,7 +11,7 @@ angular.module('app').controller('calCtrl', function ($scope, $log) {
         var authorizeButton = document.getElementById('authorize-button');
         if (authResult && !authResult.error) {
             // authorizeButton.style.visibility = 'hidden';
-            //console.log("making api call now");
+            console.log("making api call now");
             makeApiCall();
         } else {
             authorizeButton.style.visibility = '';
@@ -35,7 +35,7 @@ angular.module('app').controller('calCtrl', function ($scope, $log) {
             });
             var request1 = gapi.client.calendar.events.list({
                 'calendarId': 'primary',
-                'timeMin': '2015-12-12T04:26:52.000Z'//Suppose that you want get data after 23 Dec 2014
+                'timeMin': '2015-2-12T04:26:52.000Z'//Suppose that you want get data after 23 Dec 2014
             });
             request1.execute(function(resp){
                 $.each( resp.items, function( key, value ) {
