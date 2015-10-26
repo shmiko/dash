@@ -1,5 +1,5 @@
 <!--<html ng-app="app">-->
-        <body ng-controller="calendarController as vm">
+        <body ng-controller="CalendarCtrl">
                 <!--<p>Hello! {{vm.name}}!</p>-->
                 <!--&lt;!&ndash;<div ui-calendar=""></div>&ndash;&gt;-->
                 <!--&lt;!&ndash;<div id="calendar" ui-calendar="calendarOptions.calendar" ng-model="eventSources"></div>&ndash;&gt;-->
@@ -16,7 +16,8 @@
         <!--</div>-->
         <!--<p></p>-->
 
-        <div ui-calendar="calendarConfig" ng-model="eventSources" calendar="cal"></div>
+        <!--<div ui-calendar="calendarConfig" ng-model="eventSources" calendar="cal"></div>-->
+        <div class="calendar" ng-model="eventSources" calendar="myCalendar1" ui-calendar="uiConfig.calendar"></div>
 
 </div>
         </body>
