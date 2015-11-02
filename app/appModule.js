@@ -1,9 +1,9 @@
 ﻿"use strict";
 
-angular.module("app", ["ngRoute", "cmFramework", "ngStorage", "ui.calendar", "uiGmapgoogle-maps",'ngMaterial',"ngResource"])
+angular.module("app", ["ngRoute", "cmFramework", "ngStorage", "ui.calendar", "uiGmapgoogle-maps",'ngMaterial',"ngResource","ui.bootstrap"])
     .config(function($mdThemingProvider) {
         $mdThemingProvider.theme('default')
-            .primaryPalette('orange')
-            .accentPalette('blue');
+            .primaryPalette('red')
+            .accentPalette('cyan');
     });
 

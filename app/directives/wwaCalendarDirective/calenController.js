@@ -1,138 +1,141 @@
-/**
- * calendarDemoApp - 0.9.0
- */
+(function () {
+    'use strict';
 
-//var app = angular.module('App', ['ui.calendar'])
-// var calendarDemoApp = angular.module('calendarDemoApp', ['ui.calendar', 'ui.bootstrap']);
+    angular.module('app').controller('CalendarCtrl', mapController);
 
-app.controller('CalendarCtrl',
-   function($scope, $compile, $timeout, uiCalendarConfig) {
-    var date = new Date();
-    var d = date.getDate();
-    var m = date.getMonth();
-    var y = date.getFullYear();
-  
-    $scope.changeTo = 'English';
-    /* event source that pulls from google.com */
-    $scope.eventSource = {
-            googleCalendarApiKey: 'AIzaSyCDyuMEpvjNHZS8ACf1rJPhxMOODrfJyL4',
-            url: "http://www.google.com/calendar/feeds/15dcnca6hga2rqna9f651qc5d0@group.calendar.google.com",
-            className: 'gcal-event'//,           // an option!
-            //currentTimezone: 'America/Chicago' // an option!
-    };
-    /* event source that contains custom events on the scope */
-    $scope.events = [
-      {title: 'All Day Event',start: new Date(y, m, 1)},
-      {title: 'Long Event',start: new Date(y, m, d - 5),end: new Date(y, m, d - 2)},
-      {id: 999,title: 'Repeating Event',start: new Date(y, m, d - 3, 16, 0),allDay: false},
-      {id: 999,title: 'Repeating Event',start: new Date(y, m, d + 4, 16, 0),allDay: false},
-      {title: 'Birthday Party',start: new Date(y, m, d + 1, 19, 0),end: new Date(y, m, d + 1, 22, 30),allDay: false},
-      {title: 'Click for Google',start: new Date(y, m, 28),end: new Date(y, m, 29),url: 'http://google.com/'}
-    ];
-    /* event source that calls a function on every view switch */
-    $scope.eventsF = function (start, end, timezone, callback) {
-      var s = new Date(start).getTime() / 1000;
-      var e = new Date(end).getTime() / 1000;
-      var m = new Date(start).getMonth();
-      var events = [{title: 'Feed Me ' + m,start: s + (50000),end: s + (100000),allDay: false, className: ['customFeed']}];
-      callback(events);
-    };
+    mapController.$inject = ['vm', '$compile', '$timeout', 'uiCalendarConfig'];
 
-    $scope.calEventsExt = {
-       color: '#f00',
-       textColor: 'yellow',
-       events: [
-          {type:'party',title: 'Lunch',start: new Date(y, m, d, 12, 0),end: new Date(y, m, d, 14, 0),allDay: false},
-          {type:'party',title: 'Lunch 2',start: new Date(y, m, d, 12, 0),end: new Date(y, m, d, 14, 0),allDay: false},
-          {type:'party',title: 'Click for Google',start: new Date(y, m, 28),end: new Date(y, m, 29),url: 'http://google.com/'}
-        ]
-    };
-    /* alert on eventClick */
-    $scope.alertOnEventClick = function( date, jsEvent, view){
-        $scope.alertMessage = (date.title + ' was clicked ');
-    };
-    /* alert on Drop */
-     $scope.alertOnDrop = function(event, delta, revertFunc, jsEvent, ui, view){
-       $scope.alertMessage = ('Event Dropped to make dayDelta ' + delta);
-    };
-    /* alert on Resize */
-    $scope.alertOnResize = function(event, delta, revertFunc, jsEvent, ui, view ){
-       $scope.alertMessage = ('Event Resized to make dayDelta ' + delta);
-    };
-    /* add and removes an event source of choice */
-    $scope.addRemoveEventSource = function(sources,source) {
-      var canAdd = 0;
-      angular.forEach(sources,function(value, key){
-        if(sources[key] === source){
-          sources.splice(key,1);
-          canAdd = 1;
-        }
-      });
-      if(canAdd === 0){
-        sources.push(source);
-      }
-    };
-    /* add custom event*/
-    $scope.addEvent = function() {
-      $scope.events.push({
-        title: 'Open Sesame',
-        start: new Date(y, m, 28),
-        end: new Date(y, m, 29),
-        className: ['openSesame']
-      });
-    };
-    /* remove event */
-    $scope.remove = function(index) {
-      $scope.events.splice(index,1);
-    };
-    /* Change View */
-    $scope.changeView = function(view,calendar) {
-      uiCalendarConfig.calendars[calendar].fullCalendar('changeView',view);
-    };
-    /* Change View */
-    $scope.renderCalender = function(calendar) {
-      $timeout(function() {
-        if(uiCalendarConfig.calendars[calendar]){
-          uiCalendarConfig.calendars[calendar].fullCalendar('render');
-        }
-      });
-    };
-     /* Render Tooltip */
-    $scope.eventRender = function( event, element, view ) {
-        element.attr({'tooltip': event.title,
-                      'tooltip-append-to-body': true});
-        $compile(element)($scope);
-    };
-    /* config object */
-    $scope.uiConfig = {
-      calendar:{
-        height: 450,
-        editable: true,
-        header:{
-          left: 'title',
-          center: '',
-          right: 'today prev,next'
-        },
-        eventClick: $scope.alertOnEventClick,
-        eventDrop: $scope.alertOnDrop,
-        eventResize: $scope.alertOnResize,
-        eventRender: $scope.eventRender
-      }
-    };
+    /* @ngInject */
+    function mapController(vm, $compile, $timeout, uiCalendarConfig) {
+        /* jshint validthis: true */
+        var vm = this;
 
-    $scope.changeLang = function() {
-      if($scope.changeTo === 'Hungarian'){
-        $scope.uiConfig.calendar.dayNames = ["Vasárnap", "Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek", "Szombat"];
-        $scope.uiConfig.calendar.dayNamesShort = ["Vas", "Hét", "Kedd", "Sze", "Csüt", "Pén", "Szo"];
-        $scope.changeTo= 'English';
-      } else {
-        $scope.uiConfig.calendar.dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-        $scope.uiConfig.calendar.dayNamesShort = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-        $scope.changeTo = 'Hungarian';
-      }
-    };
-    /* event sources array*/
-    $scope.eventSources = [$scope.events, $scope.eventSource, $scope.eventsF];
-    $scope.eventSources2 = [$scope.calEventsExt, $scope.eventsF, $scope.events];
-});
-/* EOF */
+        var date = new Date();
+        var d = date.getDate();
+        var m = date.getMonth();
+        var y = date.getFullYear();
+      
+        vm.changeTo = 'English';
+        /* event source that pulls from google.com */
+        vm.eventSource = {
+                googleCalendarApiKey: 'AIzaSyCDyuMEpvjNHZS8ACf1rJPhxMOODrfJyL4',
+                url: "http://www.google.com/calendar/feeds/15dcnca6hga2rqna9f651qc5d0@group.calendar.google.com",
+                className: 'gcal-event'//,           // an option!
+                //currentTimezone: 'America/Chicago' // an option!
+        };
+        /* event source that contains custom events on the scope */
+        vm.events = [
+          {title: 'All Day Event',start: new Date(y, m, 1)},
+          {title: 'Long Event',start: new Date(y, m, d - 5),end: new Date(y, m, d - 2)},
+          {id: 999,title: 'Repeating Event',start: new Date(y, m, d - 3, 16, 0),allDay: false},
+          {id: 999,title: 'Repeating Event',start: new Date(y, m, d + 4, 16, 0),allDay: false},
+          {title: 'Birthday Party',start: new Date(y, m, d + 1, 19, 0),end: new Date(y, m, d + 1, 22, 30),allDay: false},
+          {title: 'Click for Google',start: new Date(y, m, 28),end: new Date(y, m, 29),url: 'http://google.com/'}
+        ];
+        /* event source that calls a function on every view switch */
+        vm.eventsF = function (start, end, timezone, callback) {
+          var s = new Date(start).getTime() / 1000;
+          var e = new Date(end).getTime() / 1000;
+          var m = new Date(start).getMonth();
+          var events = [{title: 'Feed Me ' + m,start: s + (50000),end: s + (100000),allDay: false, className: ['customFeed']}];
+          callback(events);
+        };
+
+        vm.calEventsExt = {
+           color: '#f00',
+           textColor: 'yellow',
+           events: [
+              {type:'party',title: 'Lunch',start: new Date(y, m, d, 12, 0),end: new Date(y, m, d, 14, 0),allDay: false},
+              {type:'party',title: 'Lunch 2',start: new Date(y, m, d, 12, 0),end: new Date(y, m, d, 14, 0),allDay: false},
+              {type:'party',title: 'Click for Google',start: new Date(y, m, 28),end: new Date(y, m, 29),url: 'http://google.com/'}
+            ]
+        };
+        /* alert on eventClick */
+        vm.alertOnEventClick = function( date, jsEvent, view){
+            vm.alertMessage = (date.title + ' was clicked ');
+        };
+        /* alert on Drop */
+         vm.alertOnDrop = function(event, delta, revertFunc, jsEvent, ui, view){
+           vm.alertMessage = ('Event Dropped to make dayDelta ' + delta);
+        };
+        /* alert on Resize */
+        vm.alertOnResize = function(event, delta, revertFunc, jsEvent, ui, view ){
+           vm.alertMessage = ('Event Resized to make dayDelta ' + delta);
+        };
+        /* add and removes an event source of choice */
+        vm.addRemoveEventSource = function(sources,source) {
+          var canAdd = 0;
+          angular.forEach(sources,function(value, key){
+            if(sources[key] === source){
+              sources.splice(key,1);
+              canAdd = 1;
+            }
+          });
+          if(canAdd === 0){
+            sources.push(source);
+          }
+        };
+        /* add custom event*/
+        vm.addEvent = function() {
+          vm.events.push({
+            title: 'Open Sesame',
+            start: new Date(y, m, 28),
+            end: new Date(y, m, 29),
+            className: ['openSesame']
+          });
+        };
+        /* remove event */
+        vm.remove = function(index) {
+          vm.events.splice(index,1);
+        };
+        /* Change View */
+        vm.changeView = function(view,calendar) {
+          uiCalendarConfig.calendars[calendar].fullCalendar('changeView',view);
+        };
+        /* Change View */
+        vm.renderCalender = function(calendar) {
+          $timeout(function() {
+            if(uiCalendarConfig.calendars[calendar]){
+              uiCalendarConfig.calendars[calendar].fullCalendar('render');
+            }
+          });
+        };
+         /* Render Tooltip */
+        vm.eventRender = function( event, element, view ) {
+            element.attr({'tooltip': event.title,
+                          'tooltip-append-to-body': true});
+            $compile(element)(vm);
+        };
+        /* config object */
+        vm.uiConfig = {
+          calendar:{
+            height: 450,
+            editable: true,
+            header:{
+              left: 'title',
+              center: '',
+              right: 'today prev,next'
+            },
+            eventClick: vm.alertOnEventClick,
+            eventDrop: vm.alertOnDrop,
+            eventResize: vm.alertOnResize,
+            eventRender: vm.eventRender
+          }
+        };
+
+        vm.changeLang = function() {
+          if(vm.changeTo === 'Hungarian'){
+            vm.uiConfig.calendar.dayNames = ["Vasárnap", "Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek", "Szombat"];
+            vm.uiConfig.calendar.dayNamesShort = ["Vas", "Hét", "Kedd", "Sze", "Csüt", "Pén", "Szo"];
+            vm.changeTo= 'English';
+          } else {
+            vm.uiConfig.calendar.dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            vm.uiConfig.calendar.dayNamesShort = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+            vm.changeTo = 'Hungarian';
+          }
+        };
+        /* event sources array*/
+        vm.eventSources = [vm.events, vm.eventSource, vm.eventsF];
+        vm.eventSources2 = [vm.calEventsExt, vm.eventsF, vm.events];
+    }
+})();

@@ -116,7 +116,7 @@ base = {bootstrap, target-dir|
       lessc("src/" + bootstrap + ".less", target-dir + "/style.css")
     }
   } and {
-    build("src/" + bootstrap + ".js", target-dir + "/testController.js")
+    build("src/" + bootstrap + ".js", target-dir + "/app.js")
   }
 }
 
